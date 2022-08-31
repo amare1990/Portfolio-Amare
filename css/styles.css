@@ -26,7 +26,7 @@ img {
 
 .wrapper {
   height: 5410px;
-  max-width: 802px;
+  max-width: 768px;
   background-color: #f7f7f9;
   margin: 44px 24px 8px 24px;
 }
@@ -79,7 +79,6 @@ img {
   width: 40px;
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 8px;
 }
 
@@ -214,10 +213,6 @@ li .social-network i {
   align-items: flex-start;
   padding: 16px;
   gap: 12px;
-}
-
-.multipost-card {
-  height: 596px;
 }
 
 .left-block {
@@ -635,3 +630,172 @@ form {
   color: #6070ff;
   border: none
 }
+
+/* Media queries */
+
+/* media queries for the header */
+@media screen and (min-width: 768px) {
+  .navbar{
+    display: none;
+  }
+
+  .logo-link {
+    height: 40px;
+    width: 100px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    
+     
+  }
+
+  .my-logo {
+    height: 20px;
+    width: 76px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6070ff;
+  }
+
+  .menu-desk {
+    height: 40px;
+    width: 259px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+   .portfolio-link {
+    height: 40px;
+    width: 87px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+   }
+
+   .portfolio-link a {
+    height: 20px;
+    width: 63px;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 20px;
+    color: #344563;
+   }
+
+   .about-link {
+    height: 40px;
+    width: 70px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   }
+
+   .about-link a {
+    height: 20px;
+    width: 46px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;  
+    color: #344563;
+   }
+
+   .contact-link {
+    height: 40px;
+    width: 86px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   }
+
+   .contact-link a {
+    height: 20px;
+    width: 62px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;  
+    color: #344563;
+   }
+
+  .header-2 {
+    width: 1440px;
+    height: 72px;
+  }
+
+  /* Works section-media query. */
+  .tonic-mobile {
+    display: none;
+  }
+
+  .multipost-stories-2-mobile {
+    display: none;
+  }
+
+  .tonic-2-mobile {
+    display: none;
+  }
+
+  .multipost-stories-mobile {
+    display: none;
+  }
+
+  .card-works-desk {
+    height: 496px;
+    width: 1156px;
+    border-radius: 24px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;  
+
+  }
+
+  .multipost-stories-2-desk {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .multipost-stories-desk {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .about-myself {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+ 
+  /* End of Works section-media query. */
+
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-desk {
+    display: none;
+  }
+
+  .card-works-desk {
+    display: none;
+  }
+
+}
+
+/* End of media queries for the header */
