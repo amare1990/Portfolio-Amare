@@ -762,7 +762,15 @@ form {
     background: #fff;
     display: flex;
     flex-direction: row;  
+    border: 1px solid #dfe1e6;
 
+  }
+
+  .tonic-desk img {
+    height: 448px;
+    width: 544px;
+    border-radius: 8px;
+    padding: 24px 46px 24px 24px;
   }
 
   .multipost-stories-2-desk {
@@ -770,6 +778,19 @@ form {
     flex-direction: row-reverse;
     align-items: center;
   }
+
+  .multipost-stories-2-desk img {
+    height: 448px;
+    width: 544px;
+    border-radius: 8px;
+    padding: 24px 22px 24px 46px;
+  }
+
+  .multipost-stories-2-desk .left-block {
+    margin: 24px 0 7px 24px;
+    padding: 24px 0 24px 24px;
+  }
+  
 
   .multipost-stories-desk {
     display: flex;
