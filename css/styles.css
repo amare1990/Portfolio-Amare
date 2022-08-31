@@ -13,6 +13,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  background: #e5e5e5;
 }
 
 img {
@@ -28,6 +29,7 @@ img {
   height: 5410px;
   max-width: 768px;
   background-color: #f7f7f9;
+  background-color: red;
   margin: 44px 24px 8px 24px;
 }
 
@@ -198,9 +200,10 @@ li .social-network i {
 .section-works {
   height: 2788px;
   max-width: 100%;
-  margin: 114px 24px 114px 24px;
+  margin: 114px 24px 314px 24px;
   display: grid;
   row-gap: 88px;
+  background-color: #f7f7f9;
 }
 
 .card-works {
@@ -208,6 +211,7 @@ li .social-network i {
   max-width: 100%;
   border: 1px solid #dfe1e6;
   border-radius: 8px;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -216,6 +220,8 @@ li .social-network i {
 }
 
 .left-block {
+  margin-top: 24px;
+  padding-top: 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -376,7 +382,6 @@ li .social-network i {
   letter-spacing: 0.03em;
   /* color: #396df2; */
   background-color: #396df2;
-
 }
 
 /* End of Styling anchor tags   */
@@ -535,13 +540,14 @@ li .social-network i {
 
 .contact-me-title {
   height: 56px;
-  max-width: 802px;
+  max-width: 801px;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   color: #fff;
   padding-top: 103px;
   margin-bottom: 12px;
@@ -563,7 +569,6 @@ form {
   display: flex;
   flex-direction: column;
   margin: 0 24px 0 24px;
-  
 }
 
 .input-field {
@@ -576,7 +581,8 @@ form {
 
 .form1-input {
   padding: 15px 38px 15px 16px;
-  height: 18px;width: 273px;
+  height: 18px;
+  width: 273px;
   font-size: 17px;
   line-height: 20px;
   display: flex;
@@ -628,14 +634,20 @@ form {
   text-align: center;
   letter-spacing: 0.03em;
   color: #6070ff;
-  border: none
+  border: none;
 }
 
 /* Media queries */
 
 /* media queries for the header */
 @media screen and (min-width: 768px) {
-  .navbar{
+  .wrapper {
+    height: 5125px;
+    max-width: 1440px;
+    background: #f4f5f7;
+  }
+
+  .navbar {
     display: none;
   }
 
@@ -645,8 +657,6 @@ form {
     padding: 10px 12px;
     display: flex;
     align-items: center;
-    
-     
   }
 
   .my-logo {
@@ -668,18 +678,17 @@ form {
     align-items: center;
     gap: 8px;
   }
-  
-   .portfolio-link {
+
+  .portfolio-link {
     height: 40px;
     width: 87px;
     padding: 10px 12px;
     display: flex;
     align-items: center;
     gap: 10px;
+  }
 
-   }
-
-   .portfolio-link a {
+  .portfolio-link a {
     height: 20px;
     width: 63px;
     font-weight: 500;
@@ -689,18 +698,18 @@ form {
     text-align: center;
     line-height: 20px;
     color: #344563;
-   }
+  }
 
-   .about-link {
+  .about-link {
     height: 40px;
     width: 70px;
     padding: 10px 12px;
     display: flex;
     align-items: center;
     gap: 10px;
-   }
+  }
 
-   .about-link a {
+  .about-link a {
     height: 20px;
     width: 46px;
     font-weight: 500;
@@ -708,20 +717,20 @@ form {
     line-height: 20px;
     display: flex;
     align-items: center;
-    text-align: center;  
+    text-align: center;
     color: #344563;
-   }
+  }
 
-   .contact-link {
+  .contact-link {
     height: 40px;
     width: 86px;
     padding: 10px 12px;
     display: flex;
     align-items: center;
     gap: 10px;
-   }
+  }
 
-   .contact-link a {
+  .contact-link a {
     height: 20px;
     width: 62px;
     font-weight: 500;
@@ -729,16 +738,21 @@ form {
     line-height: 20px;
     display: flex;
     align-items: center;
-    text-align: center;  
+    text-align: center;
     color: #344563;
-   }
+  }
 
   .header-2 {
     width: 1440px;
     height: 72px;
   }
 
+  /* End of media queries for the header */
+
   /* Works section-media query. */
+  .section-works {
+    row-gap: 142px;
+  }
   .tonic-mobile {
     display: none;
   }
@@ -761,9 +775,8 @@ form {
     border-radius: 24px;
     background: #fff;
     display: flex;
-    flex-direction: row;  
+    flex-direction: row;
     border: 1px solid #dfe1e6;
-
   }
 
   .tonic-desk img {
@@ -790,7 +803,37 @@ form {
     margin: 24px 0 7px 24px;
     padding: 24px 0 24px 24px;
   }
-  
+
+  .work-detail .tags {
+    height: 24px;
+    width: 316px;
+    left: 24px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .tags .tag-container-ruby {
+    height: 24px;
+    width: 105px;
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    background: #ebebff;
+    border-radius: 8px;
+  }
+
+  .tags .tag-container-ruby .ruby {
+    height: 16px;
+    width: 81px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    border: 0;
+  }
 
   .multipost-stories-desk {
     display: flex;
@@ -798,14 +841,122 @@ form {
     align-items: center;
   }
 
+  .multipost-stories-desk img {
+    height: 448px;
+    width: 544px;
+    border-radius: 8px;
+    padding: 24px 46px 24px 22px;
+  }
+
+  .multipost-stories-desk .left-block {
+    margin: 24px 0 24px 24px;
+    padding: 24px o 24px 24px;
+  }
+
+  .tonic-2-desk {
+    border: 2px solid #a7aeff;
+  }
+
+  .tonic-2-desk img {
+    height: 448px;
+    width: 544px;
+    border-radius: 8px;
+    padding: 24px 46px 24px 24px;
+  }
+
   .about-myself {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
- 
+
   /* End of Works section-media query. */
 
+  /* About me section media query   */
+  .about-myself {
+    height: 924px;
+    width: 1440px;
+    max-width: 100%;
+    background: #fff;
+    /*transform: rotate(-180deg);*/
+  }
+
+  footer {
+    height: 846px;
+    max-width: 100%;
+    border-radius: 0;
+    border-top-left-radius: 8.5%;
+    background: #6070ff;
+  }
+
+  .form-container {
+    height: 877px;
+    max-width: 801px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 127px;
+  }
+
+  .form-container .contact-me-title {
+    padding-top: 100px;
+  }
+
+  .name,
+  .email {
+    height: 48px;
+    width: 447px;
+    border-radius: 2px;
+    border: 1px solid #cfd8dc;
+  }
+
+  .message {
+    height: 170px;
+    width: 447px;
+    border-radius: 2px;
+    border: 1px solid #cfd8dc;
+  }
+
+  .form-container .desk-shapes-in-form {
+    background-image: url("/images/contact-form-background-shapes-2x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 10px 0;
+    height: 718.69873046875px;
+    width: 1290.6632080078125px;
+    border-radius: 0;
+  }
+
+  .contact-me-text {
+    height: 102px;
+    width: 569px;
+    border-radius: 0;
+  }
+
+  form .get-touch {
+    height: 48px;
+    width: 142px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+    padding: 12px 16px;
+    background: #fff;
+    border-radius: 8px;
+  }
+
+  form .get-touch button {
+    height: 24px;
+    max-width: 110px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
+  /* End of About me section media query   */
 }
 
 @media screen and (max-width: 768px) {
@@ -817,6 +968,27 @@ form {
     display: none;
   }
 
-}
+  .top {
+    height: 392px;
+    width: 447px;
+    border-radius: 0;
+    display: flex;
+    padding: 0;
+    gap: 24px;
+  }
 
-/* End of media queries for the header */
+  .skill-list {
+    height: 360px;
+    width: 684px;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .contact-form-shapes {
+    display: none;
+  }
+
+  .desk-shapes-in-form {
+    display: none;
+  }
+}
