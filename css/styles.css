@@ -329,6 +329,19 @@ li .social-network i {
   border-radius: 8px;
 }
 
+.btn {
+  height: 24px;
+  width: 100%;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: #396df2;
+}
+
 .action .btn {
   height: 24px;
   width: 138px;
@@ -368,20 +381,6 @@ li .social-network i {
   background-color: #2230d2;
   border-radius: 8px;
   color: #fff;
-}
-
-.btn {
-  height: 24px;
-  width: 100%;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.03em;
-  /* color: #396df2; */
-  background-color: #396df2;
 }
 
 /* End of Styling anchor tags   */
@@ -526,7 +525,6 @@ li .social-network i {
   background: #6070ff;
   border-top-left-radius: 25%;
   max-width: 100%;
-  /* transform: matrix(1, 0, 0, -1, 0, 0); */
 }
 
 .contact-form-shapes {
@@ -552,6 +550,7 @@ li .social-network i {
   padding-top: 103px;
   margin-bottom: 12px;
 }
+
 .contact-me-text {
   height: 102px;
   max-width: 100%;
@@ -753,6 +752,7 @@ form {
   .section-works {
     row-gap: 142px;
   }
+
   .tonic-mobile {
     display: none;
   }
@@ -868,19 +868,13 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-
-  /* End of Works section-media query. */
-
-  /* About me section media query   */
-  .about-myself {
     height: 924px;
     width: 1440px;
     max-width: 100%;
     background: #fff;
-    /*transform: rotate(-180deg);*/
   }
 
+  /*End of Works section-media query. */
   footer {
     height: 846px;
     max-width: 100%;
