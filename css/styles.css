@@ -872,7 +872,8 @@ form {
 
   .work-detail .tags {
     height: 24px;
-    width: 316px;
+    max-width: 316px;
+    max-width: 100%;
     left: 24px;
     border-radius: 0;
     display: flex;
@@ -882,7 +883,7 @@ form {
 
   .tags .tag-container-ruby {
     height: 24px;
-    width: 105px;
+    width: auto;
     display: flex;
     align-items: center;
     padding: 4px 12px;
@@ -892,13 +893,19 @@ form {
 
   .tags .tag-container-ruby .ruby {
     height: 16px;
-    width: 81px;
+    width: 90px;
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
     color: #6070ff;
     border: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .tags .tag-container-ruby .ruby:hover {
+    color: #fff;
   }
 
   .multipost-stories-desk {
