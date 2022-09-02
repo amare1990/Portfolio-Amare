@@ -28,9 +28,9 @@ img {
 .wrapper {
   max-height: 5410px;
   height: auto;
-  max-width: 768px;
+  width: 100%;
   background-color: #f7f7f9;
-  margin: 44px 24px 8px 24px;
+  padding: 44px 24px 8px 24px;
 }
 
 .container-homepage {
@@ -558,8 +558,6 @@ footer {
   min-width: 265px;
   max-width: 100%;
   height: 709.17px;
-  right: -20px;
-  margin-top: 21px;
 }
 
 .contact-me-title {
@@ -776,7 +774,6 @@ form {
   /* End of media queries for the header */
   .section-home {
     height: 845px;
-    width: 1440px;
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -784,14 +781,13 @@ form {
   }
 
   .home-only-container {
-    height: 268px;
-    min-inline-size: 920px;
-    max-width: 100%;
+    min-width: 868px;
+    max-width: 920px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
-    padding: 100px 240px 159px 260px;
+    justify-content: flex-start;
+    padding: 287px 260px 159px 255px;
   }
 
   #name-welcome-mobile {
@@ -977,7 +973,10 @@ form {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
+    gap: 25px;
+    justify-content: center;
+    padding-left: 142px;
+    padding-right: 142px;
     margin-top: -280px;
     min-height: 924px;
     height: auto;
