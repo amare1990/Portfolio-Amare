@@ -1065,15 +1065,16 @@ form {
     border: 1px solid #cfd8dc;
   }
 
-  .form-container .desk-shapes-in-form {
+  .desk-shapes-in-form {
     background-image: url("/images/contact-form-background-shapes-2x.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 10px 0;
+    background-size: cover;
+  
+    margin-bottom: -100px;
+    background-position: 40px 20px;
     height: 718.69873046875px;
-    max-width: 1290.6632080078125px;
+    width: 1440px;
     max-width: 100%;
-    border-radius: 0;
   }
 
   .contact-me-text {
