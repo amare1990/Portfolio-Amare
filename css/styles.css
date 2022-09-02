@@ -1031,8 +1031,6 @@ form {
   }
 
   .language-list .frame-9-10-11 {
-
-    /* .frame-9-10-11  is the name of the class for li inside language-list class */
     height: 70px;
     width: 80px;
     border-radius: 8px;
