@@ -38,7 +38,7 @@ img {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 10px 2px;
-  max-height: 800.0000610351562px; 
+  max-height: 800px;
   height: auto;
   max-width: 100%;
   border-bottom-left-radius: 80px;
@@ -234,6 +234,7 @@ li .social-network i {
   max-height: 830px;
   height: auto;
   max-width: 100%;
+
   /* padding: 16px; */
   display: flex;
   flex-direction: column;
@@ -1029,7 +1030,9 @@ form {
     padding: 12px 12px;
   }
 
-  .language-list .frame-9-10-11  { /* .frame-9-10-11  is the name of the class for li inside language-list class */
+  .language-list .frame-9-10-11 {
+
+    /* .frame-9-10-11  is the name of the class for li inside language-list class */
     height: 70px;
     width: 80px;
     border-radius: 8px;
@@ -1106,7 +1109,7 @@ form {
   .desk-shapes-in-form {
     background-image: url("/images/contact-form-background-shapes-2x.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;  
+    background-size: 100% 100%;
     margin-bottom: -100px;
     background-position: -74px 50px;
     height: 718.69873046875px;
