@@ -38,7 +38,7 @@ img {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: 10px 2px;
-  max-height: 604.0000610351562px; 
+  max-height: 800.0000610351562px; 
   height: auto;
   max-width: 100%;
   border-bottom-left-radius: 80px;
@@ -218,6 +218,7 @@ li .social-network i {
 
 .card-works {
   height: 552px;
+  height: auto;
   max-width: 100%;
   border: 1px solid #dfe1e6;
   border-radius: 8px;
@@ -230,9 +231,10 @@ li .social-network i {
 }
 
 .multipost-stories-2-mobile {
-  height: 596px;
+  max-height: 830px;
+  height: auto;
   max-width: 100%;
-  padding: 16px;
+  /* padding: 16px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,7 +244,7 @@ li .social-network i {
 }
 
 .left-block {
-  margin-top: 24px;
+  /* margin-top: 24px; */
   padding-top: 24px;
   display: flex;
   flex-direction: column;
@@ -782,7 +784,7 @@ form {
 
   .home-only-container {
     height: 268px;
-    max-width: 920px;
+    min-inline-size: 920px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
