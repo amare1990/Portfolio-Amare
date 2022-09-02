@@ -952,7 +952,7 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: -280px;
     height: 924px;
     max-width: 1440px;
