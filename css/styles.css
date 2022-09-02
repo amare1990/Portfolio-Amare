@@ -1142,4 +1142,8 @@ form {
   .multipost-stories-desk {
     display: none;
   }
+
+  .contact-form-shapes-mobile {
+    display: block;
+  }
 }
