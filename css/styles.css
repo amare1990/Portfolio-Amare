@@ -26,7 +26,8 @@ img {
 }
 
 .wrapper {
-  height: 5410px;
+  max-height: 5410px;
+  height: auto;
   max-width: 768px;
   background-color: #f7f7f9;
   margin: 44px 24px 8px 24px;
@@ -35,9 +36,10 @@ img {
 .container-homepage {
   background: url("/images/header-shapes-mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 10px 0;
-  height: 604.0000610351562px;
+  background-size: 100% 100%;
+  background-position: 10px 2px;
+  max-height: 604.0000610351562px; 
+  height: auto;
   max-width: 100%;
   border-bottom-left-radius: 80px;
   background-color: #fff;
@@ -46,6 +48,10 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 120px;
+}
+
+.home-only-container {
+  padding-top: 114px;
 }
 
 .header-2 {
@@ -200,7 +206,8 @@ li .social-network i {
 
 /* Works and About-me section */
 .section-works {
-  height: 4100px;
+  max-height: 4100px;
+  height: auto;
   max-width: 100%;
   margin: 114px 24px 114px 24px;
   display: grid;
@@ -819,6 +826,7 @@ form {
     max-width: 1156px;
     max-width: 100%;
     border-radius: 24px;
+    padding-right: 22px;
     background: #fff;
     display: flex;
     flex-direction: row;
