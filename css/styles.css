@@ -1021,7 +1021,7 @@ form {
   /* End of Works section-media query. */
   footer {
     height: 846px;
-    width: 1440px;
+    max-width: 1440px;
     max-width: 100%;
     border-radius: 0;
     margin-top: -100px;
@@ -1035,7 +1035,7 @@ form {
 
   .form-container {
     height: 877px;
-    width: 801px;
+    max-width: 801px;
     max-width: 100%;
     display: flex;
     flex-direction: column;
@@ -1071,7 +1071,7 @@ form {
     background-size: 100%;
     background-position: 10px 0;
     height: 718.69873046875px;
-    width: 1290.6632080078125px;
+    max-width: 1290.6632080078125px;
     max-width: 100%;
     border-radius: 0;
   }
