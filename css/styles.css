@@ -860,7 +860,8 @@ form {
   .multipost-stories-2-desk .left-block {
     margin: 24px 0 7px 24px;
     height: 465px;
-    width: 544px;
+    height: auto;
+    max-width: 544px;
     max-width: 100%;
     padding: 24px;
     display: flex;
@@ -951,10 +952,11 @@ form {
   .about-myself {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     margin-top: -280px;
-    height: 924px;
+    min-height: 924px;
+    height: auto;
     max-width: 1440px;
     max-width: 100%;
     background: #fff;
@@ -963,7 +965,8 @@ form {
   }
 
   .about-myself .top {
-    height: 392px;
+    min-height: 392px;
+    height: auto;
     width: 447px;
     max-width: 100%;
     display: flex;
@@ -985,6 +988,7 @@ form {
 
   .skill-list .frame-7-languages,
   .skill-list .skill-and-framework {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -995,22 +999,20 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     gap: 12px;
     height: 144px;
     width: 414px;
     max-width: 100%;
+    padding: 12px 12px;
   }
 
-  .language-list li {
+  .language-list .frame-9-10-11  { /* .frame-9-10-11  is the name of the class for li inside language-list class */
     height: 70px;
     width: 80px;
     border-radius: 8px;
     background: #f7f7f9;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .language-list li img {
@@ -1025,12 +1027,15 @@ form {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* End of Works section-media query. */
   footer {
-    height: 846px;
+    max-height: 846px;
+    height: auto;
     max-width: 1440px;
     max-width: 100%;
     border-radius: 0;
@@ -1078,10 +1083,9 @@ form {
   .desk-shapes-in-form {
     background-image: url("/images/contact-form-background-shapes-2x.png");
     background-repeat: no-repeat;
-    background-size: cover;
-  
+    background-size: 100% 100%;  
     margin-bottom: -100px;
-    background-position: 40px 20px;
+    background-position: -74px 50px;
     height: 718.69873046875px;
     width: 1440px;
     max-width: 100%;
