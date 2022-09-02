@@ -843,6 +843,22 @@ form {
     padding: 24px 46px 24px 24px;
   }
 
+  .frame-2 {
+    width: 297px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 12px;
+  }
+
+  .frame-2 .counter {
+    height: 8px;
+    width: 8px;
+    color: red;
+  }
+
   .multipost-stories-2-desk {
     display: flex;
     flex-direction: row-reverse;
