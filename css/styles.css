@@ -1146,7 +1146,7 @@ form {
   /* End of About me section media query   */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .navbar-desk {
     display: none;
   }
@@ -1183,4 +1183,45 @@ form {
   .contact-form-shapes-mobile {
     display: block;
   }
+
+  .mobile-menu-wrapper {
+    height: 787px;
+    min-width: 375px;
+    background-color: #6070ff;
+    mix-blend-mode: multiply;
+    position: relative;
+  }
+
+
+  .mobile-menu-wrapper .closeBtn {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 4px;
+    right: 24px;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px;
+  }
+
+  .mobile-menu-wrapper .mobile-menu-item {
+    list-style: none;
+    width: 251px;
+    height: 24px;
+    font-weight: 600px;
+    font-size: 32px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 24px 96px 40px 28px;
+  }
+
+  .mobile-menu-wrapper .mobile-menu-item a {
+    color: #fff;
+  }
+
 }
