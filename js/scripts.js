@@ -1,8 +1,9 @@
-const humburger = document.querySelector('.humburger');
+const humburger = document.querySelector('.navbar');
+wrapperMain = document.querySelector('.wrapper');
 
 function mobileMenuDisplay(){
-  //navbar-desk.style.display=flex;
-  navbar-desk.classList.add('t');
+  wrapperMain.style.display = 'none';
+
 }
 
-humburger.addEventListener('click', mobileMenuDisplay());
+humburger.addEventListener('click', mobileMenuDisplay);
