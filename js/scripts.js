@@ -13,7 +13,7 @@ function mobileMenuDisplay(){
   if(icon.classList.contains('fa-bars')){
     icon.classList.replace('fa-bars', 'fa-times');
     mobileMenuContainer.style.display = 'block';
-    homepage.style.filter = 'blur(2px)';
+    //homepage.style.filter = 'blur(2px)';
 
   }
   else {

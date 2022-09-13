@@ -26,12 +26,11 @@ img {
 }
 
 .wrapper {
-  max-height: 5410px;
+  min-height: 5410px;
   height: auto;
   width: 100%;
   background-color: #f7f7f9;
   padding: 44px 24px 8px 24px;
-  background-color: red;
 }
 
 .container-homepage {
@@ -98,6 +97,10 @@ li a i {
   height: 12px;
   width: 18px;
   color: #6070ff;
+}
+
+.menu-bar button i:active {
+  color: #fff;
 }
 
 li {
@@ -686,11 +689,9 @@ form {
 }
 
 .bar {
- 
   background-color: #fff;
   border: none;
   cursor: pointer;
-
   padding: 16px;
   font-size: 1.5rem;
   font-weight: lighter;
@@ -698,14 +699,18 @@ form {
   border-radius: 5px;
 }
 
-.navbar ul .menu-bar .closeBtn {
+.navbar.menu-bar .closeBtn {
   height: 40px;
   width: 40px;
   font-size: 1.5rem;
   border-radius: 8px;
-  padding: 8px;  
- 
+  padding: 8px;   
   cursor: pointer;
+  color: #fff;
+}
+
+.navbar.menu-bar .closeBtn:active{
+  color: #fff;
 }
 
 .mobile-menu-wrapper .mobile-menu .mobile-menu-item  {
