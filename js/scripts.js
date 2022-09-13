@@ -31,26 +31,23 @@ const close_window = document.querySelector('.mobile-menu-close').addEventListen
 });
 
 document.querySelector('.mobile-menu-close').addEventListener('click',() =>{
- const menu = document.querySelector('.mobile-menu-wrapper');
-   menu.style.display = 'none';
+  const menu = document.querySelector('.mobile-menu-wrapper');
+  menu.style.display = 'none';
   window.onscroll = () => { };
-      });
-     
-     
-      document.querySelector('.portfolio_mobile').addEventListener('click',() =>{
-        const menu = document.querySelector('.mobile-menu-wrapper');
-        menu.style.display = 'none';
-        window.scroll({
-            top: 875,
-            behavior: 'smooth'
-          });
+});  
+document.querySelector('.portfolio_mobile').addEventListener('click',() =>{
+const menu = document.querySelector('.mobile-menu-wrapper');
+menu.style.display = 'none';
+window.scroll({
+  top: 875,
+  behavior: 'smooth'
+  });
+});
+document.querySelector('.about_mobile').addEventListener('click',() =>{
+  const menu = document.querySelector('.mobile-menu-wrapper');
+  menu.style.display = 'none';
+  window.scroll({
+    top: 4300,
+    behavior: 'smooth'
     });
-
-    document.querySelector('.about_mobile').addEventListener('click',() =>{
-      const menu = document.querySelector('.mobile-menu-wrapper');
-   menu.style.display = 'none';
-      window.scroll({
-          top: 4300,
-          behavior: 'smooth'
-        });
   });
