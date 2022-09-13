@@ -31,6 +31,7 @@ img {
   width: 100%;
   background-color: #f7f7f9;
   padding: 44px 24px 8px 24px;
+  background-color: red;
 }
 
 .container-homepage {
@@ -73,20 +74,6 @@ img {
   align-items: center;
   text-align: center;
   text-decoration: none;
-}
-
-.bar {
-  background-color: #fff;
-  border: 0;
-  cursor: pointer;
-}
-
-.navbar {
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  padding: 8px;
 }
 
 li a i {
@@ -660,6 +647,95 @@ form {
   border: none;
 }
 
+/* Mobile Menu starts  */
+.mobile-menu-wrapper {
+  max-height: 787px;
+  min-width: 375px;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  z-index: 100;
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: 80px;
+  backdrop-filter: blur;
+}
+
+.navbar {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 8px;
+}
+
+.mobile-menu {
+  position: absolute;
+  height: 184px;
+  width: 351px;
+  left: 12px;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.bar {
+ 
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+ 
+  padding: 16px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  border: none;
+  border-radius: 5px;
+}
+
+.navbar ul .menu-bar .closeBtn {
+  height: 40px;
+  width: 40px;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  padding: 8px;  
+ 
+  cursor: pointer;
+}
+
+.mobile-menu-wrapper .mobile-menu .mobile-menu-item {
+  list-style: none;
+  width: 251px;
+  height: 24px;
+  font-weight: 600px;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 24px 96px 40px 28px;
+}
+
+.mobile-menu-wrapper .mobile-menu .mobile-menu-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.activeIcon {
+  display: none;
+}
+
+.activeMobileMenu{
+  display: none;
+}
+
+/* Mobile Menu End  */
+
 /* Media queries */
 
 /* media queries for the header */
@@ -969,6 +1045,7 @@ form {
     padding: 24px 46px 24px 24px;
   }
 
+  /* End of Works section-media query. */
   .about-myself {
     display: flex;
     flex-direction: row;
@@ -1055,7 +1132,7 @@ form {
     justify-content: center;
   }
 
-  /* End of Works section-media query. */
+  /* End of About me section media query   */
   footer {
     max-height: 846px;
     height: auto;
@@ -1143,7 +1220,9 @@ form {
     letter-spacing: 0.03em;
   }
 
-  /* End of About me section media query   */
+  .mobile-menu-wrapper {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1183,45 +1262,5 @@ form {
   .contact-form-shapes-mobile {
     display: block;
   }
-
-  .mobile-menu-wrapper {
-    height: 787px;
-    min-width: 375px;
-    background-color: #6070ff;
-    mix-blend-mode: multiply;
-    position: relative;
-  }
-
-
-  .mobile-menu-wrapper .closeBtn {
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    top: 4px;
-    right: 24px;
-    border-radius: 8px;
-    padding: 8px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 8px;
-  }
-
-  .mobile-menu-wrapper .mobile-menu-item {
-    list-style: none;
-    width: 251px;
-    height: 24px;
-    font-weight: 600px;
-    font-size: 32px;
-    line-height: 44px;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    padding: 24px 96px 40px 28px;
-  }
-
-  .mobile-menu-wrapper .mobile-menu-item a {
-    color: #fff;
-  }
-
+  
 }
