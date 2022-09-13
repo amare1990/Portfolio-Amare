@@ -51,3 +51,12 @@ document.querySelector('.about_mobile').addEventListener('click',() =>{
     behavior: 'smooth'
     });
   });
+
+  document.querySelector('.contact_mobile').addEventListener('click',() =>{
+    const menu = document.querySelector('.mobile-menu-wrapper');
+    menu.style.display = 'none';
+    window.scroll({
+      top: 5450,
+      behavior: 'smooth'
+      });
+    });
