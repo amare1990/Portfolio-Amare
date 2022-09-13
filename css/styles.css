@@ -696,6 +696,8 @@ form {
   font-size: 1.5rem;
   font-weight: lighter;
   border-radius: 5px;
+  position: relative;
+  top: calc(50% - 5px);
 }
 
 .navbar.menu-bar .closeBtn {
