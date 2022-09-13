@@ -729,6 +729,16 @@ form {
 .mobile-menu-close {
 color: white;
 font-size: 1.5em;
+height: 12px;
+width: 12px;
+position: absolute;
+right: 70px;
+top: 38px;
+border-radius: 0px;
+}
+
+.mobile-menu-close a {
+  color: #fff;
 }
 
 .mobile-menu-wrapper .mobile-menu .mobile-menu-item a {

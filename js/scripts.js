@@ -4,23 +4,23 @@ const mobileMenuContainer = document.querySelector('.mobile-menu-wrapper');
 const mobileMenuItem = document.querySelectorAll('.mobile-menu-item');
 const closeButton = document.querySelector('.closeBtn');
 const icon = document.querySelector('.fa-bars');
+const iconTimes = document.querySelector('.fa-times');
 const homepage = document.querySelector('.container-homepage');
 
 //mobileMenuContainer.style.display = 'none';
+
 
 function mobileMenuDisplay(){
 
   if(icon.classList.contains('fa-bars')){
     icon.classList.replace('fa-bars', 'fa-times');
     mobileMenuContainer.style.display = 'block';
-    //homepage.style.filter = 'blur(2px)';
-
+    homepage.style.filter = 'blur(2px)';
   }
   else {
       mobileMenuContainer.style.display = 'none';
       icon.classList.replace('fa-times', 'fa-bars');
   }
-
   //wrapperMain.style.display = 'none';
   
 }
