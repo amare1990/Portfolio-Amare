@@ -24,3 +24,33 @@ function mobileMenuDisplay(){
 
 hamburger.addEventListener('click', mobileMenuDisplay);
 closeButton.addEventListener('click', mobileMenuDisplay);
+
+const close_window = document.querySelector('.mobile-menu-close').addEventListener('click', function(){
+  close_window.style.display = 'none';
+  
+});
+
+document.querySelector('.mobile-menu-close').addEventListener('click',() =>{
+ const menu = document.querySelector('.mobile-menu-wrapper');
+   menu.style.display = 'none';
+  window.onscroll = () => { };
+      });
+     
+     
+      document.querySelector('.portfolio_mobile').addEventListener('click',() =>{
+        const menu = document.querySelector('.mobile-menu-wrapper');
+        menu.style.display = 'none';
+        window.scroll({
+            top: 875,
+            behavior: 'smooth'
+          });
+    });
+
+    document.querySelector('.about_mobile').addEventListener('click',() =>{
+      const menu = document.querySelector('.mobile-menu-wrapper');
+   menu.style.display = 'none';
+      window.scroll({
+          top: 4300,
+          behavior: 'smooth'
+        });
+  });
