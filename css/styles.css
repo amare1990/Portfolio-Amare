@@ -704,16 +704,16 @@ form {
   width: 40px;
   font-size: 1.5rem;
   border-radius: 8px;
-  padding: 8px;   
+  padding: 8px;
   cursor: pointer;
   color: #fff;
 }
 
-.navbar.menu-bar .closeBtn:active{
+.navbar.menu-bar .closeBtn:active {
   color: #fff;
 }
 
-.mobile-menu-wrapper .mobile-menu .mobile-menu-item  {
+.mobile-menu-wrapper .mobile-menu .mobile-menu-item {
   list-style: none;
   width: 251px;
   height: 24px;
@@ -727,14 +727,14 @@ form {
 }
 
 .mobile-menu-close {
-color: white;
-font-size: 1.5em;
-height: 12px;
-width: 12px;
-position: absolute;
-right: 75px;
-top: 32px;
-border-radius: 0px;
+  color: white;
+  font-size: 1.5em;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  right: 75px;
+  top: 32px;
+  border-radius: 0px;
 }
 
 .mobile-menu-close a {
@@ -750,7 +750,7 @@ border-radius: 0px;
   display: none;
 }
 
-.activeMobileMenu{
+.activeMobileMenu {
   display: none;
 }
 
