@@ -4,6 +4,7 @@ const mobileMenuContainer = document.querySelector('.mobile-menu-wrapper');
 const mobileMenuItem = document.querySelectorAll('.mobile-menu-item');
 const closeButton = document.querySelector('.closeBtn');
 const icon = document.querySelector('.fa-bars');
+const homepage = document.querySelector('.container-homepage');
 
 //mobileMenuContainer.style.display = 'none';
 
@@ -12,10 +13,12 @@ function mobileMenuDisplay(){
   if(icon.classList.contains('fa-bars')){
     icon.classList.replace('fa-bars', 'fa-times');
     mobileMenuContainer.style.display = 'block';
+    homepage.style.filter = 'blur(2px)';
+
   }
   else {
-      icon.classList.replace('fa-times', 'fa-bars');
       mobileMenuContainer.style.display = 'none';
+      icon.classList.replace('fa-times', 'fa-bars');
   }
 
   //wrapperMain.style.display = 'none';
@@ -30,11 +33,13 @@ const close_window = document.querySelector('.mobile-menu-close').addEventListen
   
 });
 
+
 document.querySelector('.mobile-menu-close').addEventListener('click',() =>{
   const menu = document.querySelector('.mobile-menu-wrapper');
   menu.style.display = 'none';
   window.onscroll = () => { };
 });  
+
 document.querySelector('.portfolio_mobile').addEventListener('click',() =>{
 const menu = document.querySelector('.mobile-menu-wrapper');
 menu.style.display = 'none';
@@ -52,7 +57,7 @@ document.querySelector('.about_mobile').addEventListener('click',() =>{
     });
   });
 
-  document.querySelector('.contact_mobile').addEventListener('click',() =>{
+document.querySelector('.contact_mobile').addEventListener('click',() =>{
     const menu = document.querySelector('.mobile-menu-wrapper');
     menu.style.display = 'none';
     window.scroll({
@@ -60,3 +65,5 @@ document.querySelector('.about_mobile').addEventListener('click',() =>{
       behavior: 'smooth'
       });
     });
+
+ 
