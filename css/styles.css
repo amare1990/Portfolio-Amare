@@ -99,6 +99,13 @@ li a i {
   color: #6070ff;
 }
 
+li .social-network i {
+  color: grey;
+  padding-right: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 .menu-bar button i:active {
   color: #fff;
 }
@@ -179,13 +186,6 @@ li a {
   display: flex;
   align-items: flex-start;
   border-radius: 8px;
-}
-
-li .social-network i {
-  color: grey;
-  padding-right: 10px;
-  font-size: 20px;
-  font-weight: 700;
 }
 
 .social-networks .social-network i:hover {
@@ -695,7 +695,6 @@ form {
   padding: 16px;
   font-size: 1.5rem;
   font-weight: lighter;
-  border: none;
   border-radius: 5px;
 }
 
@@ -734,7 +733,7 @@ form {
   position: absolute;
   right: 75px;
   top: 32px;
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 .mobile-menu-close a {
