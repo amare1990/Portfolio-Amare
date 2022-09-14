@@ -90,7 +90,7 @@ img {
   justify-content: center;
 }
 .status-bar .time span {
-  font-family:'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
   font-weight: 500;
@@ -102,7 +102,7 @@ img {
 }
 
 .mobile-status {
-  width: 66.px;
+  width: 66px;
   height: 11.34px;
   padding: 17.33px 14.67px;
   display: flex;
@@ -787,7 +787,7 @@ form {
   border-radius: 5px;
   position: relative;
   top: calc(50% - 5px);
-  transform:translateX(-40%);
+  transform: translateX(-40%);
 }
 
 .navbar.menu-bar .closeBtn {
