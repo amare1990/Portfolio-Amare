@@ -80,3 +80,42 @@ document.querySelector('.contact_mobile').addEventListener('click',() =>{
       behavior: 'smooth'
       });
 });
+
+// Details popup windows starts here
+
+let projects = [
+  {
+    project1: {
+      title: 'Tonic',
+      experience: ['Canopy', 'Back End Dev', './images/Counter.png', '2015'],
+      featuredImage: './images/SnapshootPortfolio.png',
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", 
+      linkToLiveVersion: '',
+      linkToSource: ''
+    },
+    project2: {
+      title: 'Multi-Post Stories',
+      experience: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2015'],
+      featuredImage: './images/Snapshoot-Portfolio-2.png',
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", 
+      linkToLiveVersion: '',
+      linkToSource: ''
+    },
+    project3: {
+      title: 'Tonic 2',
+      experience: ['Canopy', 'Back End Dev', './images/Counter.png', '2015'],
+      featuredImage: './images/Snapshoot-Portfolio-3.png',
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", 
+      linkToLiveVersion: '',
+      linkToSource: ''
+    },
+    project4: {
+      title: 'Multi-Post Stories 2',
+      experience: ['Canopy', 'Back End Dev', './images/Counter.png', '2015'],
+      featuredImage: './images/Snapshoot-Portfolio-4.png',
+      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", 
+      linkToLiveVersion: '',
+      linkToSource: ''
+    }
+  }
+]
