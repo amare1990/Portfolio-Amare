@@ -12,24 +12,27 @@
 <body>
   
   <div class="wrapper">
-    <header class="header-2 background-color">            
-      <div class="logo-link">
-        <a href="./index.html" class="my-logo">My Logo</a>
-      </div>
-      <nav class="navbar-desk">
-        <ul class="menu-desk">
-          <li class="menu-bar-desk portfolio-link"> 
-            <a href="#works"> Portfolio</a>
-          </li>
-          <li class="menu-bar-desk about-link"> 
-            <a href="#about"> About</a>
-          </li>
-          <li class="menu-bar-desk contact-link"> 
-            <a href="#contact-me"> Contact</a>
-          </li>
-        </ul>
-      </nav>
+   <div class="header-and-homepage-container">
+    <header class="header-2 background-color">  
+      <div class="status-bar">
+          <div class="time"> <span>9:41</span></div>
+          <div class="mobile-status">
+            <div class="cellular">
+              <img class="status-img" src="./images/status-bar-original/Cellular-Connection-normal.png" alt="Cellular connection">
+            </div>
+            <div class="wifi">
+              <img class="status-img" src="./images/status-bar-original/Wifi-normal.png" alt="Wifi connection">
+            </div>
+            <div class="battery">
+              <img class="status-img" src="./images/status-bar-original/BatteryNormal.png" alt="Battery Status">
+            </div>
+          </div>
+      </div>  
       <div class="navbar">
+        <div class="logo-link">
+          <a href="./index.html" class="my-logo-mobile">My Logo</a>
+        </div>
+        <div class="hamburger-and-closeIcon-container">
           <div class="menu-bar">
             <button type="button" class="bar"><i class="fa fa-bars"></i></button>
           </div>  
@@ -37,7 +40,25 @@
             <button type="button" class="closeBtn activeIcon"><i class="fa fa-times"></i></button>
           </div>
         </div>
-          
+      </div>
+      <div class="logo-menu-header">
+        <div class="logo-link">
+          <a href="./index.html" class="my-logo">My Logo</a>
+        </div>
+        <nav class="navbar-desk">
+          <ul class="menu-desk">
+            <li class="menu-bar-desk portfolio-link"> 
+              <a href="#works"> Portfolio</a>
+            </li>
+            <li class="menu-bar-desk about-link"> 
+              <a href="#about"> About</a>
+            </li>
+            <li class="menu-bar-desk contact-link"> 
+              <a href="#contact-me"> Contact</a>
+            </li>
+          </ul>
+        </nav>        
+      </div>      
     </header> 
     <div class="container-homepage background-color">    
       <section id="home" class="section-home">
@@ -89,6 +110,7 @@
         </div>
       </section>
     </div>
+   </div>
   <!---------mobile-finish-version--------->
   <section id="works" class="section-works background-color">
 
@@ -524,9 +546,26 @@
   <!--     Mobile Menu starts here     -->
 
   <div class="mobile-menu-wrapper">  
+    
+    <div class="status-bar hamburger-clicked">
+      <span>9:41</span>
+      <div class="mobile-status">
+        <div class="cellular">
+          <img class="status-img" src="./images/status-bar/Cellular-Connection.png" alt="Cellular connection">
+        </div>
+        <div class="wifi active">
+          <img class="status-img" src="./images/status-bar/Wifi.png" alt="Wifi connection">
+        </div>
+        <div class="battery">
+          <img class="status-img" src="./images/status-bar/Capacity.png" alt="Battery Status">
+        </div>
+      </div>
+  </div> 
+
     <li class="mobile-menu-close"> 
       <a href="">X</a>
-    </li>     
+    </li>   
+ 
     <ul class="mobile-menu">
       <li class="mobile-menu-item">
         <a class="portfolio_mobile" >Portfolio</a>
