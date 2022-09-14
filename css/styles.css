@@ -75,9 +75,10 @@ img {
   color: #fff;
   padding-left: 32px;
 }
+
 .mobile-status .cellular,
-.mobile-status .cellular,
-.mobile-status .cellular {
+.mobile-status .wifi,
+.mobile-status .battery {
   background-color: white;
 }
 
@@ -89,8 +90,9 @@ img {
   align-items: center;
   justify-content: center;
 }
+
 .status-bar .time span {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-size: 14px;
   font-weight: 500;
@@ -110,15 +112,12 @@ img {
   justify-content: center;
   gap: 5px;
 }
-.mobile-status .cellular {
-  width: 17px;
-  height: 10.67px;
-}
 
 .mobile-status .wifi {
   width: 15.27px;
   height: 10.97px;
 }
+
 .mobile-status .battery {
   width: 24.33px;
   height: 11.33px;
@@ -735,11 +734,6 @@ form {
   border: none;
 }
 
-/*
-.brightness {
-  background-color: #6070ff;
-}
-*/
 /* Mobile Menu starts  */
 .mobile-menu-wrapper {
   max-height: 822px;
