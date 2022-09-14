@@ -30,7 +30,7 @@ img {
   height: auto;
   width: 100%;
   background-color: #f7f7f9;
-  padding: 44px 24px 8px 24px;
+  padding: 0 24px 8px 24px;
 }
 
 .container-homepage {
@@ -54,7 +54,90 @@ img {
   padding-top: 114px;
 }
 
+.header-1 {
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+}
+
+.status-bar {
+  min-width: 375px;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  z-index: 100;
+}
+
+.hamburger-clicked span {
+  color: #fff;
+  padding-left: 32px;
+}
+.mobile-status .cellular,
+.mobile-status .cellular,
+.mobile-status .cellular {
+  background-color: white;
+}
+
+.status-bar .time {
+  width: 24px;
+  height: 21px;
+  padding: 3px 0 2px 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.status-bar .time span {
+  font-family:'Roboto';
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.28px;
+  padding: 3px 0 2px 0;
+  color: black;
+}
+
+.mobile-status {
+  width: 66.px;
+  height: 11.34px;
+  padding: 17.33px 14.67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.mobile-status .cellular {
+  width: 17px;
+  height: 10.67px;
+}
+
+.mobile-status .wifi {
+  width: 15.27px;
+  height: 10.97px;
+}
+.mobile-status .battery {
+  width: 24.33px;
+  height: 11.33px;
+}
+
+.status-img {
+  display: block;
+}
+
+/*
 .header-2 {
+  height: 48px;
+  max-width: 100%;
+  padding: 58px 24px 0 24px;
+  display: flex;
+  justify-content: space-between;
+} */
+
+.logo-menu-header {
   height: 48px;
   max-width: 100%;
   padding: 58px 24px 0 24px;
@@ -62,7 +145,8 @@ img {
   justify-content: space-between;
 }
 
-.my-logo {
+.my-logo,
+.my-logo-mobile {
   width: 100px;
   height: 40px;
   color: #6070ff;
@@ -650,29 +734,33 @@ form {
   border: none;
 }
 
+/*
+.brightness {
+  background-color: #6070ff;
+}
+*/
 /* Mobile Menu starts  */
 .mobile-menu-wrapper {
   max-height: 787px;
   min-width: 375px;
   background-color: #6070ff;
   mix-blend-mode: multiply;
-  z-index: 100;
   display: none;
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  margin-top: 80px;
+  margin-top: 0;
   backdrop-filter: blur;
 }
 
 .navbar {
-  height: 40px;
-  width: 40px;
+  height: 48px;
+  min-width: 375px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 8px;
 }
 
@@ -681,7 +769,7 @@ form {
   height: 184px;
   width: 351px;
   left: 12px;
-  top: 90px;
+  top: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -698,6 +786,7 @@ form {
   border-radius: 5px;
   position: relative;
   top: calc(50% - 5px);
+  transform:translateX(-40%);
 }
 
 .navbar.menu-bar .closeBtn {
@@ -734,7 +823,7 @@ form {
   width: 12px;
   position: absolute;
   right: 75px;
-  top: 32px;
+  top: 52px;
   border-radius: 0;
 }
 
@@ -765,6 +854,10 @@ form {
     height: 5125px;
     max-width: 1440px;
     background: #f4f5f7;
+  }
+
+  .status-bar {
+    display: none;
   }
 
   .navbar {
@@ -1247,7 +1340,7 @@ form {
 }
 
 @media screen and (max-width: 767.98px) {
-  .navbar-desk {
+  .logo-menu-header {
     display: none;
   }
 
