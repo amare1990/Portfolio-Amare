@@ -47,9 +47,6 @@ body {
   height: 40px;
   min-width: 311px;
   width: 100%;
-  left: 0px;
-  top: 0px;
-  border-radius: 0px;
   display: flex;
   align-items: center;
   justify-content: space-between; 
