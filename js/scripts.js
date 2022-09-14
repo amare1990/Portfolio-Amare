@@ -52,6 +52,7 @@ document.querySelector('.mobile-menu-close').addEventListener('click',() =>{
 document.querySelector('.portfolio_mobile').addEventListener('click',() =>{
 const menu = document.querySelector('.mobile-menu-wrapper');
 headerAndHomepage.style.filter = 'none';
+icon.classList.replace('fa-times', 'fa-bars');
 menu.style.display = 'none';
 window.scroll({
   top: 875,
@@ -62,6 +63,7 @@ document.querySelector('.about_mobile').addEventListener('click',() =>{
   const menu = document.querySelector('.mobile-menu-wrapper');
   menu.style.display = 'none';
   headerAndHomepage.style.filter = 'none';
+  icon.classList.replace('fa-times', 'fa-bars');
   window.scroll({
     top: 4300,
     behavior: 'smooth'
@@ -72,6 +74,7 @@ document.querySelector('.contact_mobile').addEventListener('click',() =>{
     const menu = document.querySelector('.mobile-menu-wrapper');
     menu.style.display = 'none';
     headerAndHomepage.style.filter = 'none';
+    icon.classList.replace('fa-times', 'fa-bars');
     window.scroll({
       top: 5450,
       behavior: 'smooth'
