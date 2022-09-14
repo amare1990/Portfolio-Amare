@@ -518,6 +518,7 @@ li a {
 }
 
 .skill-list {
+  padding-top: 70px;
   height: 464.14678955078125px;
   max-width: 100%;
   display: flex;
@@ -741,7 +742,7 @@ form {
 */
 /* Mobile Menu starts  */
 .mobile-menu-wrapper {
-  max-height: 787px;
+  max-height: 822px;
   min-width: 375px;
   background-color: #6070ff;
   mix-blend-mode: multiply;
@@ -822,7 +823,7 @@ form {
   height: 12px;
   width: 12px;
   position: absolute;
-  right: 75px;
+  right: 72px;
   top: 52px;
   border-radius: 0;
 }
