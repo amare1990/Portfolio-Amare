@@ -20,8 +20,17 @@ body {
   font-size: 16px;
 }
 
+.wrapper {
+  min-width: 375px;
+  min-height: 823px;
+  height: auto;
+  background-color: #c1c7d0;
+  mix-blend-mode: multiply;
+}
+
 .card {
-  height: 713px;
+  min-height: 713px;
+  height: auto;
   min-width: 343px;
   padding: 16px;
   display: flex;
@@ -31,6 +40,7 @@ body {
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
+  margin: 60px 16px 50px 16px;
 }
 
 .title-and-closeIcon-container {
@@ -107,4 +117,89 @@ body {
 
 .client {
   color: #344563;
+}
+
+.technologies {
+  height: 24px;
+  width: 203px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+}
+
+.technology-item {
+  height: 24px;
+  min-width: 53px;
+  width: auto;
+  border-radius: 8px;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  background-color: #ebebff;
+  border-radius: 8px;
+}
+
+.tech {
+  height: 16px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.html-tech {
+  width: 29px;
+}
+
+.css-tech {
+  width: 21px;
+}
+
+.javascript-tech {
+  width: 65px;
+}
+
+.button-group {
+  height: 56px;
+  min-width: 311px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  gap: 10px; /* value from figma is not there */
+}
+
+.knowBtns {
+  height: 48px;
+  width: 146px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
+.knowBtns .popup-btn-text {
+  border: none;
+  width: 84px;
+  height: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
+} 
+
+.knowBtns img {
+  background-color: #6070ff;
+  color: #6070ff;
 }
