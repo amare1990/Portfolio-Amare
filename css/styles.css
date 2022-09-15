@@ -533,7 +533,7 @@ li a {
   height: 100vh;
   overflow: auto;
   background-color: rgb(26, 34, 54);
-  background-color: rgba(26, 34, 54, 0.75); */
+  background-color: rgba(26, 34, 54, 0.75); 
 }
 
 .popup-card {
@@ -691,12 +691,12 @@ li a {
 
 .popup-knowBtns .popup-btn-text {
   border: none;
-  width: 84px;
+  width: 215px;
   height: 20px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 20px;
   display: flex;
   align-items: center;
