@@ -39,7 +39,6 @@ closeButton.addEventListener('click', mobileMenuDisplay);
 
 const close_window = document.querySelector('.mobile-menu-close').addEventListener('click', function(){
   close_window.style.display = 'none';
-  
 });
 
 
@@ -83,111 +82,143 @@ document.querySelector('.contact_mobile').addEventListener('click',() =>{
 
 // Details popup windows starts here
 
-let projects = [
+const projects = [
   {
       title: 'Tonic',
-      experience: ['Canopy', 'Back End Dev', './images/Counter.png', '2015'],
+      experiences: ['Canopy', 'Back End Dev', './images/Counter.png', '2015'],
       featuredImage: './images/SnapshootPortfolio.png',
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", 
+      technologies: ['html', 'css', 'javascript'],
       linkToLiveVersion: '',
       linkToSource: ''
     },
     {
     title: 'Multi-Post Stories',
-    experience: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2015'],
+    experiences: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2015'],
     featuredImage: './images/Snapshoot-Portfolio-2.png',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", 
+    technologies: ['html', 'css', 'javascript'],
     linkToLiveVersion: '',
     linkToSource: ''
     },
     {
     title: 'Tonic 2',
-    experience: ['Canopy', 'Back End Dev', './images/Counter.png', '2015'],
+    experiences: ['Canopy', 'Back End Dev', './images/Counter.png', '2015'],
     featuredImage: './images/Snapshoot-Portfolio-3.png',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", 
+    technologies: ['html', 'css', 'javascript'],
     linkToLiveVersion: '',
     linkToSource: ''
     },
     {
       title: 'Multi-Post Stories 2',
-      experience: ['Canopy', 'Back End Dev', './images/Counter.png', '2015'],
+      experiences: ['Canopy', 'Back End Dev', './images/Counter.png', '2015'],
       featuredImage: './images/Snapshoot-Portfolio-4.png',
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", 
+      technologies: ['html', 'css', 'javascript'],
       linkToLiveVersion: '',
       linkToSource: ''
     }
 ]
 
+const gridsContainer = document.querySelector('.grids-wrapper');
 for(let i = 0; i < projects.length; i++) {
-  let cardWork = document.createElement('div');
-  cardWork.className = `card card${i + 1}`;
-  let li = '';
-  const eachObj = projects[i];
-  const tech = projects[i].technologies;
-  for (let j = 0; j < tech.length; j += 1) {
-    li += `<li class="card-list-item">${tech[j]}</li>`;
+  let gridDiv = document.createElement('div');
+  gridDiv.className = `grid grid${i + 1}`;
+  let li1 = '';
+  let li2 = '';
+  //const project = projects[i];
+  const experiences = projects[i].experiences;
+  const techs = projects[i].technologies;
+  for (let j = 0; j < experiences.length; j++) {
+    li1 += `<li class="experience-item">${experiences[j]}</li>`;
   }
-  cardWork.innerHTML = `
-          <div class="card-image image${i + 1}">
-              <img src="${eachObj.featuredImage}" alt="">
-            </div>
-            <div class="card-body">
-              <h3 class="project-title">${eachObj.title}</h3>
-              <ul class="card-list">
-              ${li}
-              </ul>
-              <button myIndex=${i} type="button" class="card-btn">
-                See this project &rarr;
-              </button>
+
+  for (let k = 0; k < techs.length; k++) {
+    li2 += `<li class="tech">${techs[k]}</li>`;
+  }
+
+  gridDiv.innerHTML = `
+          <div class="grid-image image${i + 1}">
+            <img src="${projects[i].featuredImage}" alt="">
           </div>
-`;
-  cardContainer.append(cardDiv);
+
+          <h2 class="grid-title">${projects[i].title}</h2>
+          <ul class="experience-container">
+            ${li1}
+          </ul>
+          <p class ="project-description"> 
+             ${projects[i].description}
+          </p>
+          <div class = "technologies"
+            <ul class = "tech-container>
+              ${li2}
+            </ul>
+          </div>
+          <div class="action-grid-container"
+            <div class="action-grid">
+              <button whichProjectBtn = ${i+1} class="action-grid-btn" type = "button">
+                See Project
+              </button>
+            </div>
+          </div> `;
+  gridsContainer.append(gridDiv);
 }
 
-
-//Popup window starts here
-const modal = document.querySelector('.modal');
-
-const showModal = () => {
-  const btn = document.querySelectorAll('.card-btn');
-  btn.forEach((e) => {
-    e.addEventListener('click', () => {
-      const index = e.getAttribute('myIndex');
-      modal.classList.toggle('hidden');
-      const tech = projects[index].technologies;
-      let li = '';
-      for (let i = 0; i < tech.length; i += 1) {
-        li += `
- <li class="modal-list-item">${tech[i]}</li>
-`;
+/* Popup window starts here
+const popupWindow = document.querySelector('.popup-card-wrapper');
+function showPopupWindow() {
+  const btn = document.querySelectorAll('.action-grid-btn');
+  btn.forEach(function (e) {
+    e.addEventListener('click', function() {
+      const index = e.getAttribute('whichProjectBtn');
+      popupWindow.classList.toggle('hide');
+      const experiencePopup = projects[index].experience;
+      const techpopup = projects[index].technologies;
+      let li1 = '';
+      for (let i = 0; i < experiencePopup.length; i += 1) {
+        li1 += `
+          <li class="popup-exp-name">${experiencePopup[i]}</li>
+        `;
       }
-      modal.innerHTML = `
-      <div class="modal-content">
-      <div class="modal-header">
-        <span class="closeModal"><i class="fa-solid fa-xmark fa-2xl"></i></span>
-        <h2>${projects[index].title}</h2>
-        <ul class="modal-list">
-          ${li}
+      let li2 = '';
+      for (let j = 0; j < techpopup.length; j++) {
+        li2 += `
+          <li class="popup-exp-name">${techpopup[i]}</li>
+          `;
+      }
+      popupWindow.innerHTML = `
+      <div class=".popup-card">
+        <div class="popup-title-and-closeIcon-container">
+          <h2 class="popup-project-title"> ${projects[index].title}
+          <h2>
+          <i class="fa fa-times"></i> 
+        </div>
+        <ul class="popup-experience">
+          ${li1}
         </ul>
-      </div>
-      <div class="modal-body">
-        <img src="${projects[index].featured_image}" alt="Project image">
+        <img src="${projects[index].featuredImage}" alt="Tonic Image">
         <p>${projects[index].description}</p>
-        <div class="button-wrapper">
-          <button type="button" class="modal-button">See live<i class="fa-solid fa-arrow-up-right-from-square"
-              data-fa-transform="grow-15 right-100"></i></button><button type="button" class="modal-button">See source<i
-              class="modal-icon fa-brands fa-github" data-fa-transform="grow-15 right-90"></i></button>
+        <ul class="popup-technologies">
+          ${li2}
+        </ul>
+        <div class="popup-button-group">
+          <div class="popup-knowBtns">
+            <button type="button" class="popup-btn-text">See live</button>
+            <img src="./images/popup/Icon-Export-btn1.png" alt="">
+          </div>
+          <div class="popup-knowBtns">
+            <button type="button" class="popup-btn-text">See source</button>
+            <img src="./images/popup/Icon-GitHub-popbt2.png " width="24px" height="24px" alt="">
+          </div>
         </div>
-        <div class="projects-navigation">
-          <span><i class="fa-solid fa-arrow-left-long"></i> Previous Project </span><span>Next Project <i class="fa-solid fa-arrow-right-long"></i></span>
-        </div>
-      </div>
-    </div>`;
-      const close = document.querySelector('.closeModal');
-      close.addEventListener('click', () => modal.classList.toggle('hidden'));
-    });
-  });
-};
-showModal();
+      </div> `;
+      const closePopup = document.querySelector('.closePopup');
+      closePopup.addEventListener('click', function() {
+        popupWindow.classList.toggle('hide');
+      }); 
+    }); //button event
+  });  //end of foreach tracking for each button
+} // end of the popup main function
 
-//popup window ends here
+showPopupWindow(); */
