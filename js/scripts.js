@@ -85,7 +85,8 @@ document.querySelector('.contact_mobile').addEventListener('click',() =>{
 const projects = [
   {
       title: 'Tonic',
-      experiences: ['Canopy', 'Back End Dev', './images/Counter.png', '2015'],
+      counterImge: './images/Counter.png',
+      experiences: ['Canopy', 'Counter', 'Back End Dev', 'Counter', '2015'],
       featuredImage: './images/SnapshootPortfolio.png',
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", 
       technologies: ['html', 'css', 'javascript'],
@@ -94,7 +95,8 @@ const projects = [
     },
     {
     title: 'Multi-Post Stories',
-    experiences: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2015'],
+    counterImge: './images/Counter.png',
+    experiences: ['Canopy', 'Counter', 'Back End Dev', 'Counter', '2015'],
     featuredImage: './images/Snapshoot-Portfolio-2.png',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", 
     technologies: ['html', 'css', 'javascript'],
@@ -103,7 +105,7 @@ const projects = [
     },
     {
     title: 'Tonic 2',
-    experiences: ['Canopy', 'Back End Dev', './images/Counter.png', '2015'],
+    experiences: ['Canopy', 'Counter', 'Back End Dev', 'Counter', '2015'],
     featuredImage: './images/Snapshoot-Portfolio-3.png',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", 
     technologies: ['html', 'css', 'javascript'],
@@ -112,7 +114,7 @@ const projects = [
     },
     {
       title: 'Multi-Post Stories 2',
-      experiences: ['Canopy', 'Back End Dev', './images/Counter.png', '2015'],
+      experiences: ['Canopy', 'Back End Dev', 'Counter', '2015'],
       featuredImage: './images/Snapshoot-Portfolio-4.png',
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent", 
       technologies: ['html', 'css', 'javascript'],
@@ -132,6 +134,11 @@ for(let i = 0; i < projects.length; i++) {
   const techs = projects[i].technologies;
   for (let j = 0; j < experiences.length; j++) {
     li1 += `<li class="experience-item">${experiences[j]}</li>`;
+    /* if(experiences[j] == 'Counter'){
+      let sr = ${projects[i].counterImge};
+      let im = <img src = ${sr} alt=''>;
+      li1 += '<li class='experience-item' > ${im}</li>'; 
+    } */
   }
 
   for (let k = 0; k < techs.length; k++) {

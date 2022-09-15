@@ -291,9 +291,10 @@ li a {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 100%;
-  row-gap: 0;
+  row-gap: 88px;
   background-color: #e5e5e5;
   /* background-color: #f7f7f9; */
+  padding: 114px 0;
 }
 
 .grid {
@@ -410,6 +411,7 @@ li a {
   align-items: center;
   gap: 8px;
   padding: 0;
+  margin-top: auto;
   /* margin-bottom: 12px; */
 }
 
@@ -519,27 +521,22 @@ li a {
 /* Popup window style starts here */
 
 .popup-card-wrapper {
-  /* min-width: 375px;
-  min-height: 823px;
-  height: auto; */
+  min-width: 375px;
+  height: 823px;
   background-color: #c1c7d0;
   mix-blend-mode: multiply;
-
+  padding: 0 30px 0 30px;
   position: fixed;
   z-index: 101;
   left: 0;
   top: 0;
-  width: 100vw;
-  height: 100vh;
+
   overflow: auto;
-  background-color: rgb(26, 34, 54);
-  background-color: rgba(26, 34, 54, 0.75); 
 }
 
 .popup-card {
-  min-height: 713px;
-  height: auto;
-  min-width: 343px;
+  height: 823px;
+  width: 375px;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -548,7 +545,14 @@ li a {
   background-color: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  margin: 60px 16px 50px 16px;
+  background-color: #c1c7d0;
+  mix-blend-mode: multiply;
+}
+
+.popup-card img {
+  width: 311px;
+  width: 100%;
+  height: 220px;
 }
 
 .popup-title-and-closeIcon-container {
@@ -711,11 +715,10 @@ li a {
 
 .hide {
   display: none;
-  margin: 50px;
 }
 
 .closePopup {
- padding-right: 30px;
+ cursor: pointer;
 }
 
 /* Popup window style starts here */
