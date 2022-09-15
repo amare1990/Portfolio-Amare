@@ -20,7 +20,7 @@ body {
   font-size: 16px;
 }
 
-.wrapper {
+.popup-card-wrapper {
   min-width: 375px;
   min-height: 823px;
   height: auto;
@@ -28,7 +28,7 @@ body {
   mix-blend-mode: multiply;
 }
 
-.card {
+.popup-card {
   min-height: 713px;
   height: auto;
   min-width: 343px;
@@ -43,7 +43,7 @@ body {
   margin: 60px 16px 50px 16px;
 }
 
-.title-and-closeIcon-container {
+.popup-title-and-closeIcon-container {
   height: 40px;
   min-width: 311px;
   width: 100%;
@@ -52,7 +52,7 @@ body {
   justify-content: space-between; 
 }
 
-.project-title {
+.popup-project-title {
   height: 36px;
   width: 259px;
   font-weight: 700;
@@ -61,7 +61,7 @@ body {
   color: #172b4d;
 }
 
-.title-and-closeIcon-container i .fa-times {
+.popup-title-and-closeIcon-container i .fa-times {
   height: 40px;
   width: 40px;
   border: 2px solid #67798e;
@@ -73,7 +73,7 @@ body {
   background-color: #67798e;
 }
 
-.experience {
+.popup-experience {
   height: 32px;
   min-width: 236px;
   width: 100%;
@@ -82,7 +82,7 @@ body {
   gap: 12px;  
 }
 
-.exp-name {
+.popup-exp-name {
   height: 32px;
   display: flex;
   align-items: center;
@@ -93,30 +93,30 @@ body {
   color: #7a869a;
 }
 
-.client {
+.popup-client {
   width: 55px
 }
 
-.role {
+.popup-role {
   width: 88px;
 }
 
-.year {
+.popup-year {
   width: 29px;
 }
 
-.counter {
+.popup-counter {
   width: 8px;
   height: 8px;
   background-color: #c1c7d0;
-  border-radius: 50%%;
+  border-radius: 50%;
 }
 
-.client {
+.popup-client {
   color: #344563;
 }
 
-.technologies {
+.popup-technologies {
   height: 24px;
   width: 203px;
   display: flex;
@@ -125,7 +125,7 @@ body {
   gap: 8px;
 }
 
-.technology-item {
+.popup-technology-item {
   height: 24px;
   min-width: 53px;
   width: auto;
@@ -137,7 +137,7 @@ body {
   border-radius: 8px;
 }
 
-.tech {
+.popup-tech {
   height: 16px;
   font-weight: 500;
   font-size: 12px;
@@ -146,19 +146,19 @@ body {
   color: #6070ff;
 }
 
-.html-tech {
+.popup-html-tech {
   width: 29px;
 }
 
-.css-tech {
+.popup-css-tech {
   width: 21px;
 }
 
-.javascript-tech {
+.popup-javascript-tech {
   width: 65px;
 }
 
-.button-group {
+.popup-button-group {
   height: 56px;
   min-width: 311px;
   width: 100%;
@@ -169,7 +169,7 @@ body {
   gap: 10px; /* value from figma is not there */
 }
 
-.knowBtns {
+.popup-knowBtns {
   height: 48px;
   width: 146px;
   padding: 12px 14px;
@@ -181,7 +181,7 @@ body {
   border-radius: 8px;
 }
 
-.knowBtns .popup-btn-text {
+.popup-knowBtns .popup-btn-text {
   border: none;
   width: 84px;
   height: 20px;
@@ -196,7 +196,7 @@ body {
   color: #6070ff;
 } 
 
-.knowBtns img {
+.popup-knowBtns img {
   background-color: #6070ff;
   color: #6070ff;
 }
