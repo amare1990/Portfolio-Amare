@@ -157,7 +157,7 @@ for(let i = 0; i < projects.length; i++) {
           </div>
           <div class="action-grid-container"
             <div class="action-grid">
-              <button whichProjectBtn = ${i+1} class="action-grid-btn" type = "button">
+              <button whichProjectBtn = ${i} class="action-grid-btn" type = "button">
                 See Project
               </button>
             </div>
@@ -165,7 +165,7 @@ for(let i = 0; i < projects.length; i++) {
   gridsContainer.append(gridDiv);
 }
 
-/* Popup window starts here
+// Popup window starts here
 const popupWindow = document.querySelector('.popup-card-wrapper');
 function showPopupWindow() {
   const btn = document.querySelectorAll('.action-grid-btn');
@@ -173,10 +173,10 @@ function showPopupWindow() {
     e.addEventListener('click', function() {
       const index = e.getAttribute('whichProjectBtn');
       popupWindow.classList.toggle('hide');
-      const experiencePopup = projects[index].experience;
+      const experiencePopup = projects[index].experiences;
       const techpopup = projects[index].technologies;
       let li1 = '';
-      for (let i = 0; i < experiencePopup.length; i += 1) {
+      for (let i = 0; i < experiencePopup.length; i++) {
         li1 += `
           <li class="popup-exp-name">${experiencePopup[i]}</li>
         `;
@@ -184,7 +184,7 @@ function showPopupWindow() {
       let li2 = '';
       for (let j = 0; j < techpopup.length; j++) {
         li2 += `
-          <li class="popup-exp-name">${techpopup[i]}</li>
+          <li class="popup-exp-name">${techpopup[j]}</li>
           `;
       }
       popupWindow.innerHTML = `
@@ -192,7 +192,7 @@ function showPopupWindow() {
         <div class="popup-title-and-closeIcon-container">
           <h2 class="popup-project-title"> ${projects[index].title}
           <h2>
-          <i class="fa fa-times"></i> 
+          <i class="fa fa-times closePopup"></i> 
         </div>
         <ul class="popup-experience">
           ${li1}
@@ -213,12 +213,14 @@ function showPopupWindow() {
           </div>
         </div>
       </div> `;
+      wrapperMain.style.display = 'none';
       const closePopup = document.querySelector('.closePopup');
       closePopup.addEventListener('click', function() {
-        popupWindow.classList.toggle('hide');
+      popupWindow.classList.toggle('hide');
+      wrapperMain.style.display = 'block';
       }); 
     }); //button event
   });  //end of foreach tracking for each button
 } // end of the popup main function
 
-showPopupWindow(); */
+showPopupWindow(); 

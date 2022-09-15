@@ -519,20 +519,20 @@ li a {
 /* Popup window style starts here */
 
 .popup-card-wrapper {
-  min-width: 375px;
+  /* min-width: 375px;
   min-height: 823px;
-  height: auto;
+  height: auto; */
   background-color: #c1c7d0;
   mix-blend-mode: multiply;
 
-  /* position: fixed;
+  position: fixed;
   z-index: 101;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
   overflow: auto;
-   background-color: rgb(26, 34, 54);
+  background-color: rgb(26, 34, 54);
   background-color: rgba(26, 34, 54, 0.75); */
 }
 
@@ -711,10 +711,11 @@ li a {
 
 .hide {
   display: none;
+  margin: 50px;
 }
 
 .closePopup {
-  margin: 85%;
+ padding-right: 30px;
 }
 
 /* Popup window style starts here */
