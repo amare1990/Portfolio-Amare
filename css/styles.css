@@ -283,7 +283,7 @@ li a {
   
 }
 
-.grid-wrapper {
+.grids-wrapper {
   max-height: 4100px;
   height: auto;
   max-width: 100%;
@@ -332,7 +332,7 @@ li a {
   height: 596px;
 }
 
-.grid img {
+.grid-img {
   width: 295px;
   height: 220px;
   border-radius: 8px;
@@ -361,7 +361,7 @@ li a {
   /* margin-bottom: 20px; uncertain */
 }
 
-.experience {
+.experience-container {
   height: 32px;
   max-width: 100%;
   display: flex;
@@ -369,9 +369,7 @@ li a {
   gap: 12px;
 }
 
-.experience .client,
-.experience .role,
-.experience .year {
+.experience-item {
   height: 16px;
   max-width: 100%;
   font-weight: 600;
@@ -417,7 +415,7 @@ li a {
 
 .tech-container {
   height: 24px;
-  width: 53px; 
+  /* width: 53px; */
   width: auto; 
   display: flex;
   align-items: center;
@@ -526,6 +524,16 @@ li a {
   height: auto;
   background-color: #c1c7d0;
   mix-blend-mode: multiply;
+
+  /* position: fixed;
+  z-index: 101;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+   background-color: rgb(26, 34, 54);
+  background-color: rgba(26, 34, 54, 0.75); */
 }
 
 .popup-card {
@@ -699,6 +707,14 @@ li a {
 .popup-knowBtns img {
   background-color: #6070ff;
   color: #6070ff;
+}
+
+.hide {
+  display: none;
+}
+
+.closePopup {
+  margin: 85%;
 }
 
 /* Popup window style starts here */
