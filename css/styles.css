@@ -14,6 +14,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   background: #e5e5e5;
+
   /* background-color: #f7f7f9; */
 }
 
@@ -265,20 +266,18 @@ li a {
   border-radius: 8px;
 }
 
-/* Projects Section */
-.section-works {
-}
-
 .grids-wrapper {
   max-height: 4100px;
   height: auto;
   max-width: 100%;
+
   /* margin: 114px 24px 114px 24px; */
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 100%;
   row-gap: 88px;
   background-color: #e5e5e5;
+
   /* background-color: #f7f7f9; */
   padding: 114px 0;
 }
@@ -287,6 +286,7 @@ li a {
   height: 552px;
   height: auto;
   min-width: 327px;
+
   /* max-width: 100%; */
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -328,14 +328,12 @@ li a {
 .grid-title {
   height: 36px;
   width: 295px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  /* margin-top: 12px; uncertain */
-  /* margin-bottom: 20px; uncertain */
 }
 
 .experience-container {
@@ -388,11 +386,13 @@ li a {
   gap: 8px;
   padding: 0;
   margin-top: auto;
+
   /* margin-bottom: 12px; */
 }
 
 .tech-container {
   height: 24px;
+
   /* width: 53px; */
   width: auto;
   display: flex;
@@ -438,13 +438,11 @@ li a {
   border: 1px solid #6070ff;
   border-radius: 8px;
   background-color: #396df2;
-  display: flex;
-  align-items: center;
 }
 
 .action-grid-btn {
   width: 100%;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -484,21 +482,7 @@ li a {
   color: #fff;
 }
 
-.action-grid-btn:hover {
-  background-color: #6070ff;
-  box-shadow: 0 8px 16px rgb(64, 83, 252, 0.24);
-  border-radius: 8px;
-  color: #fff;
-}
-
-.action-grid-btn:active {
-  background-color: #2230d2;
-  border-radius: 8px;
-  color: #fff;
-}
-
 /* Popup window style starts here */
-
 .popup-card-wrapper {
   width: 100vw;
   height: 100vh;
@@ -600,7 +584,7 @@ li a {
   height: 220px;
   width: 311px;
   border-radius: 0;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -626,7 +610,6 @@ li a {
   display: flex;
   align-items: center;
   background-color: #ebebff;
-  border-radius: 8px;
 }
 
 .popup-tech {
@@ -676,7 +659,7 @@ li a {
   border: none;
   width: 215px;
   height: 20px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1211,6 +1194,16 @@ form {
     gap: 42px;
   }
 
+  .main-image img {
+    width: 100%;
+  }
+
+  .language-list li img {
+    height: 48px;
+    max-width: 48px;
+    border-radius: 0;
+  }
+
   .grid .grid-img {
     height: 448px;
     width: 544px;
@@ -1236,7 +1229,7 @@ form {
     height: 50px;
     width: 496px;
     border-radius: 0;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -1257,6 +1250,7 @@ form {
 
   .grid-body .technologies .tech-container {
     height: 24px;
+
     /* width: 53px; */
     width: auto;
     display: flex;
@@ -1308,11 +1302,8 @@ form {
     border-radius: 8px;
   }
 
-  .main-image img {
-    width: 100%;
-  }
-
   .popup-body {
+
     /* max-width: 1108px; */
     width: 100%;
     height: 382px;
@@ -1435,12 +1426,6 @@ form {
     background: #f7f7f9;
     display: flex;
     flex-direction: column;
-  }
-
-  .language-list li img {
-    height: 48px;
-    max-width: 48px;
-    border-radius: 0;
   }
 
   .language-list li a {
