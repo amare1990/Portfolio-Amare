@@ -94,7 +94,7 @@ body {
   font-weight: 500;
   line-height: 16px;
   text-align: center;
-  letter-spacing: -0.28px;
+  /* letter-spacing: -0.28px; */
   padding: 3px 0 2px 0;
   color: black;
 }
@@ -187,7 +187,7 @@ li {
 /* Styling anchor tags */
 a {
   text-decoration: none;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 }
 
 li a {
