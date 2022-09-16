@@ -1,11 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio: Mobile Menu
+# Portfolio: Details Popup Window
 
 # Project Name
 
 ## Description the project
-The objective of this project development is to add pop-up menus for the mobile version. The previous project, which includes the desktop version is extended to include this pop-up mobile menus. The project is modified by creating a branch on the main branch base. It is designed to fulfill the requirements of the figma design template.
+The objective of this project development is to add popup windows to see details of the project for the mobile version. The previous project, which includes the Mobile menu for the mobile version is extended to include this pop-up windows. THe project is modified for both the mobile and desktop version. The project is modified by creating a branch on the main branch base. It is designed to fulfill the requirements of the figma design template.
 
 
 ## Built With
