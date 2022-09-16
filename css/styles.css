@@ -14,11 +14,8 @@ body {
   font-size: 16px;
   line-height: 24px;
   background: #e5e5e5;
-}
 
-img {
-  display: block;
-  width: 100%;
+  /* background-color: #f7f7f9; */
 }
 
 .background-color {
@@ -29,7 +26,7 @@ img {
   min-height: 5410px;
   height: auto;
   width: 100%;
-  background-color: #f7f7f9;
+  background-color: #e5e5e5;
   padding: 0 24px 8px 24px;
 }
 
@@ -98,7 +95,8 @@ img {
   font-weight: 500;
   line-height: 16px;
   text-align: center;
-  letter-spacing: -0.28px;
+
+  /* letter-spacing: -0.28px; */
   padding: 3px 0 2px 0;
   color: black;
 }
@@ -126,15 +124,6 @@ img {
 .status-img {
   display: block;
 }
-
-/*
-.header-2 {
-  height: 48px;
-  max-width: 100%;
-  padding: 58px 24px 0 24px;
-  display: flex;
-  justify-content: space-between;
-} */
 
 .logo-menu-header {
   height: 48px;
@@ -200,6 +189,7 @@ li {
 /* Styling anchor tags */
 a {
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
 li a {
@@ -277,65 +267,77 @@ li a {
   border-radius: 8px;
 }
 
-/* Works and About-me section */
-.section-works {
+.grids-wrapper {
   max-height: 4100px;
   height: auto;
   max-width: 100%;
-  margin: 114px 24px 114px 24px;
+
+  /* margin: 114px 24px 114px 24px; */
   display: grid;
   grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 100%;
   row-gap: 88px;
-  background-color: #f7f7f9;
+  background-color: #e5e5e5;
+
+  /* background-color: #f7f7f9; */
+  padding: 114px 0;
 }
 
-.card-works {
+.grid {
   height: 552px;
   height: auto;
-  max-width: 100%;
+  min-width: 327px;
+
+  /* max-width: 100%; */
   border: 1px solid #dfe1e6;
-  border-radius: 8px;
+  border-radius: 16px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 16px;
   gap: 12px;
 }
 
-.multipost-stories-2-mobile {
-  max-height: 830px;
-  height: auto;
-  max-width: 100%;
-
-  /* padding: 16px; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
+.grid1 {
+  grid-row: 1 /2;
 }
 
-.left-block {
-  /* margin-top: 24px; */
-  padding-top: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
+.grid2 {
+  grid-row: 2 /3;
 }
 
-.section-works h1 {
+.grid3 {
+  grid-row: 3 /4;
+}
+
+.grid4 {
+  grid-row: 4 /5;
+}
+
+.grid2,
+.grid4 {
+  height: 596px;
+}
+
+.grid-img {
+  width: 295px;
+  height: 220px;
+  border-radius: 8px;
+}
+
+.grid-title {
   height: 36px;
   width: 295px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
 }
 
-.frame-2 {
+.experience-container {
   height: 32px;
   max-width: 100%;
   display: flex;
@@ -343,9 +345,7 @@ li a {
   gap: 12px;
 }
 
-.frame-2 .canopy,
-.frame-2 .back-end-dev,
-.frame-2 .year {
+.experience-item {
   height: 16px;
   max-width: 100%;
   font-weight: 600;
@@ -357,11 +357,11 @@ li a {
   align-items: center;
 }
 
-.frame-2 .canopy {
+.experience .canopy {
   color: #344563;
 }
 
-.frame-2 .counter {
+.experience .counter {
   height: 8px;
   width: 8px;
   color: #c1c7d0;
@@ -369,8 +369,9 @@ li a {
   align-items: center;
 }
 
-.work-detail p {
+.project-description {
   height: 76px;
+  min-width: 295px;
   max-width: 100%;
   font-weight: 400;
   font-size: 15px;
@@ -378,26 +379,32 @@ li a {
   color: #344563;
 }
 
-.tags {
+.technologies {
   height: 24px;
   width: 203px;
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 12px;
+  padding: 0;
+  margin-top: auto;
+
+  /* margin-bottom: 12px; */
 }
 
-.tag-container {
+.tech-container {
   height: 24px;
-  width: 203px;
+
+  /* width: 53px; */
+  width: auto;
   display: flex;
   align-items: center;
   padding: 4px 12px;
   background-color: #ebebff;
   border-radius: 8px;
+  margin-left: 29px;
 }
 
-.tag {
+.tech {
   width: 29px;
   height: 16px;
   font-weight: 500;
@@ -407,91 +414,284 @@ li a {
   color: #6070ff;
 }
 
-.tag-javascript {
+.tech-javascript {
   width: 65px;
 }
 
-.tag .lets-connect-about {
+/* previous css code maybe */
+.tech .lets-connect-about {
   margin-bottom: 22px;
 }
 
-.action {
-  width: 162px;
+.action-grid-container {
+  width: 295px;
+  height: 72px;
+}
+
+.action-grid {
+  width: 124px;
   height: 48px;
   display: flex;
   align-items: center;
+  gap: 10px;
   padding: 12px;
   box-sizing: border-box;
-  gap: 10px;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  background-color: #396df2;
 }
 
-.btn {
-  height: 24px;
+.action-grid-btn {
   width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+  padding: 0;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
   background-color: #396df2;
+  border: 0;
 }
 
-.action .btn {
-  height: 24px;
-  width: 138px;
-  border: none;
+.tech:hover {
+  background-color: #6070ff;
+  box-shadow: 0 8px 16px rgb(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.tech:active {
+  background-color: #2230d2;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.action-grid-btn:hover {
+  background-color: #6070ff;
+  box-shadow: 0 8px 16px rgb(64, 83, 252, 0.24);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.action-grid-btn:active {
+  background-color: #2230d2;
+  border-radius: 8px;
+  color: #fff;
+}
+
+/* Popup window style starts here */
+.popup-mobile-version {
+  background-color: #c1c7d0;
+}
+
+.popup-card-wrapper {
+  width: 90%;
+  height: 95%;
   background-color: #fff;
+  padding: 30px 30px 30px 30px;
+  margin: 16px 16px;
+}
+
+.popup-card {
+  height: 823px;
+  min-width: 375px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.popup-title-and-closeIcon-container {
+  height: 40px;
+  width: 311px;
+  width: 100%;
   display: flex;
   align-items: center;
-  text-align: center;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #396df2;
+  justify-content: space-between;
 }
 
-.tag:hover {
-  background-color: #6070ff;
-  box-shadow: 0 8px 16px rgb(64, 83, 252, 0.24);
-  border-radius: 8px;
-  color: #fff;
-}
-
-.tag:active {
-  background-color: #2230d2;
-  border-radius: 8px;
-  color: #fff;
-}
-
-.action:hover {
-  background-color: #6070ff;
-  box-shadow: 0 8px 16px rgb(64, 83, 252, 0.24);
-  border-radius: 8px;
-  color: #fff;
-}
-
-.action:active {
-  background-color: #2230d2;
-  border-radius: 8px;
-  color: #fff;
-}
-
-/* End of Styling anchor tags   */
-.project-title .title {
+.popup-project-title {
   height: 36px;
-  width: 295px;
+  width: auto;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  margin-top: 12px;
+}
+
+.popup-title-and-closeIcon-container i .fa-times {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #67798e;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #67798e;
+}
+
+.popup-experience {
+  height: 32px;
+  width: 236px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.popup-exp-name {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.popup-role {
+  width: 88px;
+}
+
+.popup-year {
+  width: 29px;
+}
+
+.popup-counter {
+  width: 8px;
+  height: 8px;
+  background-color: #c1c7d0;
+  border-radius: 50%;
+}
+
+.popup-client {
+  color: #344563;
+  width: 55px;
+}
+
+.popup-card-text {
+  height: 220px;
+  min-width: 311px;
+  width: 100%;
+  border-radius: 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+}
+
+.popup-technologies {
+  height: 24px;
+  width: 203px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  gap: 8px;
+  margin-top: -170px;
   margin-bottom: 20px;
 }
+
+.popup-technology-item {
+  height: 24px;
+  min-width: 53px;
+  width: auto;
+  border-radius: 8px;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  background-color: #ebebff;
+}
+
+.popup-tech {
+  height: 16px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.popup-html-tech {
+  width: 29px;
+}
+
+.popup-css-tech {
+  width: 21px;
+}
+
+.popup-javascript-tech {
+  width: 65px;
+}
+
+.popup-button-group {
+  height: 56px;
+  min-width: 311px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 33px 16px 16px 16px;
+  gap: 10px; /* value from figma is not there */
+  margin-top: -20px;
+}
+
+.popup-knowBtns {
+  height: 48px;
+  width: 146px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+}
+
+.popup-knowBtns .popup-btn-text {
+  border: none;
+  width: 215px;
+  height: 20px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #6070ff;
+}
+
+.popup-knowBtns img {
+  background-color: #6070ff;
+  color: #6070ff;
+  width: 24px;
+  height: 24px;
+}
+
+.hide {
+  display: none;
+}
+
+.closePopup {
+  cursor: pointer;
+  color: #67798e;
+  font-weight: 100;
+}
+
+/* Popup window style starts here */
 
 /* Styling about myself section */
 .about-myself {
@@ -611,8 +811,6 @@ li a {
 }
 
 /* End of Styling about myself section */
-
-/* End of Works and About-me section */
 
 /* ......Contact Form....... */
 footer {
@@ -989,78 +1187,45 @@ form {
     row-gap: 142px;
   }
 
-  .tonic-mobile {
-    display: none;
-  }
-
-  .multipost-stories-2-mobile {
-    display: none;
-  }
-
-  .tonic-2-mobile {
-    display: none;
-  }
-
-  .multipost-stories-mobile {
-    display: none;
-  }
-
-  .card-works-desk {
-    height: 496px;
+  .grid {
+    margin-top: 24px;
+    padding-top: 24px;
     max-width: 1156px;
-    max-width: 100%;
-    border-radius: 24px;
-    padding-right: 22px;
-    background: #fff;
+    height: 496px;
     display: flex;
     flex-direction: row;
-    border: 1px solid #dfe1e6;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 42px;
   }
 
-  .tonic-desk img {
-    height: 448px;
-    max-width: 544px;
-    max-width: 100%;
+  .main-image-im {
+    max-width: 1108px;
+    width: 100%;
+    height: 286px;
     border-radius: 8px;
-    padding: 24px 46px 24px 24px;
   }
 
-  .frame-2 {
-    width: 297px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    gap: 12px;
+  .language-list li img {
+    height: 48px;
+    max-width: 48px;
+    border-radius: 0;
   }
 
-  .frame-2 .counter {
-    height: 8px;
-    width: 8px;
-    color: red;
-  }
-
-  .multipost-stories-2-desk {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-
-  .multipost-stories-2-desk img {
+  .grid .grid-img {
     height: 448px;
-    max-width: 544px;
-    max-width: 100%;
+    width: 544px;
     border-radius: 8px;
-    padding: 24px 22px 24px 46px;
   }
 
-  .multipost-stories-2-desk .left-block {
-    margin: 24px 0 7px 24px;
-    height: 465px;
-    height: auto;
-    max-width: 544px;
-    max-width: 100%;
+  .grid .grid-img img {
+    width: 100%;
+  }
+
+  .grid .grid-body {
+    height: 445px;
+    width: 544px;
+    border-radius: 0;
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -1068,15 +1233,115 @@ form {
     gap: 24px;
   }
 
-  .work-detail .tags {
-    height: 24px;
-    max-width: 316px;
-    max-width: 100%;
-    left: 24px;
+  .grid-body p {
+    height: 50px;
+    width: 496px;
     border-radius: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .grid-body .technologies {
+    height: 24px;
+    width: 203px;
     display: flex;
     align-items: center;
     gap: 8px;
+    padding: 0;
+    margin-top: 100px;
+    margin-left: 29px;
+  }
+
+  .grid-body .technologies .tech-container {
+    height: 24px;
+
+    /* width: 53px; */
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    background-color: #ebebff;
+    border-radius: 8px;
+  }
+
+  .grid-body .technologies .tech-container .tech {
+    width: auto;
+    height: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+  }
+
+  .popup-mobile-version {
+    height: 670px;
+    max-width: 1296px;
+    background-color: #fff;
+  }
+
+  .grid-body .technologies .tech-container .tech:nth-child(4) {
+    width: auto;
+  }
+
+  .popup-card-wrapper {
+    background-color: #c1c7d0;
+    padding: 30px 30px 30px 30px;
+  }
+
+  .popup-card {
+    max-width: 1156px;
+    height: 823px;
+    background-color: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 24px 0 24px;
+  }
+
+  .popup-title-and-closeIcon-container {
+    height: 30px;
+    width: 311px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .popup-body {
+    width: 100%;
+    height: 382px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 59px 24px 0 24px;
+    margin-top: -20px;
+  }
+
+  .popup-body-text {
+    width: auto;
+    height: 382px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .popup-techs-and-button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .tags .tag-container-ruby {
@@ -1104,54 +1369,6 @@ form {
 
   .tags .tag-container-ruby .ruby:hover {
     color: #fff;
-  }
-
-  .multipost-stories-desk {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-
-  .multipost-stories-desk img {
-    height: 448px;
-    max-width: 544px;
-    max-width: 100%;
-    border-radius: 8px;
-    padding: 24px 46px 24px 22px;
-  }
-
-  .multipost-stories-desk .left-block {
-    /* margin: 24px 0 24px 24px; */
-    height: 465px;
-    max-width: 544px;
-    max-width: 100%;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-  }
-
-  .left-block .tags {
-    height: 24px;
-    max-width: 316px;
-    max-width: 100%;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    gap: 8px;
-  }
-
-  .tonic-2-desk {
-    border: 2px solid #a7aeff;
-  }
-
-  .tonic-2-desk img {
-    height: 448px;
-    max-width: 544px;
-    max-width: 100%;
-    border-radius: 8px;
-    padding: 24px 46px 24px 24px;
   }
 
   /* End of Works section-media query. */
@@ -1222,12 +1439,6 @@ form {
     background: #f7f7f9;
     display: flex;
     flex-direction: column;
-  }
-
-  .language-list li img {
-    height: 48px;
-    max-width: 48px;
-    border-radius: 0;
   }
 
   .language-list li a {
