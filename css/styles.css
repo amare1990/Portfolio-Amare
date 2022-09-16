@@ -123,15 +123,6 @@ body {
   display: block;
 }
 
-/*
-.header-2 {
-  height: 48px;
-  max-width: 100%;
-  padding: 58px 24px 0 24px;
-  display: flex;
-  justify-content: space-between;
-} */
-
 .logo-menu-header {
   height: 48px;
   max-width: 100%;
@@ -275,7 +266,6 @@ li a {
 
 /* Projects Section */
 .section-works {
-  
 }
 
 .grids-wrapper {
@@ -337,7 +327,7 @@ li a {
 .grid-title {
   height: 36px;
   width: 295px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -382,7 +372,7 @@ li a {
 .project-description {
   height: 76px;
   min-width: 295px;
-  max-width: 100%; 
+  max-width: 100%;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -403,7 +393,7 @@ li a {
 .tech-container {
   height: 24px;
   /* width: 53px; */
-  width: auto; 
+  width: auto;
   display: flex;
   align-items: center;
   padding: 4px 12px;
@@ -431,7 +421,6 @@ li a {
   margin-bottom: 22px;
 }
 
-
 .action-grid-container {
   width: 295px;
   height: 72px;
@@ -454,7 +443,7 @@ li a {
 
 .action-grid-btn {
   width: 100%;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -512,7 +501,7 @@ li a {
 .popup-card-wrapper {
   width: 100vw;
   height: 100vh;
-  background-color: #c1c7d0; 
+  background-color: #c1c7d0;
   padding: 0 30px 0 30px;
 }
 
@@ -526,7 +515,7 @@ li a {
   gap: 12px;
   background-color: #fff;
   border: 1px solid #dfe1e6;
-  border-radius: 16px; 
+  border-radius: 16px;
 }
 
 .popup-title-and-closeIcon-container {
@@ -535,7 +524,7 @@ li a {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .popup-project-title {
@@ -565,7 +554,7 @@ li a {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 12px;  
+  gap: 12px;
 }
 
 .popup-exp-name {
@@ -580,7 +569,7 @@ li a {
 }
 
 .popup-client {
-  width: 55px
+  width: 55px;
 }
 
 .popup-role {
@@ -613,7 +602,7 @@ li a {
   height: 220px;
   width: 311px;
   border-radius: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -689,7 +678,7 @@ li a {
   border: none;
   width: 215px;
   height: 20px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -698,7 +687,7 @@ li a {
   align-items: center;
   text-align: center;
   color: #6070ff;
-} 
+}
 
 .popup-knowBtns img {
   background-color: #6070ff;
@@ -710,10 +699,10 @@ li a {
 }
 
 .closePopup {
- cursor: pointer;
- margin-left: 100%;
- color: #67798e;
- font-weight: 100;
+  cursor: pointer;
+  margin-left: 100%;
+  color: #67798e;
+  font-weight: 100;
 }
 
 /* Popup window style starts here */
@@ -1213,15 +1202,15 @@ form {
   }
 
   .grid {
-      margin-top: 24px; 
-      padding-top: 24px;
-      max-width: 1156px;
-      height: 496px;
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: center;
-      gap: 42px;
+    margin-top: 24px;
+    padding-top: 24px;
+    max-width: 1156px;
+    height: 496px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 42px;
   }
 
   .grid .grid-img {
@@ -1243,19 +1232,18 @@ form {
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-  } 
+  }
 
   .grid-body p {
     height: 50px;
     width: 496px;
     border-radius: 0;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #344563;
-
   }
 
   .grid-body .technologies {
@@ -1268,18 +1256,18 @@ form {
     margin-top: 100px;
     margin-left: 29px;
   }
-  
+
   .grid-body .technologies .tech-container {
     height: 24px;
     /* width: 53px; */
-    width: auto; 
+    width: auto;
     display: flex;
     align-items: center;
     padding: 4px 12px;
     background-color: #ebebff;
     border-radius: 8px;
   }
-  
+
   .grid-body .technologies .tech-container .tech {
     width: auto;
     height: 16px;
@@ -1289,21 +1277,18 @@ form {
     letter-spacing: 0.03em;
     color: #6070ff;
   }
-  
-  .grid-body .technologies .tech-container .tech:nth-child(4){
+
+  .grid-body .technologies .tech-container .tech:nth-child(4) {
     width: auto;
   }
-
 
   .popup-card-wrapper {
     width: 100vw;
     height: 100vh;
-    background-color: #c1c7d0; 
+    background-color: #c1c7d0;
     padding: 0 30px 0 30px;
   }
 
-
-   
   .popup-card {
     max-width: 1156px;
     height: 823px;
@@ -1318,14 +1303,12 @@ form {
     padding: 24px 24px 0 24px;
   }
 
-
-
   .main-image {
     height: 586px;
     max-width: 1108px;
     width: 100%;
     border-radius: 8px;
-  }  
+  }
 
   .main-image img {
     width: 100%;
