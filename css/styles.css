@@ -1277,6 +1277,7 @@ form {
     letter-spacing: 0.03em;
     color: #6070ff;
   }
+
   .popup-mobile-version {
     height: 670px;
     max-width: 1296px;
@@ -1286,11 +1287,11 @@ form {
   .grid-body .technologies .tech-container .tech:nth-child(4) {
     width: auto;
   }
-  
+
   .popup-card-wrapper {
     background-color: #c1c7d0;
     padding: 30px 30px 30px 30px;
-   }
+  }
 
   .popup-card {
     max-width: 1156px;
