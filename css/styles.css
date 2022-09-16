@@ -17,11 +17,6 @@ body {
   /* background-color: #f7f7f9; */
 }
 
-img {
-  display: block;
-  width: 100%;
-}
-
 .background-color {
   background-color: #fff;
 }
@@ -339,16 +334,6 @@ li a {
   border-radius: 8px;
 }
 
-/*
-.grid-body {
-  margin-top: 24px; 
-  padding-top: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-} */
-
 .grid-title {
   height: 36px;
   width: 295px;
@@ -424,6 +409,7 @@ li a {
   padding: 4px 12px;
   background-color: #ebebff;
   border-radius: 8px;
+  margin-left: 29px;
 }
 
 .tech {
@@ -440,15 +426,14 @@ li a {
   width: 65px;
 }
 
-/* previous css code maybe
+/* previous css code maybe */
 .tech .lets-connect-about {
   margin-bottom: 22px;
 }
 
-*/
+
 .action-grid-container {
   width: 295px;
-  max-width: 100%;
   height: 72px;
 }
 
@@ -462,21 +447,25 @@ li a {
   box-sizing: border-box;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  background-color: #396df2;
+  display: flex;
+  align-items: center;
 }
 
 .action-grid-btn {
-  height: 24px;
-  width: 100px;
+  width: 100%;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
+  padding: 0;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
   background-color: #396df2;
+  border: 0;
 }
 
 .tech:hover {
@@ -521,22 +510,15 @@ li a {
 /* Popup window style starts here */
 
 .popup-card-wrapper {
-  min-width: 375px;
-  height: 823px;
-  background-color: #c1c7d0;
-  mix-blend-mode: multiply;
+  width: 100vw;
+  height: 100vh;
+  background-color: #c1c7d0; 
   padding: 0 30px 0 30px;
-  position: fixed;
-  z-index: 101;
-  left: 0;
-  top: 0;
-
-  overflow: auto;
 }
 
 .popup-card {
   height: 823px;
-  width: 375px;
+  min-width: 375px;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -544,20 +526,12 @@ li a {
   gap: 12px;
   background-color: #fff;
   border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  background-color: #c1c7d0;
-  mix-blend-mode: multiply;
-}
-
-.popup-card img {
-  width: 311px;
-  width: 100%;
-  height: 220px;
+  border-radius: 16px; 
 }
 
 .popup-title-and-closeIcon-container {
   height: 40px;
-  min-width: 311px;
+  width: 311px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -566,7 +540,7 @@ li a {
 
 .popup-project-title {
   height: 36px;
-  width: 259px;
+  width: auto;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -587,7 +561,7 @@ li a {
 
 .popup-experience {
   height: 32px;
-  min-width: 236px;
+  width: 236px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -625,6 +599,25 @@ li a {
 }
 
 .popup-client {
+  color: #344563;
+}
+
+.main-image {
+  height: 220px;
+  min-width: 311px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.popup-card-text {
+  height: 220px;
+  width: 311px;
+  border-radius: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
   color: #344563;
 }
 
@@ -672,12 +665,11 @@ li a {
 
 .popup-button-group {
   height: 56px;
-  min-width: 311px;
-  width: 100%;
+  width: 311px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 24px;
+  padding: 33px 16px 16 px 16px;
   gap: 10px; /* value from figma is not there */
 }
 
@@ -719,6 +711,9 @@ li a {
 
 .closePopup {
  cursor: pointer;
+ margin-left: 100%;
+ color: #67798e;
+ font-weight: 100;
 }
 
 /* Popup window style starts here */
@@ -1217,94 +1212,151 @@ form {
     row-gap: 142px;
   }
 
-  .tonic-mobile {
-    display: none;
+  .grid {
+      margin-top: 24px; 
+      padding-top: 24px;
+      max-width: 1156px;
+      height: 496px;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 42px;
   }
 
-  .multipost-stories-2-mobile {
-    display: none;
-  }
-
-  .tonic-2-mobile {
-    display: none;
-  }
-
-  .multipost-stories-mobile {
-    display: none;
-  }
-
-  .card-works-desk {
-    height: 496px;
-    max-width: 1156px;
-    max-width: 100%;
-    border-radius: 24px;
-    padding-right: 22px;
-    background: #fff;
-    display: flex;
-    flex-direction: row;
-    border: 1px solid #dfe1e6;
-  }
-
-  .tonic-desk img {
+  .grid .grid-img {
     height: 448px;
-    max-width: 544px;
-    max-width: 100%;
+    width: 544px;
     border-radius: 8px;
-    padding: 24px 46px 24px 24px;
   }
 
-  .frame-2 {
-    width: 297px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    gap: 12px;
+  .grid .grid-img img {
+    width: 100%;
   }
 
-  .frame-2 .counter {
-    height: 8px;
-    width: 8px;
-    color: red;
-  }
-
-  .multipost-stories-2-desk {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-
-  .multipost-stories-2-desk img {
-    height: 448px;
-    max-width: 544px;
-    max-width: 100%;
-    border-radius: 8px;
-    padding: 24px 22px 24px 46px;
-  }
-
-  .multipost-stories-2-desk .left-block {
-    margin: 24px 0 7px 24px;
-    height: 465px;
-    height: auto;
-    max-width: 544px;
-    max-width: 100%;
+  .grid .grid-body {
+    height: 445px;
+    width: 544px;
+    border-radius: 0;
     padding: 24px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+  } 
+
+  .grid-body p {
+    height: 50px;
+    width: 496px;
+    border-radius: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+
   }
 
-  .work-detail .tags {
+  .grid-body .technologies {
     height: 24px;
-    max-width: 316px;
-    max-width: 100%;
-    left: 24px;
-    border-radius: 0;
+    width: 203px;
     display: flex;
     align-items: center;
     gap: 8px;
+    padding: 0;
+    margin-top: 100px;
+    margin-left: 29px;
+  }
+  
+  .grid-body .technologies .tech-container {
+    height: 24px;
+    /* width: 53px; */
+    width: auto; 
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    background-color: #ebebff;
+    border-radius: 8px;
+  }
+  
+  .grid-body .technologies .tech-container .tech {
+    width: auto;
+    height: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+  }
+  
+  .grid-body .technologies .tech-container .tech:nth-child(4){
+    width: auto;
+  }
+
+
+  .popup-card-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #c1c7d0; 
+    padding: 0 30px 0 30px;
+  }
+
+
+   
+  .popup-card {
+    max-width: 1156px;
+    height: 823px;
+    background-color: #fff;
+    border: 1px solid #ebecf0;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 24px 0 24px;
+  }
+
+
+
+  .main-image {
+    height: 586px;
+    max-width: 1108px;
+    width: 100%;
+    border-radius: 8px;
+  }  
+
+  .main-image img {
+    width: 100%;
+  }
+
+  .popup-body {
+    /* max-width: 1108px; */
+    width: 100%;
+    height: 382px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 59px 24px 0 24px;
+  }
+
+  .popup-body-text {
+    width: 778px;
+    height: 382px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .popup-techs-and-button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .tags .tag-container-ruby {
@@ -1332,54 +1384,6 @@ form {
 
   .tags .tag-container-ruby .ruby:hover {
     color: #fff;
-  }
-
-  .multipost-stories-desk {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-
-  .multipost-stories-desk img {
-    height: 448px;
-    max-width: 544px;
-    max-width: 100%;
-    border-radius: 8px;
-    padding: 24px 46px 24px 22px;
-  }
-
-  .multipost-stories-desk .left-block {
-    /* margin: 24px 0 24px 24px; */
-    height: 465px;
-    max-width: 544px;
-    max-width: 100%;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-  }
-
-  .left-block .tags {
-    height: 24px;
-    max-width: 316px;
-    max-width: 100%;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    gap: 8px;
-  }
-
-  .tonic-2-desk {
-    border: 2px solid #a7aeff;
-  }
-
-  .tonic-2-desk img {
-    height: 448px;
-    max-width: 544px;
-    max-width: 100%;
-    border-radius: 8px;
-    padding: 24px 46px 24px 24px;
   }
 
   /* End of Works section-media query. */
