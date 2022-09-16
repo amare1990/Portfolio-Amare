@@ -189,7 +189,7 @@ li {
 /* Styling anchor tags */
 a {
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 li a {
@@ -1281,14 +1281,14 @@ form {
   .grid-body .technologies .tech-container .tech:nth-child(4) {
     width: auto;
   }
-   
+  
   .popup-mobile-version {
     height: 670px;
     max-width: 1296px;
     background-color: #fff;
   }
-
-  .popup-card-wrapper {     
+  
+  .popup-card-wrapper {
     background-color: #c1c7d0;
     padding: 30px 30px 30px 30px;
   }
