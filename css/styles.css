@@ -187,6 +187,7 @@ li {
 /* Styling anchor tags */
 a {
   text-decoration: none;
+  font-family: 'Poppins';
 }
 
 li a {
@@ -568,10 +569,6 @@ li a {
   color: #7a869a;
 }
 
-.popup-client {
-  width: 55px;
-}
-
 .popup-role {
   width: 88px;
 }
@@ -589,6 +586,7 @@ li a {
 
 .popup-client {
   color: #344563;
+  width: 55px;
 }
 
 .main-image {
