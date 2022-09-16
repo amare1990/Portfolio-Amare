@@ -487,6 +487,7 @@ li a {
 .popup-mobile-version {
   background-color: #c1c7d0;
 }
+
 .popup-card-wrapper {
   width: 90%;
   height: 95%;
@@ -1197,12 +1198,6 @@ form {
     justify-content: center;
     gap: 42px;
   }
-  
-  /*
-  .main-image img {
-    width: 100%;
-  }
-  */
 
   .main-image-im {
     max-width: 1108px;
@@ -1319,7 +1314,6 @@ form {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
   }
 
   .popup-body {
