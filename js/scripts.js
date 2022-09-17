@@ -466,23 +466,32 @@ showPopupWindow();
 
 // Contact Form Validation
 
-//const fullName = document.querySelector('.name');
-const emailAddress = document.querySelector('.email');
-//const textMessage = document.querySelector('.message');
+const emailInput = document.getElementById('email-input');
+console.log(emailInput.value);
+let emailPattern =  /^[a-z0-9-]+@[a-z0-9]+\.[a-z0-9.]+$/;
 
-let emailPattern = /^([a-z0-9]+@[a-z0-9]+\.[a-z0-9])+$/;
-
-const emailInputValue = emailAddress.nodeValue;
+//console.log("node value= "+emailInputValue.value);
 const btnContact = document.querySelector('.get-me-btn');
-const errorMessage = document.querySelector('.error-message');
+//const errorMessage = document.querySelector('.error-message');
+const form = document.querySelector('.contact-form');
 
-btnContact.addEventListener('click', function(e){
-  if(!emailInputValue.match(emailPattern)){
-    console.log('invalid');
-    e.preventDefault();
-    errorMessage.innerHTML = "Please enter valid email input values";
-  }
-  else {
-    form.submit();
+btnContact.addEventListener('click', (event) => {
+  if (!emailPattern.test(emailInput.value)) {
+    const error = document.querySelector('.error-message');
+
+    error.style.display = 'block';
+
+    event.preventDefault();
+    if (emailInput.value === '') {
+      error.style.display = 'none';
+    }
   }
 });
+
+emailInput.addEventListener('input', () => {
+  if (emailPattern.test(emailInput.value)) {
+    const error = document.querySelector('.error-message');
+    error.style.display = 'none';
+  }
+});
+console.log(emailInput.value);
