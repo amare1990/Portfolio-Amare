@@ -1,3 +1,5 @@
+const { fromJSON } = require("flatted");
+
 const hamburger = document.querySelector('.navbar');
 const wrapperMain = document.querySelector('.wrapper');
 const mobileMenuContainer = document.querySelector('.mobile-menu-wrapper');
@@ -373,4 +375,23 @@ emailInput.addEventListener('input', () => {
     const error = document.querySelector('.error-message');
     error.style.display = 'none';
   }
+});
+
+//Local Storage
+const nameKey = document.querySelector('.name');
+const emailKey = document.querySelector('.email');
+const textKey = document.querySelector('.message');
+const formKeyArrays = [nameKey, emailKey, textKey];
+
+
+formKeyArrays.forEach((e) => {
+  e.addEventListener('change', () => {
+    const formObject = {
+      name: formKeyArrays[0].value,
+      email: formKeyArrays[1].value,
+      message: formKeyArrays[2].value,
+    };
+    const formJSON = JSON.stringify(formObject);
+    localStorage.setItem('formValues', formJSON);
+  });
 });
