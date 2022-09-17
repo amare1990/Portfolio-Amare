@@ -877,7 +877,8 @@ form {
 .form1-input {
   padding: 15px 38px 15px 16px;
   height: 18px;
-  width: 273px;
+  min-width: 273px;
+  max-width: 100%;
   font-size: 17px;
   line-height: 20px;
   display: flex;
@@ -930,6 +931,16 @@ form {
   letter-spacing: 0.03em;
   color: #6070ff;
   border: none;
+}
+
+.error-message {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  align-self: center;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  color: red;
+  display: none;
 }
 
 /* Mobile Menu starts  */
@@ -1542,6 +1553,10 @@ form {
 
   .mobile-menu-wrapper {
     display: none;
+  }
+
+  .error-message {
+    margin-right: 30px;
   }
 }
 
