@@ -374,3 +374,37 @@ emailInput.addEventListener('input', () => {
     error.style.display = 'none';
   }
 });
+
+//Local Storage
+const nameKey = document.querySelector('.name');
+const emailKey = document.querySelector('.email');
+const textKey = document.querySelector('.message');
+const formKeyArrays = [nameKey, emailKey, textKey];
+
+
+formKeyArrays.forEach((e) => {
+  e.addEventListener('change', () => {
+    const formObject = {
+      name: formKeyArrays[0].value,
+      email: formKeyArrays[1].value,
+      message: formKeyArrays[2].value,
+    };
+    const formJSON = JSON.stringify(formObject);
+    localStorage.setItem('form key', formJSON);
+  });
+});
+
+//To prefill the form when the page loads
+window.addEventListener('load', function (){
+    const formObject = JSON.parse(localStorage.getItem('form key'));
+    if (formObject) {
+      formKeyArrays[0].value = formObject.name;
+      formKeyArrays[1].value = formObject.email;
+      formKeyArrays[2].value = formObject.message;
+    } 
+    else {
+      formKeyArrays[0].value = '';
+      formKeyArrays[1].value = '';
+      formKeyArrays[2].value = '';
+    }
+});
