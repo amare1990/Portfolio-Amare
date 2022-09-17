@@ -934,7 +934,7 @@ form {
 }
 
 .error-message {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
   align-self: center;
   margin-bottom: 10px;
@@ -1558,7 +1558,6 @@ form {
   .error-message {
     margin-right: 30px;
   }
-
 }
 
 @media screen and (max-width: 767.98px) {
