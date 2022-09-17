@@ -459,4 +459,30 @@ function showPopupWindow() {
 
 showPopupWindow(); 
 
-} //end of for desktop version
+} //end of popup window for desktop version
+
+
+
+
+// Contact Form Validation
+
+//const fullName = document.querySelector('.name');
+const emailAddress = document.querySelector('.email');
+//const textMessage = document.querySelector('.message');
+
+let emailPattern = /^([a-z0-9]+@[a-z0-9]+\.[a-z0-9])+$/;
+
+const emailInputValue = emailAddress.nodeValue;
+const btnContact = document.querySelector('.get-me-btn');
+const errorMessage = document.querySelector('.error-message');
+
+btnContact.addEventListener('click', function(e){
+  if(!emailInputValue.match(emailPattern)){
+    console.log('invalid');
+    e.preventDefault();
+    errorMessage.innerHTML = "Please enter valid email input values";
+  }
+  else {
+    form.submit();
+  }
+});
