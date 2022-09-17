@@ -1,5 +1,3 @@
-const { fromJSON } = require("flatted");
-
 const hamburger = document.querySelector('.navbar');
 const wrapperMain = document.querySelector('.wrapper');
 const mobileMenuContainer = document.querySelector('.mobile-menu-wrapper');
@@ -392,6 +390,21 @@ formKeyArrays.forEach((e) => {
       message: formKeyArrays[2].value,
     };
     const formJSON = JSON.stringify(formObject);
-    localStorage.setItem('formValues', formJSON);
+    localStorage.setItem('form key', formJSON);
   });
+});
+
+//To prefill the form when the page loads
+window.addEventListener('load', function (){
+    const formObject = JSON.parse(localStorage.getItem('form key'));
+    if (formObject) {
+      formKeyArrays[0].value = formObject.name;
+      formKeyArrays[1].value = formObject.email;
+      formKeyArrays[2].value = formObject.message;
+    } 
+    else {
+      formKeyArrays[0].value = '';
+      formKeyArrays[1].value = '';
+      formKeyArrays[2].value = '';
+    }
 });
