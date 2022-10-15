@@ -94,49 +94,49 @@ document.querySelector('.contact_mobile').addEventListener('click',() =>{
 
   // Details popup windows starts here
 
-const projects = [
-  {
-      title: 'Tonic',
-      counterImge: './images/Counter.png',
-      experiences: ['Canopy', 'Back End Dev', 'Counter', '2015'],
-      featuredImage: './images/SnapshootPortfolio.png',
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-      technologies: ['', 'html', 'css', 'javascript'],
-      linkToLiveVersion: '',
-      linkToSource: 'https://github.com/amare1990/Portfolio-Amare'
-    },
-    {
-    title: 'Multi-Post Stories',
-    counterImge: './images/Counter.png',
-    experiences: ['Canopy', 'Back End Dev', '2015'],
-    featuredImage: './images/Snapshoot-Portfolio-2.png',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    technologies: ['', 'html', 'css', 'javascript'],
-    linkToLiveVersion: '',
-    linkToSource: ''
-    },
-    {
-    title: 'Tonic 2',
-    experiences: ['Canopy', 'Back End Dev', '2015'],
-    featuredImage: './images/Snapshoot-Portfolio-3.png',
-    description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-    technologies: ['', 'html', 'css', 'javascript'],
-    linkToLiveVersion: '',
-    linkToSource: ''
-    },
-    {
-      title: 'Multi-Post Stories',
-      experiences: ['Canopy', 'Back End Dev', '2015'],
-      featuredImage: './images/Snapshoot-Portfolio-4.png',
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-      technologies: ['', 'html', 'css', 'javascript'],
-      linkToLiveVersion: '',
-      linkToSource: ''
-    }
-]
-
 if((window.matchMedia('(max-width: 767.98px')).matches) {
-  console.log('logged');
+  const projects = [
+    {
+        title: 'ICTD4A',
+        counterImge: './images/Counter.png',
+        experiences: ['Canopy', 'Back End Dev', 'Counter', '2015'],
+        featuredImage: './images/ictd4a-images/mob-ictd4.png',
+        description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        technologies: ['', 'html', 'css', 'javascript'],
+        linkToLiveVersion: '',
+        linkToSource: 'https://github.com/amare1990/ICT4DA'
+      },
+      {
+      title: 'Awesome Books',
+      counterImge: './images/Counter.png',
+      experiences: ['Canopy', 'Back End Dev', '2015'],
+      featuredImage: './images/ictd4a-images/awesome-books.png',
+      description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      technologies: ['', 'html', 'css', 'javascript'],
+      linkToLiveVersion: '',
+      linkToSource: 'https://github.com/amare1990/AwesomeBooks'
+      },
+      {
+      title: 'Tonic 2',
+      experiences: ['Canopy', 'Back End Dev', '2015'],
+      featuredImage: './images/Snapshoot-Portfolio-3.png',
+      description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      technologies: ['', 'html', 'css', 'javascript'],
+      linkToLiveVersion: '',
+      linkToSource: 'https://github.com/amare1990/ICT4DA'
+      },
+      {
+        title: 'Multi-Post Stories',
+        experiences: ['Canopy', 'Back End Dev', '2015'],
+        featuredImage: './images/Snapshoot-Portfolio-4.png',
+        description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+        technologies: ['', 'html', 'css', 'javascript'],
+        linkToLiveVersion: '',
+        linkToSource:'https://github.com/amare1990/ICT4DA'
+      }
+  ]
+
+
   const gridsContainer = document.querySelector('.grids-wrapper');
   for(let i = 0; i < projects.length; i++) {
     let gridDiv = document.createElement('div');
@@ -225,7 +225,7 @@ if((window.matchMedia('(max-width: 767.98px')).matches) {
               <img src="./images/popup/Icon-Export-btn1.png" alt="">
             </div>
             <div class="popup-knowBtns">
-              <button type="button" class="popup-btn-text">See source</button>
+              <button type="button" class="popup-btn-text"> <a href = '${projects[index].linkToSource}'>See source </a></button>
               <img src="./images/popup/Icon-GitHub-popbt2.png " width="24px" height="24px" alt="">
             </div>
           </div>
@@ -276,7 +276,7 @@ else {
 
 
 
- projects[0].title = 'Tonic';
+ projects[0].title = 'ICTD4A';
  projects[1].title = 'Multi-Post Stories';
  projects[2].title = 'Facebook 360';
  projects[3].title = 'Uber Navigation';
@@ -290,10 +290,10 @@ else {
  projects[2].technologies = ['', 'html', 'Ruby on rails' ,'css', 'javascript'];
  projects[3].technologies = ['', 'html', 'Ruby on rails' ,'css', 'javascript'];
 
- projects[0].featuredImage = './images/Snapshoot-Portfolio-desk-1.png';
- projects[1].featuredImage = './images/Snapshoot-Portfolio-4.png';
- projects[2].featuredImage = './images/SnapshootPortfolio.png';
- projects[3].featuredImage = './images/Snapshoot-Portfolio-2.png';
+ projects[0].featuredImage = './images/ictd4a-images/desk-ictd4a.png';
+ projects[1].featuredImage = './images/ictd4a-images/desk-main-program.png';
+ projects[2].featuredImage = './images/ictd4a-images/desk-speakers.png';
+ projects[3].featuredImage = './images/ictd4a-images/desk-partners.png';
 
  projects[0].description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
  projects[1].description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
@@ -438,7 +438,7 @@ function showPopupWindow() {
                 <img src="./images/popup/Icon-Export-btn1.png" alt="">
               </div>
               <div class="popup-knowBtns">
-                <button type="button" class="popup-btn-text">   <a href = "https://github.com/amare1990/Portfolio-Amare">See source </a> </button>
+                <button type="button" class="popup-btn-text">   <a href = "https://github.com/amare1990/ICT4DA">See source </a> </button>
               
                 <img src="./images/popup/Icon-GitHub-popbt2.png " alt="">
               </div>
