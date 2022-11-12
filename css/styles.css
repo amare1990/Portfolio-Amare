@@ -23,8 +23,6 @@ body {
 }
 
 .wrapper {
-  min-height: 5410px;
-  height: auto;
   width: 100%;
   background-color: #e5e5e5;
   padding: 0 24px 8px 24px;
@@ -44,7 +42,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 120px;
 }
 
 .home-only-container {
@@ -150,7 +147,6 @@ body {
 li a i {
   color: #6070ff;
   width: 16px;
-  margin-bottom: 138px;
 }
 
 .frame-7-languages i {
@@ -268,7 +264,6 @@ li a {
 }
 
 .grids-wrapper {
-  max-height: 4100px;
   height: auto;
   max-width: 100%;
 
@@ -284,8 +279,7 @@ li a {
 }
 
 .grid {
-  height: 552px;
-  height: auto;
+  height: 100%;
   min-width: 327px;
 
   /* max-width: 100%; */
@@ -315,14 +309,9 @@ li a {
   grid-row: 4 /5;
 }
 
-.grid2,
-.grid4 {
-  height: 596px;
-}
-
-.grid-img {
-  width: 295px;
-  height: 220px;
+.grid-image {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
@@ -370,7 +359,7 @@ li a {
 }
 
 .project-description {
-  height: 76px;
+  height: auto;
   min-width: 295px;
   max-width: 100%;
   font-weight: 400;
@@ -414,6 +403,10 @@ li a {
   color: #6070ff;
 }
 
+.tech2 {
+  width: auto;
+}
+
 .tech-javascript {
   width: 65px;
 }
@@ -429,7 +422,7 @@ li a {
 }
 
 .action-grid {
-  width: 124px;
+  width: auto;
   height: 48px;
   display: flex;
   align-items: center;
@@ -441,7 +434,8 @@ li a {
   background-color: #396df2;
 }
 
-.action-grid-btn {
+.action-grid-btn,
+.about-me-btn {
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -599,7 +593,6 @@ li a {
   align-items: center;
   padding: 0;
   gap: 8px;
-  margin-top: -170px;
   margin-bottom: 20px;
 }
 
@@ -696,7 +689,7 @@ li a {
 /* Styling about myself section */
 .about-myself {
   max-width: 100%;
-  height: 1125.15px;
+  height: auto;
   padding: 114px 24px;
   display: flex;
   flex-direction: column;
@@ -1055,7 +1048,7 @@ form {
 /* media queries for the header */
 @media screen and (min-width: 768px) {
   .wrapper {
-    height: 5125px;
+    height: auto;
     max-width: 1440px;
     background: #f4f5f7;
   }
@@ -1167,7 +1160,7 @@ form {
 
   /* End of media queries for the header */
   .section-home {
-    height: 845px;
+    height: auto;
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -1181,7 +1174,7 @@ form {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 287px 260px 159px 255px;
+    padding: 185px 100px 159px 100px;
   }
 
   #name-welcome-mobile {
@@ -1191,11 +1184,14 @@ form {
   /* Works section-media query. */
   .section-works {
     max-width: 100%;
-    height: 2789px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 142px;
+  }
+
+  .grids-wrapper {
+    width: 100%;
   }
 
   .grid {
@@ -1207,9 +1203,9 @@ form {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    gap: 42px;
   }
 
+  /* For popup window */
   .main-image-im {
     max-width: 1108px;
     width: 100%;
@@ -1223,19 +1219,24 @@ form {
     border-radius: 0;
   }
 
-  .grid .grid-img {
+  .grid .grid-image {
+    padding-top: 24px;
     height: 448px;
-    width: 544px;
+    max-width: 544px;
     border-radius: 8px;
   }
 
-  .grid .grid-img img {
+  .grid .grid-image img {
+    width: 100%;
+  }
+
+  .grid-title {
     width: 100%;
   }
 
   .grid .grid-body {
-    height: 445px;
-    width: 544px;
+    height: auto;
+    max-width: 544px;
     border-radius: 0;
     padding: 24px;
     display: flex;
@@ -1245,8 +1246,8 @@ form {
   }
 
   .grid-body p {
-    height: 50px;
-    width: 496px;
+    height: auto;
+    max-width: 496px;
     border-radius: 0;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -1263,7 +1264,6 @@ form {
     align-items: center;
     gap: 8px;
     padding: 0;
-    margin-top: 100px;
     margin-left: 29px;
   }
 
@@ -1287,12 +1287,6 @@ form {
     line-height: 16px;
     letter-spacing: 0.03em;
     color: #6070ff;
-  }
-
-  .popup-mobile-version {
-    height: 670px;
-    max-width: 1296px;
-    background-color: #fff;
   }
 
   .grid-body .technologies .tech-container .tech:nth-child(4) {
@@ -1391,8 +1385,6 @@ form {
     justify-content: center;
     padding-left: 142px;
     padding-right: 142px;
-    margin-top: -280px;
-    min-height: 924px;
     height: auto;
     max-width: 1440px;
     max-width: 100%;
@@ -1465,8 +1457,6 @@ form {
 
   /* End of About me section media query   */
   footer {
-    max-height: 846px;
-    height: auto;
     max-width: 1440px;
     max-width: 100%;
     border-radius: 0;
@@ -1480,7 +1470,6 @@ form {
   }
 
   .form-container {
-    height: 877px;
     max-width: 801px;
     max-width: 100%;
     display: flex;
