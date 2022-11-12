@@ -146,7 +146,7 @@ body {
 
 li a i {
   color: #6070ff;
-  width: 16px;  
+  width: 16px;
 }
 
 .frame-7-languages i {
@@ -1277,7 +1277,6 @@ form {
     letter-spacing: 0.03em;
     color: #6070ff;
   }
-
 
   .grid-body .technologies .tech-container .tech:nth-child(4) {
     width: auto;
