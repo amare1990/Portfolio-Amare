@@ -279,7 +279,7 @@ li a {
 }
 
 .grid {
-  height: 552px;
+  height: 100%;
   min-width: 327px;
 
   /* max-width: 100%; */
@@ -309,14 +309,9 @@ li a {
   grid-row: 4 /5;
 }
 
-.grid2,
-.grid4 {
-  height: 596px;
-}
-
-.grid-img {
-  width: 295px;
-  height: 220px;
+.grid-image {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
@@ -364,7 +359,7 @@ li a {
 }
 
 .project-description {
-  height: 76px;
+  height: auto;
   min-width: 295px;
   max-width: 100%;
   font-weight: 400;
@@ -1168,7 +1163,7 @@ form {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 287px 260px 159px 255px;
+    padding: 185px 100px 159px 100px;
   }
 
   #name-welcome-mobile {
@@ -1184,6 +1179,10 @@ form {
     align-items: center;
   }
 
+  .grids-wrapper {
+    width: 100%;
+  }
+
   .grid {
     margin-top: 24px;
     padding-top: 24px;
@@ -1195,6 +1194,7 @@ form {
     justify-content: center;
   }
 
+  /* For popup window */
   .main-image-im {
     max-width: 1108px;
     width: 100%;
@@ -1208,19 +1208,24 @@ form {
     border-radius: 0;
   }
 
-  .grid .grid-img {
+  .grid .grid-image {
+    padding-top: 24px;
     height: 448px;
-    width: 544px;
+    max-width: 544px;
     border-radius: 8px;
   }
 
-  .grid .grid-img img {
+  .grid .grid-image img {
+    width: 100%;
+  }
+
+  .grid-title {
     width: 100%;
   }
 
   .grid .grid-body {
-    height: 445px;
-    width: 544px;
+    height: auto;
+    max-width: 544px;
     border-radius: 0;
     padding: 24px;
     display: flex;
@@ -1230,8 +1235,8 @@ form {
   }
 
   .grid-body p {
-    height: 50px;
-    width: 496px;
+    height: auto;
+    max-width: 496px;
     border-radius: 0;
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -1248,7 +1253,6 @@ form {
     align-items: center;
     gap: 8px;
     padding: 0;
-    margin-top: 100px;
     margin-left: 29px;
   }
 
@@ -1273,6 +1277,7 @@ form {
     letter-spacing: 0.03em;
     color: #6070ff;
   }
+
 
   .grid-body .technologies .tech-container .tech:nth-child(4) {
     width: auto;
