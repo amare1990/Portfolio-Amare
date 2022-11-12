@@ -5,22 +5,21 @@
 # Project Name
 
 ## Description the project
-The objective of this project development is to add popup windows to see details of the project for the mobile version. The previous project, which includes the Mobile menu for the mobile version is extended to include this pop-up windows. THe project is modified for both the mobile and desktop version. The project is modified by creating a branch on the main branch base. It is designed to fulfill the requirements of the figma design template.
+This part of the Portfolio project implements local storage for the contact form input values.
+The local storage implementation is done on a branch, "Added_Local-Storage" and merged to the main repository, Portfolio-Amare. Basically, local storage by browsers stores (key, value) pairs persistently. The browser helps users leave inserting their input values each time the user browses a site. This project helps users have their form values prefilled, done by javascript "load" event.  
+
 
 
 ## Built With
 
-- Major languages: HTML, CSS, Javascript
-- Frameworks: No framework used
+- Javascript
 - Technologies used: VS code editor, git, github, github flow
 
 
 
-## How can a pop-up mobile menu is developed
+## How can values be stored by browsers
 
-** First you have to create a branch for this part of the work so that you can not hamper the main way of project development. Then you have to design the pop-up page and style using html and css scripting language. To add dynamic features of the project, you write javascript code. **
-
-
+** You have to use localStorage js object to store data. localStorage object has setItem() and getItem() methods to set the key value pairs and retrieve the values of the data stored. Use 'change' or 'input' js event to store when inputs are inserted first. use 'load' js event to retrieve stored data and prefill the form. **
 
 
 ## Authors
