@@ -112,7 +112,7 @@ const projects = [
   featuredImage: './images/ictd4a-images/math-magician-mob.png',
   description: 'This project is a claculator web application created by React JavaScript library.  It allowers users to calculate basic mathematics. The objective of this project is to practice how to create react components, use react props and states.',
   technologies: ['', 'html', 'css', 'javascript'],
-  linkToLiveVersion: '',
+  linkToLiveVersion: 'https://remarkable-chebakia-f7a6a5.netlify.app/',
   linkToSource: 'https://github.com/amare1990/math-magicians',
 }
 ];
