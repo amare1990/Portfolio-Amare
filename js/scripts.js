@@ -78,43 +78,43 @@ document.querySelector('.contact_mobile').addEventListener('click', () => {
 // Values initially for mobile version
 const projects = [
   {
-    title: 'Awesome Books',
-    counterImge: './images/Counter.png',
-    experiences: ['Microverse Inc', 'Front End Dev', '2022'],
-    featuredImage: './images/ictd4a-images/awesomebook-mob.png',
-    description: 'This project is a web application project that allows the client to add a book and dynamically display all the added books.',
-    technologies: ['', 'html', 'css', 'javascript'],
-    linkToLiveVersion: '',
-    linkToSource: 'https://github.com/amare1990/AwesomeBooks',
-  },
-  {
-    title: 'Math Magicians',
-    counterImge: './images/Counter.png',
-    experiences: ['Microverse Inc', 'Front End Dev', '2022'],
-    featuredImage: './images/ictd4a-images/math-magician-mob.png',
-    description: 'This project is a claculator web application created by React JavaScript library.  It allowers users to calculate basic mathematics. The objective of this project is to practice how to create react components, use react props and states.',
-    technologies: ['', 'html', 'css', 'javascript'],
-    linkToLiveVersion: '',
-    linkToSource: 'https://github.com/amare1990/math-magicians',
-  },
-  {
     title: 'Todos List',
     experiences: ['Microverse Inc', 'Front End Dev', '2022'],
-    featuredImage: './images/ictd4a-images/todos.png',
+    featuredImage: './images/ictd4a-images/todos-mob.png',
     description: 'Developed with HTML, CSS and JavaScript, this web application allows customers to add tasks to be completed today, edit the tasks, and interactively delete completed tasks both on the screen and in the localStorage object.',
     technologies: ['', 'html', 'css', 'javascript'],
-    linkToLiveVersion: '',
+    linkToLiveVersion: 'https://magical-eclair-b90bd7.netlify.app/',
     linkToSource: 'https://github.com/amare1990/To-do-List',
   },
   {
     title: 'LeaderBoard',
     experiences: ['Microverse Inc', 'Front End Dev', '2022'],
-    featuredImage: './images/ictd4a-images/leaderboard.png',
+    featuredImage: './images/ictd4a-images/leaderboard-mob.png',
     description: 'LeaderBoard is a web application project that allows people to submit score of the player and see the score on the screen. It stores and fetches score result fom the remore API. HTML, CSS, and mainly JavaScript is used to implement this project.',
     technologies: ['', 'html', 'css', 'javascript'],
-    linkToLiveVersion: '',
+    linkToLiveVersion: 'https://friendly-croquembouche-2faf30.netlify.app/',
     linkToSource: 'https://github.com/amare1990/LeaderBoard',
   },
+  {
+  title: 'Awesome Books',
+  counterImge: './images/Counter.png',
+  experiences: ['Microverse Inc', 'Front End Dev', '2022'],
+  featuredImage: './images/ictd4a-images/awesomebook-mob.png',
+  description: 'This project is a web application project that allows the client to add a book and dynamically display all the added books.',
+  technologies: ['', 'html', 'css', 'javascript'],
+  linkToLiveVersion: '',
+  linkToSource: 'https://github.com/amare1990/AwesomeBooks',
+},
+{
+  title: 'Math Magicians',
+  counterImge: './images/Counter.png',
+  experiences: ['Microverse Inc', 'Front End Dev', '2022'],
+  featuredImage: './images/ictd4a-images/math-magician-mob.png',
+  description: 'This project is a claculator web application created by React JavaScript library.  It allowers users to calculate basic mathematics. The objective of this project is to practice how to create react components, use react props and states.',
+  technologies: ['', 'html', 'css', 'javascript'],
+  linkToLiveVersion: '',
+  linkToSource: 'https://github.com/amare1990/math-magicians',
+}
 ];
 
 // Details popup windows starts here
@@ -141,12 +141,12 @@ function mobileVersion() {
               <div class="grid-image image${i + 1}">
                 <img src="${projects[i].featuredImage}" alt="">
               </div>
-  
+
               <h2 class="grid-title">${projects[i].title}</h2>
               <ul class="experience-container">
                 ${li1}
               </ul>
-              <p class ="project-description"> 
+              <p class ="project-description">
                 ${projects[i].description}
               </p>
               <div class = "technologies"
@@ -154,13 +154,13 @@ function mobileVersion() {
                   ${li2}
                 </ul>
               </div>
-            
+
                 <div class="action-grid">
                   <button whichProjectBtn = ${i} class="action-grid-btn" type = "button">
                     See Project
                   </button>
                 </div>
-            
+
             </div>`;
     gridsContainer.append(gridDiv);
   }
@@ -192,7 +192,7 @@ function mobileVersion() {
             <div class="popup-title-and-closeIcon-container">
               <h2 class="popup-project-title"> ${projects[index].title}
               <h2>
-              <i class="fa fa-times closePopup"></i> 
+              <i class="fa fa-times closePopup"></i>
             </div>
             <ul class="popup-experience">
               ${li1}
@@ -204,11 +204,11 @@ function mobileVersion() {
             </ul>
             <div class="popup-button-group">
               <div class="popup-knowBtns">
-                <button type="button" class="popup-btn-text">See live</button>
+                <button type="button" class="popup-btn-text"> <a href = '${projects[index].linkToLiveVersion}'> See live </a> </button>
                 <img src="./images/popup/Icon-Export-btn1.png" alt="">
               </div>
               <div class="popup-knowBtns">
-                <button type="button" class="popup-btn-text"> <a href = '${projects[index].linkToSource}'>See source </a></button>
+                <button type="button" class="popup-btn-text"> <a href = '${projects[index].linkToSource}'>See source </a> </button>
                 <img src="./images/popup/Icon-GitHub-popbt2.png " width="24px" height="24px" alt="">
               </div>
             </div>
@@ -265,10 +265,10 @@ function desktopVersion() {
   projects[1].linkToLiveVersion = 'https://www.loom.com/share/2e5639ffe4904400ad7a9baaba57e9f7';
   projects[1].linkToSource = 'https://github.com/amare1990/JavaScript-Capstone-Project';
 
-  projects[2].linkToLiveVersion = '';
+  projects[2].linkToLiveVersion = 'https://magical-eclair-b90bd7.netlify.app/';
   projects[2].linkToSource = 'https://github.com/amare1990/To-do-List';
 
-  projects[3].linkToLiveVersion = '';
+  projects[3].linkToLiveVersion = 'https://friendly-croquembouche-2faf30.netlify.app/';
   projects[3].linkToSource = 'https://github.com/amare1990/LeaderBoard';
 
   for (let i = 0; i < projects.length; i += 1) {
@@ -313,15 +313,15 @@ function desktopVersion() {
             <div class="grid-image image${i + 1}">
               <img src="${projects[i].featuredImage}" alt="">
             </div>
-  
-  
-  
+
+
+
             <div class = "grid-body grid-body${i + 1}">
               <h2 class="grid-title">${projects[i].title}</h2>
               <ul class="experience-container">
                 ${li1}
               </ul>
-              <p class ="project-description"> 
+              <p class ="project-description">
                 ${projects[i].description}
               </p>
               <div class = "technologies"
@@ -329,13 +329,13 @@ function desktopVersion() {
                   ${li2}
                 </ul>
               </div>
-            
+
                 <div class="action-grid">
                   <button whichProjectBtn = ${i} class="action-grid-btn" type = "button">
                     See Project
                   </button>
                </div>
-            </div>        
+            </div>
           </div>`;
 
     gridsContainer.append(gridDiv);
@@ -379,16 +379,16 @@ function desktopVersion() {
           <div class="popup-title-and-closeIcon-container">
             <h2 class="popup-project-title"> ${projects[index].title}
             <h2>
-            <i class="fa fa-times closePopup"></i> 
+            <i class="fa fa-times closePopup"></i>
           </div>
           <ul class="popup-experience">
             ${li1}
           </ul>
-          
+
           <div class = "main-mage">
             <img class = "main-image-im" src="${projects[index].featuredImage}" alt="Tonic Image">
           </div>
-  
+
           <div class = "popup-body">
             <p class = "popup-body-text">${projects[index].description}</p>
             <div class = "popup-techs-and-button-group">
@@ -403,13 +403,13 @@ function desktopVersion() {
                 </div>
                 <div class="popup-knowBtns">
                   <button type="button" class="popup-btn-text">   <a href = "${projects[index].linkToSource}">See source </a> </button>
-                
+
                   <img src="./images/popup/Icon-GitHub-popbt2.png " alt="">
                 </div>
               </div>
             </div>
           </div>
-  
+
         </div> `;
         wrapperMain.style.display = 'none';
         const closePopup = document.querySelector('.closePopup');
