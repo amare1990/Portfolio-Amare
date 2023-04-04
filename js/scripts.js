@@ -78,42 +78,45 @@ document.querySelector('.contact_mobile').addEventListener('click', () => {
 // Values initially for mobile version
 const projects = [
   {
-    title: 'Todos List',
-    experiences: ['Microverse Inc', 'Front End Dev', '2022'],
-    featuredImage: './images/ictd4a-images/todos-mob.png',
-    description: 'Developed with HTML, CSS and JavaScript, this web application allows customers to add tasks to be completed today, edit the tasks, and interactively delete completed tasks both on the screen and in the localStorage object.',
-    technologies: ['', 'html', 'css', 'javascript'],
-    linkToLiveVersion: 'https://magical-eclair-b90bd7.netlify.app/',
-    linkToSource: 'https://github.com/amare1990/To-do-List',
+    title: 'Car Reservation System',
+    experiences: ['Microverse Inc', 'Full-stack Dev', '2023'],
+    featuredImage: './images/ictd4a-images/car-details-mobile-merged.png',
+    description: 'Car Reservation System is a Full-stack web application. It is developed as a Microverse final capstone project for Module 6. The Front-end is built using React library and the Back-end is built using Ruby on Rails web framework. It is a single page web application set a single application.',
+    technologies: ['HTML5', 'CSS3', 'React', 'Ruby on Rails'],
+    linkToLiveVersion: 'https://reserve-tesla-car.onrender.com',
+    linkToSource: 'https://github.com/amare1990/Car-Reservation-System',
   },
+
+  {
+    title: 'Awesome Budget App',
+    counterImge: './images/Counter.png',
+    experiences: ['Microverse Inc', 'Full-stack Dev', '2023'],
+    featuredImage: './images/ictd4a-images/budget-categ.png',
+    description: 'Budget App is a mobile application that allows users to manage their expenses. It allows users to create an expense category, add their transaction, see the detail for each transaction, and etc.',
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'Ruby on Rails'],
+    linkToLiveVersion: 'https://budgetapp-amare.onrender.com/',
+    linkToSource: 'https://github.com/amare1990/Budget-App',
+  },
+
   {
     title: 'LeaderBoard',
     experiences: ['Microverse Inc', 'Front End Dev', '2022'],
     featuredImage: './images/ictd4a-images/leaderboard-mob.png',
     description: 'LeaderBoard is a web application project that allows people to submit score of the player and see the score on the screen. It stores and fetches score result fom the remore API. HTML, CSS, and mainly JavaScript is used to implement this project.',
-    technologies: ['', 'html', 'css', 'javascript'],
+    technologies: ['html', 'css', 'javascript'],
     linkToLiveVersion: 'https://friendly-croquembouche-2faf30.netlify.app/',
     linkToSource: 'https://github.com/amare1990/LeaderBoard',
   },
+
   {
-    title: 'Awesome Books',
+    title: "Space Traveller's Hub",
     counterImge: './images/Counter.png',
     experiences: ['Microverse Inc', 'Front End Dev', '2022'],
-    featuredImage: './images/ictd4a-images/awesomebook-mob.png',
-    description: 'This project is a web application project that allows the client to add a book and dynamically display all the added books.',
-    technologies: ['', 'html', 'css', 'javascript'],
-    linkToLiveVersion: '',
-    linkToSource: 'https://github.com/amare1990/AwesomeBooks',
-  },
-  {
-    title: 'Math Magicians',
-    counterImge: './images/Counter.png',
-    experiences: ['Microverse Inc', 'Front End Dev', '2022'],
-    featuredImage: './images/ictd4a-images/math-magician-mob.png',
-    description: 'This project is a claculator web application created by React JavaScript library.  It allowers users to calculate basic mathematics. The objective of this project is to practice how to create react components, use react props and states.',
-    technologies: ['', 'html', 'css', 'javascript'],
-    linkToLiveVersion: 'https://remarkable-chebakia-f7a6a5.netlify.app/',
-    linkToSource: 'https://github.com/amare1990/math-magicians',
+    featuredImage: './images/ictd4a-images/space-travellers-combined.png',
+    description: 'It is a web application that allows users to see the rockets and missions from the real data of Space Science Hub dynamically. It also allows users to reserve rockets and cancel rockets reservation, join and leave missions, and see the reserved rockets and joined missions. ',
+    technologies: ['HTML5', 'CSS3', 'JavaScript', 'React'],
+    linkToLiveVersion: 'https://darling-florentine-9d2083.netlify.app/',
+    linkToSource: 'https://github.com/amare1990/space-travellers-hub',
   },
 ];
 
@@ -139,7 +142,7 @@ function mobileVersion() {
 
     gridDiv.innerHTML = `
               <div class="grid-image image${i + 1}">
-                <img src="${projects[i].featuredImage}" alt="">
+                <img src="${projects[i].featuredImage}" alt="" class="grid-image-each">
               </div>
 
               <h2 class="grid-title">${projects[i].title}</h2>
@@ -150,7 +153,7 @@ function mobileVersion() {
                 ${projects[i].description}
               </p>
               <div class = "technologies"
-                <ul class = "tech-container>
+                <ul class = "tech-container">
                   ${li2}
                 </ul>
               </div>
@@ -184,7 +187,7 @@ function mobileVersion() {
         let li2 = '';
         for (let j = 0; j < techpopup.length; j += 1) {
           li2 += `
-              <li class="popup-exp-name">${techpopup[j]}</li>
+              <li class="popup-tech">${techpopup[j]}</li>
               `;
         }
         popupWindow.innerHTML = `
@@ -234,39 +237,39 @@ function mobileVersion() {
 
 // if screen size is greater than 768px
 function desktopVersion() {
-  projects[0].title = 'ICTD4A';
+  projects[0].title = 'Car Reservation System';
   projects[1].title = 'JavaScript Capstone Project';
-  projects[2].title = 'Todos List';
+  projects[2].title = "Space traveller's Hub";
   projects[3].title = 'LeaderBoard';
 
-  projects[0].experiences = ['Microverse Inc', 'Front-end Dev', '2022'];
-  projects[1].experiences = ['Microverse Inc', 'Front-end Dev Dev', '2022'];
+  projects[0].experiences = ['Microverse Inc', 'Full-stack Dev', '2023'];
+  projects[1].experiences = ['Microverse Inc', 'Full-stack Dev', '2023'];
   projects[2].experiences = ['Microverse Inc', 'Front-end Dev', '2022'];
   projects[3].experiences = ['Microverse Inc', 'Front-end Dev', '2022'];
 
-  projects[0].technologies = ['', 'html', 'css', 'javascript'];
-  projects[1].technologies = ['', 'html', 'css', 'javascript'];
-  projects[2].technologies = ['', 'html', 'css', 'javascript'];
-  projects[3].technologies = ['', 'html', 'css', 'javascript'];
+  projects[0].technologies = ['HTML5', 'CSS3', 'React', 'Ruby on Rails'];
+  projects[1].technologies = ['HTML5', 'CSS3', 'JavaScript', 'Ruby on Rails'];
+  projects[2].technologies = ['HTML5', 'CSS3', 'JavaScript', 'React'];
+  projects[3].technologies = ['HTML5', 'CSS3', 'Javascript'];
 
-  projects[0].featuredImage = './images/ictd4a-images/ictd4a-desk.png';
-  projects[1].featuredImage = './images/ictd4a-images/canadian-food.png';
-  projects[2].featuredImage = './images/ictd4a-images/todos.png';
+  projects[0].featuredImage = './images/ictd4a-images/car-details.png';
+  projects[1].featuredImage = './images/ictd4a-images/budget-categ.png';
+  projects[2].featuredImage = './images/ictd4a-images/space-travellers-combined.png';
   projects[3].featuredImage = './images/ictd4a-images/leaderboard.png';
 
-  projects[0].description = 'This is a web application project for the Research Conference Call for Paper. It is developed as a Microverse Capstone project for Module 1. It is developed using HTML, CSS, and JavaSript. It is a two page web application that is interactive and dynamic as it is developed using JavaScript.';
-  projects[1].description = 'This project is a JavaScript capstone project from Microverse for Module 2. As a capstone project, it requires the previous advanced four weeks JavaScript intensive learning and some web development background. this project is very dynamic web application that fetches meal from the Canadian meal API. It allows customers to like and comment the meal ';
-  projects[2].description = 'Developed with HTML, CSS and JavaScript, this web application allows customers to add tasks to be completed today, edit the tasks, and interactively delete completed tasks both on the screen and in the localStorage object.';
+  projects[0].description = 'Car Reservation System is a Full-stack web application. It is developed as a Microverse final capstone project for Module 6. The Front-end is built using React library and the Back-end is built using Ruby on Rails web framework. It is a single page web application set a single application.';
+  projects[1].description = 'Budget App is a mobile application that allows users to manage their expenses. It allows users to create an expense category, add their transaction, see the detail for each transaction, and etc. ';
+  projects[2].description = 'It is a web application that allows users to see the rockets and missions from the real data of Space Science Hub dynamically. It also allows users to reserve rockets and cancel rockets reservation, join and leave missions, and see the reserved rockets and joined missions. ';
   projects[3].description = 'LeaderBoard is a web application project that allows people to submit score of the player and see the score on the screen. It stores and fetches score result fom the remore API. HTML, CSS, and mainly JavaScript is used to implement this project.';
 
-  projects[0].linkToLiveVersion = 'https://amare1990.github.io/ICT4DA/';
-  projects[0].linkToSource = 'https://github.com/amare1990/ICT4DA';
+  projects[0].linkToLiveVersion = 'https://reserve-tesla-car.onrender.com';
+  projects[0].linkToSource = 'https://github.com/amare1990/Car-Reservation-System';
 
-  projects[1].linkToLiveVersion = 'https://www.loom.com/share/2e5639ffe4904400ad7a9baaba57e9f7';
-  projects[1].linkToSource = 'https://github.com/amare1990/JavaScript-Capstone-Project';
+  projects[1].linkToLiveVersion = 'https://budgetapp-amare.onrender.com';
+  projects[1].linkToSource = 'https://github.com/amare1990/Budget-App';
 
-  projects[2].linkToLiveVersion = 'https://magical-eclair-b90bd7.netlify.app/';
-  projects[2].linkToSource = 'https://github.com/amare1990/To-do-List';
+  projects[2].linkToLiveVersion = 'https://darling-florentine-9d2083.netlify.app/';
+  projects[2].linkToSource = 'https://github.com/amare1990/space-travellers-hub';
 
   projects[3].linkToLiveVersion = 'https://friendly-croquembouche-2faf30.netlify.app/';
   projects[3].linkToSource = 'https://github.com/amare1990/LeaderBoard';
@@ -311,7 +314,7 @@ function desktopVersion() {
 
     gridDiv.innerHTML = `
             <div class="grid-image image${i + 1}">
-              <img src="${projects[i].featuredImage}" alt="">
+              <img src="${projects[i].featuredImage}" alt="" grid-image-each>
             </div>
 
 
@@ -325,7 +328,7 @@ function desktopVersion() {
                 ${projects[i].description}
               </p>
               <div class = "technologies"
-                <ul class = "tech-container>
+                <ul class = "tech-container">
                   ${li2}
                 </ul>
               </div>
@@ -371,7 +374,7 @@ function desktopVersion() {
         let li2 = '';
         for (let j = 0; j < techpopup.length; j += 1) {
           li2 += `
-            <li class="popup-exp-name">${techpopup[j]}</li>
+            <li class="popup-tech">${techpopup[j]}</li>
             `;
         }
         popupWindow.innerHTML = `
@@ -386,7 +389,7 @@ function desktopVersion() {
           </ul>
 
           <div class = "main-mage">
-            <img class = "main-image-im" src="${projects[index].featuredImage}" alt="Tonic Image">
+            <img class = "main-image" src="${projects[index].featuredImage}" alt="Tonic Image">
           </div>
 
           <div class = "popup-body">

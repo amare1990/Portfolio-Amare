@@ -282,7 +282,7 @@ li a {
   height: 100%;
   min-width: 327px;
 
-  /* max-width: 100%; */
+  max-width: 767.98px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background-color: #fff;
@@ -315,9 +315,13 @@ li a {
   border-radius: 8px;
 }
 
+.grid-image-each {
+  width: 100%;
+}
+
 .grid-title {
-  height: 36px;
-  width: 295px;
+  height: auto;
+  width: auto;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -370,7 +374,7 @@ li a {
 
 .technologies {
   height: 24px;
-  width: 203px;
+  width: auto;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -394,13 +398,14 @@ li a {
 }
 
 .tech {
-  width: 29px;
-  height: 16px;
+  /* width: 29px;
+  height: 16px; */
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
+  padding: 2px 5px;
 }
 
 .tech2 {
@@ -416,12 +421,12 @@ li a {
   margin-bottom: 22px;
 }
 
-.action-grid-container {
+/* .action-grid-container {
   width: 295px;
   height: 72px;
-}
+} */
 
-.action-grid {
+/* .action-grid {
   width: auto;
   height: 48px;
   display: flex;
@@ -432,30 +437,34 @@ li a {
   border: 1px solid #6070ff;
   border-radius: 8px;
   background-color: #396df2;
-}
+} */
 
 .action-grid-btn,
 .about-me-btn {
   width: 100%;
+  height: 48px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  padding: 0;
+  padding: 12px;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
   background-color: #396df2;
   border: 0;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
-.tech:hover {
+.tech:hover,
+.popup-tech:hover {
   background-color: #6070ff;
   box-shadow: 0 8px 16px rgb(64, 83, 252, 0.24);
-  border-radius: 8px;
   color: #fff;
+  border-radius: 8px;
 }
 
 .tech:active {
@@ -464,11 +473,14 @@ li a {
   color: #fff;
 }
 
-.action-grid-btn:hover {
+.action-grid-btn:hover,
+.about-me-btn:hover {
   background-color: #6070ff;
   box-shadow: 0 8px 16px rgb(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
+  font-size: 20px;
+  padding: 16px;
 }
 
 .action-grid-btn:active {
@@ -504,35 +516,48 @@ li a {
 }
 
 .popup-title-and-closeIcon-container {
-  height: 40px;
-  width: 311px;
-  width: 100%;
+  /* height: 40px; */
+  /* width: 311px;
+  width: 100%; */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .popup-project-title {
-  height: 36px;
-  width: auto;
+  /* height: 36px; */
+  /* width: auto; */
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+  padding-right: 10px;
 }
 
-.popup-title-and-closeIcon-container i .fa-times {
+.popup-title-and-closeIcon-container i {
   height: 40px;
   width: 40px;
-  border: 2px solid #67798e;
+  font-size: 24px;
+  color: #67798e;
+  opacity: 0.7;
+  /* border: 2px solid #67798e; */
   border-radius: 8px;
   padding: 8px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: #67798e;
+  /* background-color: #67798e; */
 }
 
+.popup-title-and-closeIcon-container i:hover {
+  color: #67798e;
+  font-size: 30px;
+  opacity: 0.4;
+}
+
+.main-image {
+  width: 100%;
+}
 .popup-experience {
   height: 32px;
   width: 236px;
@@ -543,14 +568,16 @@ li a {
 }
 
 .popup-exp-name {
-  height: 32px;
+  /* height: 32px; */
   display: flex;
   align-items: center;
-  padding: 8px 0;
+  padding: 2px 5px;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
+  /* color: #6070ff; */
+
 }
 
 .popup-role {
@@ -588,7 +615,7 @@ li a {
 
 .popup-technologies {
   height: 24px;
-  width: 203px;
+  /* width: 203px; */
   display: flex;
   align-items: center;
   padding: 0;
@@ -596,7 +623,7 @@ li a {
   margin-bottom: 20px;
 }
 
-.popup-technology-item {
+/* .popup-technology-item {
   height: 24px;
   min-width: 53px;
   width: auto;
@@ -605,15 +632,18 @@ li a {
   display: flex;
   align-items: center;
   background-color: #ebebff;
-}
+} */
 
 .popup-tech {
-  height: 16px;
+  /* height: 16px; */
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
+  padding: 2px 5px;
+  /* background-color: #6070ff; */
+  border-radius: 8px;
 }
 
 .popup-html-tech {
@@ -642,7 +672,7 @@ li a {
 
 .popup-knowBtns {
   height: 48px;
-  width: 146px;
+  max-width: 146px;
   padding: 12px 14px;
   display: flex;
   align-items: center;
@@ -650,6 +680,7 @@ li a {
   gap: 10px;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  background-color: #fff;
 }
 
 .popup-knowBtns .popup-btn-text {
@@ -665,6 +696,12 @@ li a {
   align-items: center;
   text-align: center;
   color: #6070ff;
+  background-color: #fff;
+}
+
+.popup-btn-text:hover {
+  font-size: 14px;
+  color: #fff;
 }
 
 .popup-knowBtns img {
@@ -678,11 +715,11 @@ li a {
   display: none;
 }
 
-.closePopup {
+/* .closePopup {
   cursor: pointer;
   color: #67798e;
   font-weight: 100;
-}
+} */
 
 /* Popup window style starts here */
 
@@ -1096,6 +1133,11 @@ form {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: all 1.5s;
+  }
+
+  .portfolio-link:hover {
+    width: 150px;
   }
 
   .portfolio-link a {
@@ -1108,6 +1150,7 @@ form {
     text-align: center;
     line-height: 20px;
     color: #344563;
+    transition: all 2s;
   }
 
   .about-link {
@@ -1117,6 +1160,7 @@ form {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: all 1.5s;
   }
 
   .about-link a {
@@ -1129,6 +1173,7 @@ form {
     align-items: center;
     text-align: center;
     color: #344563;
+    transition: 1.5s;
   }
 
   .contact-link {
@@ -1138,6 +1183,7 @@ form {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: all 1.5s;
   }
 
   .contact-link a {
@@ -1150,6 +1196,21 @@ form {
     align-items: center;
     text-align: center;
     color: #344563;
+    transition: all 1.5s;
+  }
+
+  .menu-anchor-tag:hover {
+    color: rgb(226, 164, 82);
+    background-color: #396df2;
+    padding: 12px;
+    width: auto;
+    border-radius: 10px;
+  }
+
+  .portfolio-link:hover,
+  .about-link:hover,
+  .contact-link:hover {
+    width: 150px;
   }
 
   .header-2 {
@@ -1198,7 +1259,7 @@ form {
     margin-top: 24px;
     padding-top: 24px;
     max-width: 1156px;
-    height: 496px;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -1206,12 +1267,12 @@ form {
   }
 
   /* For popup window */
-  .main-image-im {
+  /* .main-image-im {
     max-width: 1108px;
     width: 100%;
     height: 286px;
     border-radius: 8px;
-  }
+  } */
 
   .language-list li img {
     height: 48px;
@@ -1259,7 +1320,7 @@ form {
 
   .grid-body .technologies {
     height: 24px;
-    width: 203px;
+    width: auto;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -1375,6 +1436,15 @@ form {
   .tags .tag-container-ruby .ruby:hover {
     color: #fff;
   }
+
+  /* .popup-knowBtns {
+    background-color: #fff;
+  } */
+
+  /* .popup-btn-text {
+
+    color: #6070ff;
+  } */
 
   /* End of Works section-media query. */
   .about-myself {
