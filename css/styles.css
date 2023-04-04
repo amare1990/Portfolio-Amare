@@ -553,6 +553,7 @@ li a {
   color: #67798e;
   font-size: 30px;
   opacity: 0.4;
+  background-color: #fff;
 }
 
 .main-image {
@@ -938,7 +939,7 @@ form {
   color: #b3bac5;
 }
 
-.get-touch {
+/* .get-touch {
   height: 48px;
   width: 140px;
   background-color: #fff;
@@ -946,14 +947,14 @@ form {
   padding: 12px 16px;
   display: flex;
   align-items: center;
-}
+} */
 
-.get-touch button {
-  height: 24px;
-  width: 108px;
+.get-me-btn {
+  height: 48px;
+  width: 140px;
   font-weight: 500;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 28px;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -961,6 +962,21 @@ form {
   letter-spacing: 0.03em;
   color: #6070ff;
   border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+/* .get-touch:hover {
+  background-color: #6070ff;
+  color: #fff;
+} */
+
+.get-me-btn:hover {
+  width: 160px;
+  font-size: 20px;
+  color: #344563;
+  /* background-color: #6070ff;
+  color: #fff; */
 }
 
 .error-message {

@@ -81,7 +81,7 @@ const projects = [
     title: 'Car Reservation System',
     experiences: ['Microverse Inc', 'Full-stack Dev', '2023'],
     featuredImage: './images/ictd4a-images/car-details-mobile-merged.png',
-    description: 'Car Reservation System is a Full-stack web application. It is developed as a Microverse final capstone project for Module 6. The Front-end is built using React library and the Back-end is built using Ruby on Rails web framework. It is a single page web application set a single application.',
+    description: 'Car Reservation System is a Full-stack web application developed as a Microverse final capstone project for Module 6. The Front-end is built using React library and the Back-end is built using Ruby on Rails web framework. It is a single page web application set as a single application.',
     technologies: ['HTML5', 'CSS3', 'React', 'Ruby on Rails'],
     linkToLiveVersion: 'https://reserve-tesla-car.onrender.com',
     linkToSource: 'https://github.com/amare1990/Car-Reservation-System',
@@ -257,7 +257,7 @@ function desktopVersion() {
   projects[2].featuredImage = './images/ictd4a-images/space-travellers-combined.png';
   projects[3].featuredImage = './images/ictd4a-images/leaderboard.png';
 
-  projects[0].description = 'Car Reservation System is a Full-stack web application. It is developed as a Microverse final capstone project for Module 6. The Front-end is built using React library and the Back-end is built using Ruby on Rails web framework. It is a single page web application set a single application.';
+  projects[0].description = 'Car Reservation System is a Full-stack web application developed as a Microverse final capstone project for Module 6. The Front-end is built using React library and the Back-end is built using Ruby on Rails web framework. It is a single page web application set as a single application.';
   projects[1].description = 'Budget App is a mobile application that allows users to manage their expenses. It allows users to create an expense category, add their transaction, see the detail for each transaction, and etc. ';
   projects[2].description = 'It is a web application that allows users to see the rockets and missions from the real data of Space Science Hub dynamically. It also allows users to reserve rockets and cancel rockets reservation, join and leave missions, and see the reserved rockets and joined missions. ';
   projects[3].description = 'LeaderBoard is a web application project that allows people to submit score of the player and see the score on the screen. It stores and fetches score result fom the remore API. HTML, CSS, and mainly JavaScript is used to implement this project.';
