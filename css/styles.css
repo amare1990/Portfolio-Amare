@@ -14,8 +14,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   background: #e5e5e5;
-
-  /* background-color: #f7f7f9; */
 }
 
 .background-color {
@@ -92,8 +90,6 @@ body {
   font-weight: 500;
   line-height: 16px;
   text-align: center;
-
-  /* letter-spacing: -0.28px; */
   padding: 3px 0 2px 0;
   color: black;
 }
@@ -161,6 +157,19 @@ li a i {
   color: #5e6c84;
 }
 
+.popup-title-and-closeIcon-container i {
+  height: 40px;
+  width: 40px;
+  font-size: 24px;
+  color: #67798e;
+  opacity: 0.7;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .menu-bar button i {
   height: 12px;
   width: 18px;
@@ -172,6 +181,13 @@ li .social-network i {
   padding-right: 10px;
   font-size: 20px;
   font-weight: 700;
+}
+
+.popup-title-and-closeIcon-container i:hover {
+  color: #67798e;
+  font-size: 30px;
+  opacity: 0.4;
+  background-color: #fff;
 }
 
 .menu-bar button i:active {
@@ -266,8 +282,6 @@ li a {
 .grids-wrapper {
   height: auto;
   max-width: 100%;
-
-  /* margin: 114px 24px 114px 24px; */
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 100%;
@@ -281,7 +295,6 @@ li a {
 .grid {
   height: 100%;
   min-width: 327px;
-
   max-width: 767.98px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -380,14 +393,10 @@ li a {
   gap: 8px;
   padding: 0;
   margin-top: auto;
-
-  /* margin-bottom: 12px; */
 }
 
 .tech-container {
   height: 24px;
-
-  /* width: 53px; */
   width: auto;
   display: flex;
   align-items: center;
@@ -398,8 +407,6 @@ li a {
 }
 
 .tech {
-  /* width: 29px;
-  height: 16px; */
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
@@ -416,28 +423,9 @@ li a {
   width: 65px;
 }
 
-/* previous css code maybe */
 .tech .lets-connect-about {
   margin-bottom: 22px;
 }
-
-/* .action-grid-container {
-  width: 295px;
-  height: 72px;
-} */
-
-/* .action-grid {
-  width: auto;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px;
-  box-sizing: border-box;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  background-color: #396df2;
-} */
 
 .action-grid-btn,
 .about-me-btn {
@@ -457,6 +445,16 @@ li a {
   border: 0;
   border-radius: 8px;
   box-sizing: border-box;
+}
+
+.popup-tech {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  padding: 2px 5px;
+  border-radius: 8px;
 }
 
 .tech:hover,
@@ -516,17 +514,12 @@ li a {
 }
 
 .popup-title-and-closeIcon-container {
-  /* height: 40px; */
-  /* width: 311px;
-  width: 100%; */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .popup-project-title {
-  /* height: 36px; */
-  /* width: auto; */
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
@@ -534,31 +527,10 @@ li a {
   padding-right: 10px;
 }
 
-.popup-title-and-closeIcon-container i {
-  height: 40px;
-  width: 40px;
-  font-size: 24px;
-  color: #67798e;
-  opacity: 0.7;
-  /* border: 2px solid #67798e; */
-  border-radius: 8px;
-  padding: 8px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /* background-color: #67798e; */
-}
-
-.popup-title-and-closeIcon-container i:hover {
-  color: #67798e;
-  font-size: 30px;
-  opacity: 0.4;
-  background-color: #fff;
-}
-
 .main-image {
   width: 100%;
 }
+
 .popup-experience {
   height: 32px;
   width: 236px;
@@ -569,7 +541,6 @@ li a {
 }
 
 .popup-exp-name {
-  /* height: 32px; */
   display: flex;
   align-items: center;
   padding: 2px 5px;
@@ -577,8 +548,6 @@ li a {
   font-size: 13px;
   line-height: 16px;
   color: #7a869a;
-  /* color: #6070ff; */
-
 }
 
 .popup-role {
@@ -616,35 +585,11 @@ li a {
 
 .popup-technologies {
   height: 24px;
-  /* width: 203px; */
   display: flex;
   align-items: center;
   padding: 0;
   gap: 8px;
   margin-bottom: 20px;
-}
-
-/* .popup-technology-item {
-  height: 24px;
-  min-width: 53px;
-  width: auto;
-  border-radius: 8px;
-  padding: 4px 12px;
-  display: flex;
-  align-items: center;
-  background-color: #ebebff;
-} */
-
-.popup-tech {
-  /* height: 16px; */
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  padding: 2px 5px;
-  /* background-color: #6070ff; */
-  border-radius: 8px;
 }
 
 .popup-html-tech {
@@ -667,7 +612,7 @@ li a {
   align-items: center;
   justify-content: center;
   padding: 33px 16px 16px 16px;
-  gap: 10px; /* value from figma is not there */
+  gap: 10px;
   margin-top: -20px;
 }
 
@@ -716,15 +661,6 @@ li a {
   display: none;
 }
 
-/* .closePopup {
-  cursor: pointer;
-  color: #67798e;
-  font-weight: 100;
-} */
-
-/* Popup window style starts here */
-
-/* Styling about myself section */
 .about-myself {
   max-width: 100%;
   height: auto;
@@ -955,16 +891,6 @@ form {
   color: #b3bac5;
 }
 
-/* .get-touch {
-  height: 48px;
-  width: 140px;
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 12px 16px;
-  display: flex;
-  align-items: center;
-} */
-
 .get-me-btn {
   height: 48px;
   width: 140px;
@@ -982,17 +908,10 @@ form {
   border-radius: 8px;
 }
 
-/* .get-touch:hover {
-  background-color: #6070ff;
-  color: #fff;
-} */
-
 .get-me-btn:hover {
   width: 160px;
   font-size: 20px;
   color: #344563;
-  /* background-color: #6070ff;
-  color: #fff; */
 }
 
 .error-message {
@@ -1298,14 +1217,6 @@ form {
     justify-content: center;
   }
 
-  /* For popup window */
-  /* .main-image-im {
-    max-width: 1108px;
-    width: 100%;
-    height: 286px;
-    border-radius: 8px;
-  } */
-
   .language-list li img {
     height: 48px;
     max-width: 48px;
@@ -1362,8 +1273,6 @@ form {
 
   .grid-body .technologies .tech-container {
     height: 24px;
-
-    /* width: 53px; */
     width: auto;
     display: flex;
     align-items: center;
@@ -1469,15 +1378,6 @@ form {
     color: #fff;
   }
 
-  /* .popup-knowBtns {
-    background-color: #fff;
-  } */
-
-  /* .popup-btn-text {
-
-    color: #6070ff;
-  } */
-
   /* End of Works section-media query. */
   .about-myself {
     display: flex;
@@ -1547,12 +1447,9 @@ form {
   }
 
   .frame-9-10-11-pskills {
-    /* height: 70px; */
     width: auto;
     border-radius: 8px;
     background: #f7f7f9;
-    /* display: flex;
-    flex-direction: column; */
   }
 
   .frame-9-10-11-pskills a {

@@ -1,33 +1,20 @@
 const hamburger = document.querySelector('.navbar');
 const wrapperMain = document.querySelector('.wrapper');
 const mobileMenuContainer = document.querySelector('.mobile-menu-wrapper');
-// const mobileMenuItem = document.querySelectorAll('.mobile-menu-item');
 const closeButton = document.querySelector('.closeBtn');
 const icon = document.querySelector('.fa-bars');
-// const iconTimes = document.querySelector('.fa-times');
 const headerAndHomepage = document.querySelector('.header-and-homepage-container');
-// const deviceStatusNormal = document.querySelector('.status-bar');
-
-// mobileMenuContainer.style.display = 'none';
 
 function mobileMenuDisplay() {
   if (icon.classList.contains('fa-bars')) {
     icon.classList.replace('fa-bars', 'fa-times');
-    // deviceStatusNormal.style.display = 'none';
     mobileMenuContainer.style.display = 'block';
-    // mobileMenuContainer.style.marginTop = '0';
     headerAndHomepage.style.filter = 'blur(7px)';
-    // deviceStatus.classList.add('brightness');
-    // deviceStatusNormal.toggle('hamburger-clicked');
-
-    // headerAndHomepage.style.backgroundColor = red;
   } else {
     mobileMenuContainer.style.display = 'none';
     icon.classList.replace('fa-times', 'fa-bars');
     headerAndHomepage.style.filter = '1';
-    // headerAndHomepage.style.filter = '100%';
   }
-  // wrapperMain.style.display = 'none';
 }
 
 hamburger.addEventListener('click', mobileMenuDisplay);
@@ -59,7 +46,7 @@ document.querySelector('.about_mobile').addEventListener('click', () => {
   headerAndHomepage.style.filter = 'none';
   icon.classList.replace('fa-times', 'fa-bars');
   window.scroll({
-    top: 4300,
+    top: 5200,
     behavior: 'smooth',
   });
 });
@@ -70,7 +57,7 @@ document.querySelector('.contact_mobile').addEventListener('click', () => {
   headerAndHomepage.style.filter = 'none';
   icon.classList.replace('fa-times', 'fa-bars');
   window.scroll({
-    top: 5450,
+    top: 7000,
     behavior: 'smooth',
   });
 });
@@ -129,7 +116,6 @@ function mobileVersion() {
     gridDiv.className = `grid grid${i + 1}`;
     let li1 = '';
     let li2 = '';
-    // const project = projects[i];
     const { experiences } = projects[i];
     const techs = projects[i].technologies;
     for (let j = 0; j < experiences.length; j += 1) {
@@ -216,12 +202,6 @@ function mobileVersion() {
               </div>
             </div>
           </div> `;
-
-        /* const popupCardWrapper = document.querySelector('.popup-card-wrapper');
-               const popupCard = document.querySelector('.popup-card');
-               popupWindow.append(popupCard);
-            */
-
         wrapperMain.style.display = 'none';
         const closePopup = document.querySelector('.closePopup');
         closePopup.addEventListener('click', () => {
@@ -281,10 +261,8 @@ function desktopVersion() {
 
     const gridBody = document.createElement('div');
     gridBody.className = `grid-body grid-body${i + 1}`;
-    // console.log('grid body created');
     const gridTitle = document.createElement('h2');
     gridTitle.className = 'grid-title';
-    // const techs = document.createElement('tech');
     const expContainer = document.createElement('ul');
     expContainer.className = 'experience-container';
     const description = document.createElement('p');
@@ -296,16 +274,10 @@ function desktopVersion() {
 
     let li1 = '';
     let li2 = '';
-    // const project = projects[i];
     const { experiences } = projects[i];
     const techs = projects[i].technologies;
     for (let j = 0; j < experiences.length; j += 1) {
       li1 += `<li class="experience-item">${experiences[j]}</li>`;
-      /* if(experiences[j] == 'Counter'){
-        let sr = ${projects[i].counterImge};
-        let im = <img src = ${sr} alt=''>;
-        li1 += '<li class='experience-item' > ${im}</li>';
-      } */
     }
 
     for (let k = 0; k < techs.length; k += 1) {
@@ -342,19 +314,12 @@ function desktopVersion() {
           </div>`;
 
     gridsContainer.append(gridDiv);
-    // gridDiv.append(gridBody);
     gridBody.append(gridTitle);
     gridBody.append(expContainer);
     gridBody.append(description);
     gridBody.append(techsContainer);
     gridBody.append(actionGrid);
   }
-
-  // Popup window starts here
-  // projects[0].description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.";
-  // projects[1].description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.";
-  // projects[2].description = 'Developed with HTML, CSS and JavaScript, this web application allows customers to add tasks to be completed today, edit the tasks, and interactively delete completed tasks both on the screen and in the localStorage object.';
-  // projects[3].description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.";
 
   const popupWindow = document.querySelector('.popup-card-wrapper');
   function showPopupWindow() {
@@ -430,6 +395,5 @@ function desktopVersion() {
 if ((window.matchMedia('(max-width: 767.98px')).matches) {
   mobileVersion();
 } else {
-  // console.log('Greater than 768px');
   desktopVersion();
 }
