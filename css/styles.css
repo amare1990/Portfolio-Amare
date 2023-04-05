@@ -36,7 +36,7 @@ body {
   max-width: 100%;
   border-bottom-left-radius: 80px;
   background-color: #fff;
-  padding: 114px, 24px;
+  padding: 114px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -205,7 +205,7 @@ a {
 }
 
 li a {
-  text-decoration-style: none;
+  text-decoration: none;
   position: relative;
 }
 
@@ -831,17 +831,17 @@ footer {
 }
 
 .contact-me-text {
-  height: 102px;
+  height: auto;
   max-width: 100%;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
   color: #ebebff;
-  padding: 12px 24px 87px 24px;
+  padding: 12px 24px 24px 24px;
 }
 
 form {
-  padding: o 24px 0 24px;
+  padding: 0 24px 0 24px;
   min-height: 374px;
   max-width: 100%;
   display: flex;
@@ -937,7 +937,6 @@ form {
   top: 0;
   bottom: 0;
   margin-top: 0;
-  backdrop-filter: blur;
 }
 
 .navbar {
@@ -992,7 +991,7 @@ form {
   list-style: none;
   width: 251px;
   height: 24px;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   display: flex;
