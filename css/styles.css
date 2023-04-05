@@ -14,8 +14,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   background: #e5e5e5;
-
-  /* background-color: #f7f7f9; */
 }
 
 .background-color {
@@ -38,7 +36,7 @@ body {
   max-width: 100%;
   border-bottom-left-radius: 80px;
   background-color: #fff;
-  padding: 114px, 24px;
+  padding: 114px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,8 +90,6 @@ body {
   font-weight: 500;
   line-height: 16px;
   text-align: center;
-
-  /* letter-spacing: -0.28px; */
   padding: 3px 0 2px 0;
   color: black;
 }
@@ -161,6 +157,19 @@ li a i {
   color: #5e6c84;
 }
 
+.popup-title-and-closeIcon-container i {
+  height: 40px;
+  width: 40px;
+  font-size: 24px;
+  color: #67798e;
+  opacity: 0.7;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .menu-bar button i {
   height: 12px;
   width: 18px;
@@ -172,6 +181,13 @@ li .social-network i {
   padding-right: 10px;
   font-size: 20px;
   font-weight: 700;
+}
+
+.popup-title-and-closeIcon-container i:hover {
+  color: #67798e;
+  font-size: 30px;
+  opacity: 0.4;
+  background-color: #fff;
 }
 
 .menu-bar button i:active {
@@ -189,7 +205,7 @@ a {
 }
 
 li a {
-  text-decoration-style: none;
+  text-decoration: none;
   position: relative;
 }
 
@@ -266,8 +282,6 @@ li a {
 .grids-wrapper {
   height: auto;
   max-width: 100%;
-
-  /* margin: 114px 24px 114px 24px; */
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 100%;
@@ -281,8 +295,7 @@ li a {
 .grid {
   height: 100%;
   min-width: 327px;
-
-  /* max-width: 100%; */
+  max-width: 767.98px;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   background-color: #fff;
@@ -315,9 +328,13 @@ li a {
   border-radius: 8px;
 }
 
+.grid-image-each {
+  width: 100%;
+}
+
 .grid-title {
-  height: 36px;
-  width: 295px;
+  height: auto;
+  width: auto;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -370,20 +387,16 @@ li a {
 
 .technologies {
   height: 24px;
-  width: 203px;
+  width: auto;
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 0;
   margin-top: auto;
-
-  /* margin-bottom: 12px; */
 }
 
 .tech-container {
   height: 24px;
-
-  /* width: 53px; */
   width: auto;
   display: flex;
   align-items: center;
@@ -394,13 +407,12 @@ li a {
 }
 
 .tech {
-  width: 29px;
-  height: 16px;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
+  padding: 2px 5px;
 }
 
 .tech2 {
@@ -411,51 +423,46 @@ li a {
   width: 65px;
 }
 
-/* previous css code maybe */
 .tech .lets-connect-about {
   margin-bottom: 22px;
-}
-
-.action-grid-container {
-  width: 295px;
-  height: 72px;
-}
-
-.action-grid {
-  width: auto;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px;
-  box-sizing: border-box;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  background-color: #396df2;
 }
 
 .action-grid-btn,
 .about-me-btn {
   width: 100%;
+  height: 48px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  padding: 0;
+  padding: 12px;
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
   background-color: #396df2;
   border: 0;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
-.tech:hover {
+.popup-tech {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  padding: 2px 5px;
+  border-radius: 8px;
+}
+
+.tech:hover,
+.popup-tech:hover {
   background-color: #6070ff;
   box-shadow: 0 8px 16px rgb(64, 83, 252, 0.24);
-  border-radius: 8px;
   color: #fff;
+  border-radius: 8px;
 }
 
 .tech:active {
@@ -464,11 +471,14 @@ li a {
   color: #fff;
 }
 
-.action-grid-btn:hover {
+.action-grid-btn:hover,
+.about-me-btn:hover {
   background-color: #6070ff;
   box-shadow: 0 8px 16px rgb(64, 83, 252, 0.24);
   border-radius: 8px;
   color: #fff;
+  font-size: 20px;
+  padding: 16px;
 }
 
 .action-grid-btn:active {
@@ -504,33 +514,21 @@ li a {
 }
 
 .popup-title-and-closeIcon-container {
-  height: 40px;
-  width: 311px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .popup-project-title {
-  height: 36px;
-  width: auto;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
+  padding-right: 10px;
 }
 
-.popup-title-and-closeIcon-container i .fa-times {
-  height: 40px;
-  width: 40px;
-  border: 2px solid #67798e;
-  border-radius: 8px;
-  padding: 8px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-color: #67798e;
+.main-image {
+  width: 100%;
 }
 
 .popup-experience {
@@ -543,10 +541,9 @@ li a {
 }
 
 .popup-exp-name {
-  height: 32px;
   display: flex;
   align-items: center;
-  padding: 8px 0;
+  padding: 2px 5px;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
@@ -588,32 +585,11 @@ li a {
 
 .popup-technologies {
   height: 24px;
-  width: 203px;
   display: flex;
   align-items: center;
   padding: 0;
   gap: 8px;
   margin-bottom: 20px;
-}
-
-.popup-technology-item {
-  height: 24px;
-  min-width: 53px;
-  width: auto;
-  border-radius: 8px;
-  padding: 4px 12px;
-  display: flex;
-  align-items: center;
-  background-color: #ebebff;
-}
-
-.popup-tech {
-  height: 16px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
 }
 
 .popup-html-tech {
@@ -636,13 +612,13 @@ li a {
   align-items: center;
   justify-content: center;
   padding: 33px 16px 16px 16px;
-  gap: 10px; /* value from figma is not there */
+  gap: 10px;
   margin-top: -20px;
 }
 
 .popup-knowBtns {
   height: 48px;
-  width: 146px;
+  max-width: 146px;
   padding: 12px 14px;
   display: flex;
   align-items: center;
@@ -650,6 +626,7 @@ li a {
   gap: 10px;
   border: 1px solid #6070ff;
   border-radius: 8px;
+  background-color: #fff;
 }
 
 .popup-knowBtns .popup-btn-text {
@@ -665,6 +642,12 @@ li a {
   align-items: center;
   text-align: center;
   color: #6070ff;
+  background-color: #fff;
+}
+
+.popup-btn-text:hover {
+  font-size: 14px;
+  color: #fff;
 }
 
 .popup-knowBtns img {
@@ -678,15 +661,6 @@ li a {
   display: none;
 }
 
-.closePopup {
-  cursor: pointer;
-  color: #67798e;
-  font-weight: 100;
-}
-
-/* Popup window style starts here */
-
-/* Styling about myself section */
 .about-myself {
   max-width: 100%;
   height: auto;
@@ -711,7 +685,7 @@ li a {
 
 .skill-list {
   padding-top: 70px;
-  height: 464.14678955078125px;
+  height: auto;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -745,7 +719,7 @@ li a {
 }
 
 .language-list {
-  height: 248.14678955078125px;
+  height: auto;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -763,7 +737,16 @@ li a {
   align-items: center;
 }
 
-.frame-9-10-11 a {
+.frame-9-10-11-pkills {
+  width: auto;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.frame-9-10-11 a,
+.frame-9-10-11-pskills a {
   height: 24px;
   width: 215px;
   font-weight: 500;
@@ -772,6 +755,13 @@ li a {
   display: flex;
   align-items: center;
   color: #253858;
+}
+
+.frame-9-10-11-pskills a {
+  height: auto;
+  width: auto;
+  background-color: #f7f7f9;
+  padding: 3px 5px;
 }
 
 .frame-9-10-11 img {
@@ -841,17 +831,17 @@ footer {
 }
 
 .contact-me-text {
-  height: 102px;
+  height: auto;
   max-width: 100%;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
   color: #ebebff;
-  padding: 12px 24px 87px 24px;
+  padding: 12px 24px 24px 24px;
 }
 
 form {
-  padding: o 24px 0 24px;
+  padding: 0 24px 0 24px;
   min-height: 374px;
   max-width: 100%;
   display: flex;
@@ -869,9 +859,9 @@ form {
 
 .form1-input {
   padding: 15px 38px 15px 16px;
-  height: 18px;
+  height: 100%;
   min-width: 273px;
-  max-width: 100%;
+  width: 100%;
   font-size: 17px;
   line-height: 20px;
   display: flex;
@@ -894,29 +884,19 @@ form {
 }
 
 .input-field textarea {
-  height: 140px;
+  height: 100%;
   min-width: 273px;
-  max-width: 100%;
+  width: 100%;
   font-size: 15px;
   color: #b3bac5;
 }
 
-.get-touch {
+.get-me-btn {
   height: 48px;
   width: 140px;
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 12px 16px;
-  display: flex;
-  align-items: center;
-}
-
-.get-touch button {
-  height: 24px;
-  width: 108px;
   font-weight: 500;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 28px;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -924,6 +904,14 @@ form {
   letter-spacing: 0.03em;
   color: #6070ff;
   border: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.get-me-btn:hover {
+  width: 160px;
+  font-size: 20px;
+  color: #344563;
 }
 
 .error-message {
@@ -949,7 +937,6 @@ form {
   top: 0;
   bottom: 0;
   margin-top: 0;
-  backdrop-filter: blur;
 }
 
 .navbar {
@@ -1004,7 +991,7 @@ form {
   list-style: none;
   width: 251px;
   height: 24px;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 32px;
   line-height: 44px;
   display: flex;
@@ -1096,6 +1083,11 @@ form {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: all 1.5s;
+  }
+
+  .portfolio-link:hover {
+    width: 150px;
   }
 
   .portfolio-link a {
@@ -1108,6 +1100,7 @@ form {
     text-align: center;
     line-height: 20px;
     color: #344563;
+    transition: all 2s;
   }
 
   .about-link {
@@ -1117,6 +1110,7 @@ form {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: all 1.5s;
   }
 
   .about-link a {
@@ -1129,6 +1123,7 @@ form {
     align-items: center;
     text-align: center;
     color: #344563;
+    transition: 1.5s;
   }
 
   .contact-link {
@@ -1138,6 +1133,7 @@ form {
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: all 1.5s;
   }
 
   .contact-link a {
@@ -1150,6 +1146,21 @@ form {
     align-items: center;
     text-align: center;
     color: #344563;
+    transition: all 1.5s;
+  }
+
+  .menu-anchor-tag:hover {
+    color: rgb(226, 164, 82);
+    background-color: #396df2;
+    padding: 12px;
+    width: auto;
+    border-radius: 10px;
+  }
+
+  .portfolio-link:hover,
+  .about-link:hover,
+  .contact-link:hover {
+    width: 150px;
   }
 
   .header-2 {
@@ -1198,19 +1209,11 @@ form {
     margin-top: 24px;
     padding-top: 24px;
     max-width: 1156px;
-    height: 496px;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-  }
-
-  /* For popup window */
-  .main-image-im {
-    max-width: 1108px;
-    width: 100%;
-    height: 286px;
-    border-radius: 8px;
   }
 
   .language-list li img {
@@ -1259,7 +1262,7 @@ form {
 
   .grid-body .technologies {
     height: 24px;
-    width: 203px;
+    width: auto;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -1269,8 +1272,6 @@ form {
 
   .grid-body .technologies .tech-container {
     height: 24px;
-
-    /* width: 53px; */
     width: auto;
     display: flex;
     align-items: center;
@@ -1442,6 +1443,20 @@ form {
     background: #f7f7f9;
     display: flex;
     flex-direction: column;
+  }
+
+  .frame-9-10-11-pskills {
+    width: auto;
+    border-radius: 8px;
+    background: #f7f7f9;
+  }
+
+  .frame-9-10-11-pskills a {
+    width: 120px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #253858;
   }
 
   .language-list li a {
