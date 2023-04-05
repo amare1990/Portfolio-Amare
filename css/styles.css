@@ -749,7 +749,7 @@ li a {
 
 .skill-list {
   padding-top: 70px;
-  height: 464.14678955078125px;
+  height: auto;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -783,7 +783,7 @@ li a {
 }
 
 .language-list {
-  height: 248.14678955078125px;
+  height: auto;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -801,7 +801,16 @@ li a {
   align-items: center;
 }
 
-.frame-9-10-11 a {
+.frame-9-10-11-pkills {
+  width: auto;
+  background-color: #f7f7f9;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.frame-9-10-11 a,
+.frame-9-10-11-pskills a {
   height: 24px;
   width: 215px;
   font-weight: 500;
@@ -810,6 +819,13 @@ li a {
   display: flex;
   align-items: center;
   color: #253858;
+}
+
+.frame-9-10-11-pskills a {
+  height: auto;
+  width: auto;
+  background-color: #f7f7f9;
+  padding: 3px 5px;
 }
 
 .frame-9-10-11 img {
@@ -1528,6 +1544,23 @@ form {
     background: #f7f7f9;
     display: flex;
     flex-direction: column;
+  }
+
+  .frame-9-10-11-pskills {
+    /* height: 70px; */
+    width: auto;
+    border-radius: 8px;
+    background: #f7f7f9;
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  .frame-9-10-11-pskills a {
+    width: 120px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #253858;
   }
 
   .language-list li a {
