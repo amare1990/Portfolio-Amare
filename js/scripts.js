@@ -193,11 +193,11 @@ function mobileVersion() {
             </ul>
             <div class="popup-button-group">
               <div class="popup-knowBtns">
-                <button type="button" class="popup-btn-text"> <a href = '${projects[index].linkToLiveVersion}'> See live </a> </button>
+                <button type="button" class="popup-btn-text"> <a href = '${projects[index].linkToLiveVersion}' target="_blank"> See live </a> </button>
                 <img src="./images/popup/Icon-Export-btn1.png" alt="">
               </div>
               <div class="popup-knowBtns">
-                <button type="button" class="popup-btn-text"> <a href = '${projects[index].linkToSource}'>See source </a> </button>
+                <button type="button" class="popup-btn-text"> <a href = "${projects[index].linkToSource}" target="_blank">See source </a> </button>
                 <img src="./images/popup/Icon-GitHub-popbt2.png " width="24px" height="24px" alt="">
               </div>
             </div>
@@ -366,11 +366,11 @@ function desktopVersion() {
               <div class="popup-button-group">
                 <div class="popup-knowBtns">
                   <button type="button" class="popup-btn-text">
-                  <a href = "${projects[index].linkToLiveVersion}"> See live  </a> </button>
+                  <a href = "${projects[index].linkToLiveVersion}" target="_blank"> See live  </a> </button>
                   <img src="./images/popup/Icon-Export-btn1.png" alt="">
                 </div>
                 <div class="popup-knowBtns">
-                  <button type="button" class="popup-btn-text">   <a href = "${projects[index].linkToSource}">See source </a> </button>
+                  <button type="button" class="popup-btn-text">   <a href = "${projects[index].linkToSource}" target="_blank">See source </a> </button>
 
                   <img src="./images/popup/Icon-GitHub-popbt2.png " alt="">
                 </div>
