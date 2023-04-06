@@ -237,10 +237,10 @@ function desktopVersion() {
   projects[2].featuredImage = './images/ictd4a-images/space-travellers-combined.png';
   projects[3].featuredImage = './images/ictd4a-images/leaderboard.png';
 
-  projects[0].description = 'Car Reservation System is a Full-stack web application developed as a Microverse final capstone project for Module 6. The Front-end is built using React library and the Back-end is built using Ruby on Rails web framework. It is a single page web application set as a single application.';
-  projects[1].description = 'Budget App is a mobile application that allows users to manage their expenses. It allows users to create an expense category, add their transaction, see the detail for each transaction, and etc. ';
-  projects[2].description = 'It is a web application that allows users to see the rockets and missions from the real data of Space Science Hub dynamically. It also allows users to reserve rockets and cancel rockets reservation, join and leave missions, and see the reserved rockets and joined missions. ';
-  projects[3].description = 'LeaderBoard is a web application project that allows people to submit score of the player and see the score on the screen. It stores and fetches score result fom the remore API. HTML, CSS, and mainly JavaScript is used to implement this project.';
+  projects[0].description = 'Car Reservation System is a Full-stack web application developed as a Microverse final capstone project for Module 6. The Front-end is built using React library and the Back-end is built using the Ruby on Rails web framework. It is a single-page web application set as a single application.';
+  projects[1].description = 'Budget App is a mobile application that allows users to manage their expenses. It allows users to create an expense category, add their transaction, see the detail for each transaction, etc.';
+  projects[2].description = "Space Traveller's Hub is a web application that allows users to see the rockets and missions from the real data of Space Science Hub. It also allows users to reserve a rocket and cancel a rocket reserved, join and leave missions, and see the reserved rockets and joined missions.";
+  projects[3].description = 'LeaderBoard is a web application project that allows people to submit the score of the player and see the score on the screen. It stores and fetches score results to/from the remote API. HTML5, CSS3, and mainly JavaScript are used to implement this project.';
 
   projects[0].linkToLiveVersion = 'https://reserve-tesla-car.onrender.com';
   projects[0].linkToSource = 'https://github.com/amare1990/Car-Reservation-System';
