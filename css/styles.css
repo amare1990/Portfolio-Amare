@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   font-family: "Poppins", sans-serif;
@@ -124,6 +128,7 @@ body {
   position: fixed;
   right: 20px;
   left: 23.5px;
+
   /* width: 97%; */
   border-radius: 7px;
   z-index: 10000;
@@ -231,16 +236,16 @@ li a {
 }
 
 @keyframes bubble {
-  from {color: #17284d;}
-  to {color: #6070ff;}
+  from { color: #17284d; }
+  to { color: #6070ff; }
 
-  from {font-size: 40px;}
-  to {font-size: 50px;}
+  from { font-size: 40px; }
+  to { font-size: 50px; }
 }
 
 @keyframes whoami {
-  from {color: #344563;}
-  to {color: #6070ff;}
+  from { color: #344563; }
+  to { color: #6070ff; }
 }
 
 .name-welcome {
@@ -961,6 +966,7 @@ form {
   max-height: 822px;
   min-width: 375px;
   background-color: #6070ff;
+
   /* mix-blend-mode: multiply; */
   display: none;
   position: fixed;
@@ -980,6 +986,7 @@ form {
   justify-content: space-between;
   padding: 8px;
   background-color: #777;
+
   /* position: fixed; */
 }
 
@@ -1202,10 +1209,12 @@ form {
     /* height: 72px; */
     background-color: #777;
     position: fixed;
+
     /* max-width: 1440px;
     width: 100%; */
     z-index: 10000;
     padding-right: 5%;
+
     /* border-radius: 7px; */
   }
 
@@ -1361,6 +1370,7 @@ form {
 
   .popup-title-and-closeIcon-container {
     height: 30px;
+
     /* width: 311px; */
     width: 100%;
     display: flex;
@@ -1409,7 +1419,6 @@ form {
 
   .popup-body-text-1 {
     width: 75%;
-
   }
 
   .popup-techs-and-button-group {
