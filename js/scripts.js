@@ -49,6 +49,9 @@ document.querySelector('.about_mobile').addEventListener('click', () => {
     top: 5200,
     behavior: 'smooth',
   });
+  // if (window.scrollTo >= 5200) {
+  //   document.querySelector('.section-about-myself').style.display = 'none';
+  // }
 });
 
 document.querySelector('.contact_mobile').addEventListener('click', () => {
@@ -57,7 +60,7 @@ document.querySelector('.contact_mobile').addEventListener('click', () => {
   headerAndHomepage.style.filter = 'none';
   icon.classList.replace('fa-times', 'fa-bars');
   window.scroll({
-    top: 7000,
+    top: 6950,
     behavior: 'smooth',
   });
 });
