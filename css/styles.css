@@ -230,6 +230,19 @@ li a {
   gap: 12px;
 }
 
+@keyframes bubble {
+  from {color: #17284d;}
+  to {color: #6070ff;}
+
+  from {font-size: 40px;}
+  to {font-size: 50px;}
+}
+
+@keyframes whoami {
+  from {color: #344563;}
+  to {color: #6070ff;}
+}
+
 .name-welcome {
   color: #17284d;
   font-style: normal;
@@ -240,12 +253,16 @@ li a {
   max-width: 100%;
   display: flex;
   align-items: center;
+  animation-name: bubble;
+  animation-duration: 4s;
 }
 
 .description-of-me {
   color: #344563;
   padding-top: 36px;
   padding-bottom: 12px;
+  animation-name: whoami;
+  animation-duration: 4s;
 }
 
 .lets-connect-about {
