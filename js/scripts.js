@@ -81,7 +81,7 @@ const projects = [
     title: 'Awesome Budget App',
     counterImge: './images/Counter.png',
     experiences: ['Microverse Inc', 'Full-stack Dev', '2023'],
-    featuredImage: './images/ictd4a-images/budget-categ.png',
+    featuredImage: './images/ictd4a-images/budget-modified.png',
     description: 'Budget App is a mobile application that allows users to manage their expenses. It allows users to create an expense category, add their transaction, see the detail for each transaction, and etc.',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'Ruby on Rails'],
     linkToLiveVersion: 'https://budgetapp-amare.onrender.com/',
@@ -102,7 +102,7 @@ const projects = [
     title: "Space Traveller's Hub",
     counterImge: './images/Counter.png',
     experiences: ['Microverse Inc', 'Front End Dev', '2022'],
-    featuredImage: './images/ictd4a-images/space-travellers-combined.png',
+    featuredImage: './images/ictd4a-images/space-modified.png',
     description: 'It is a web application that allows users to see the rockets and missions from the real data of Space Science Hub dynamically. It also allows users to reserve rockets and cancel rockets reservation, join and leave missions, and see the reserved rockets and joined missions. ',
     technologies: ['HTML5', 'CSS3', 'JavaScript', 'React'],
     linkToLiveVersion: 'https://darling-florentine-9d2083.netlify.app/',
@@ -189,7 +189,7 @@ function mobileVersion() {
             <ul class="popup-experience">
               ${li1}
             </ul>
-            <img class = "main-image" src="${projects[index].featuredImage}" alt="Tonic Image">
+            <img class = "main-image main-image-${index}" src="${projects[index].featuredImage}" alt="Tonic Image">
             <p class = "popup-card-text">${projects[index].description}</p>
             <ul class="popup-technologies">
               ${li2}
@@ -236,8 +236,8 @@ function desktopVersion() {
   projects[3].technologies = ['HTML5', 'CSS3', 'Javascript'];
 
   projects[0].featuredImage = './images/ictd4a-images/car-details.png';
-  projects[1].featuredImage = './images/ictd4a-images/budget-categ.png';
-  projects[2].featuredImage = './images/ictd4a-images/space-travellers-combined.png';
+  projects[1].featuredImage = './images/ictd4a-images/budget-modified.png';
+  projects[2].featuredImage = './images/ictd4a-images/space-modified.png';
   projects[3].featuredImage = './images/ictd4a-images/leaderboard.png';
 
   projects[0].description = 'Car Reservation System is a Full-stack web application developed as a Microverse final capstone project for Module 6. The Front-end is built using React library and the Back-end is built using the Ruby on Rails web framework. It is a single-page web application set as a single application.';
@@ -347,7 +347,7 @@ function desktopVersion() {
         }
         popupWindow.innerHTML = `
         <div class=".popup-card">
-          <div class="popup-title-and-closeIcon-container">
+          <div class="popup-title-and-closeIcon-container popup-title-and-closeIcon-container-${index}">
             <h2 class="popup-project-title"> ${projects[index].title}
             <h2>
             <i class="fa fa-times closePopup"></i>
@@ -357,11 +357,11 @@ function desktopVersion() {
           </ul>
 
           <div class = "main-mage">
-            <img class = "main-image" src="${projects[index].featuredImage}" alt="Tonic Image">
+            <img class = "main-image main-image-${index}" src="${projects[index].featuredImage}" alt="Tonic Image">
           </div>
 
-          <div class = "popup-body">
-            <p class = "popup-body-text">${projects[index].description}</p>
+          <div class = "popup-body popup-body-${index}">
+            <p class = "popup-body-text popup-body-text-${index}">${projects[index].description}</p>
             <div class = "popup-techs-and-button-group">
               <ul class="popup-technologies">
                 ${li2}
