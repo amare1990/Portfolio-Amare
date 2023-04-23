@@ -49,9 +49,6 @@ document.querySelector('.about_mobile').addEventListener('click', () => {
     top: 5200,
     behavior: 'smooth',
   });
-  // if (window.scrollTo >= 5200) {
-  //   document.querySelector('.section-about-myself').style.display = 'none';
-  // }
 });
 
 document.querySelector('.contact_mobile').addEventListener('click', () => {
@@ -217,6 +214,53 @@ function mobileVersion() {
 
   showPopupWindow();
 } // end of for mobile version
+
+// About-me section Skills btn functionality implementation
+const btnLanSkill = document.querySelector('.btn-lan-skill');
+const btnLibSkill = document.querySelector('.btn-lib-skill');
+const btnProfSkill = document.querySelector('.btn-prof-skill');
+
+const itemLanSkills = document.querySelector('.item-lan-skills');
+const itemLibSkills = document.querySelector('.item-lib-skills');
+const itemProfSkills = document.querySelector('.item-prof-skills');
+
+const chevronUp = document.querySelector('.btn-lan-chevron-up');
+const libChevronLeft = document.querySelector('.btn-lib-chevron-left');
+const profChevronLeft = document.querySelector('.btn-prof-chevron-left');
+
+btnLanSkill.addEventListener('click', () => {
+  itemLanSkills.style.display = 'block';
+  chevronUp.style.display = 'block';
+  btnLanSkill.style.display = 'none';
+});
+btnLibSkill.addEventListener('click', () => {
+  itemLibSkills.style.display = 'block';
+  libChevronLeft.style.display = 'block';
+  btnLibSkill.style.display = 'none';
+});
+btnProfSkill.addEventListener('click', () => {
+  itemProfSkills.style.display = 'block';
+  btnProfSkill.style.display = 'none';
+  profChevronLeft.style.display = 'block';
+});
+
+chevronUp.addEventListener('click', () => {
+  itemLanSkills.style.display = 'none';
+  btnLanSkill.style.display = 'block';
+  chevronUp.style.display = 'none';
+});
+
+libChevronLeft.addEventListener('click', () => {
+  itemLibSkills.style.display = 'none';
+  btnLibSkill.style.display = 'block';
+  libChevronLeft.style.display = 'none';
+});
+
+profChevronLeft.addEventListener('click', () => {
+  itemProfSkills.style.display = 'none';
+  btnProfSkill.style.display = 'block';
+  profChevronLeft.style.display = 'none';
+});
 
 // if screen size is greater than 768px
 function desktopVersion() {

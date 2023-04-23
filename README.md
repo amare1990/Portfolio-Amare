@@ -58,4 +58,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT/Portfolio-Amare/](./LICENSE) licensed.
+This project is [MIT/](./LICENSE) licensed.

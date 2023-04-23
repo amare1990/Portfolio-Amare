@@ -22,10 +22,6 @@ body {
   margin-right: 20px;
 }
 
-/* .background-color {
-  background-color: #fff;
-} */
-
 .wrapper {
   width: 100%;
   background-color: #e5e5e5;
@@ -128,14 +124,11 @@ body {
   position: fixed;
   right: 20px;
   left: 23.5px;
-
-  /* width: 97%; */
   border-radius: 7px;
   z-index: 10000;
 }
 
 .logo-menu-header {
-  /* height: 48px; */
   max-width: 100%;
   padding: 24px 24px;
   display: flex;
@@ -320,8 +313,6 @@ li a {
   grid-template-columns: 100%;
   row-gap: 88px;
   background-color: #e5e5e5;
-
-  /* background-color: #f7f7f9; */
   padding: 114px 0;
 }
 
@@ -478,6 +469,23 @@ li a {
   border: 0;
   border-radius: 8px;
   box-sizing: border-box;
+}
+
+.btn-lan-skill,
+.btn-lib-skill,
+.btn-prof-skill,
+.btn-lan-chevron-up,
+.btn-lib-chevron-left,
+.btn-prof-chevron-left {
+  border: none;
+  cursor: pointer;
+}
+
+.btn-lan-skill .fa-chevron-up,
+.btn-lan-chevron-up,
+.btn-lib-chevron-left,
+.btn-prof-chevron-left {
+  display: none;
 }
 
 .popup-tech {
@@ -694,10 +702,6 @@ li a {
   display: none;
 }
 
-/* .section-about-myself {
-  filter: blur(7px);
-} */
-
 .about-myself {
   max-width: 100%;
   height: auto;
@@ -817,6 +821,10 @@ li a {
   max-width: 100%;
   display: flex;
   align-items: center;
+}
+
+.skill-and-framework-only {
+  margin-top: 30px;
 }
 
 .skill-and-framework a {
@@ -966,8 +974,6 @@ form {
   max-height: 822px;
   min-width: 375px;
   background-color: #6070ff;
-
-  /* mix-blend-mode: multiply; */
   display: none;
   position: fixed;
   left: 0;
@@ -986,8 +992,6 @@ form {
   justify-content: space-between;
   padding: 8px;
   background-color: #777;
-
-  /* position: fixed; */
 }
 
 .mobile-menu {
@@ -1206,16 +1210,10 @@ form {
   }
 
   .header-2 {
-    /* height: 72px; */
     background-color: #777;
     position: fixed;
-
-    /* max-width: 1440px;
-    width: 100%; */
     z-index: 10000;
     padding-right: 5%;
-
-    /* border-radius: 7px; */
   }
 
   /* End of media queries for the header */
@@ -1355,7 +1353,6 @@ form {
   }
 
   .popup-card {
-    /* max-width: 1156px; */
     height: 823px;
     background-color: #fff;
     border: 1px solid #ebecf0;
@@ -1370,8 +1367,6 @@ form {
 
   .popup-title-and-closeIcon-container {
     height: 30px;
-
-    /* width: 311px; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -1508,8 +1503,6 @@ form {
     align-items: center;
     gap: 12px;
     height: 144px;
-    width: 414px;
-    max-width: 100%;
     padding: 12px 12px;
   }
 
@@ -1537,8 +1530,6 @@ form {
   }
 
   .language-list li a {
-    height: 24px;
-    max-width: 98px;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;

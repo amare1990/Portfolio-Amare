@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
-    <!-----<link rel="stylesheet" href="css/finish.css"--------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -14,20 +13,6 @@
   <div class="wrapper">
    <div class="header-and-homepage-container">
     <header class="header-2 background-color">
-      <!-- <div class="status-bar">
-          <div class="time"> <span>9:41</span></div>
-          <div class="mobile-status">
-            <div class="cellular">
-              <img class="status-img" src="./images/status-bar-original/Cellular-Connection-normal.png" alt="Cellular connection">
-            </div>
-            <div class="wifi">
-              <img class="status-img" src="./images/status-bar-original/Wifi-normal.png" alt="Wifi connection">
-            </div>
-            <div class="battery">
-              <img class="status-img" src="./images/status-bar-original/BatteryNormal.png" alt="Battery Status">
-            </div>
-          </div>
-      </div> -->
       <div class="navbar">
         <div class="logo-link">
           <a href="./index.html" class="my-logo-mobile">Amare Kassa</a>
@@ -174,14 +159,19 @@
           </a>
           </div>
         </div>
-        <ul class="skill-list">
+        <ul class="skill-list hide">
             <!----<div class="frame-12"> --->
             <li class="frame-7-languages">
               <a href="#">Languages</a>
-              <i class='fa fa-chevron-down'></i>
+              <button type="button" class="btn btn-lan-skill">
+                <i class='fa fa-chevron-down'></i>
+              </button>
+              <button type="button" class="btn-lan-chevron-up">
+                <i class='fa fa-chevron-up'></i>
+              </button>
 
                <!---<ul class="language-list"> --->
-              <li>
+              <li class="item-lan-skills hide">
                 <ul class="language-list">
                   <li class="frame-9-10-11">
                       <img src="./images/Ellipse-1.png" alt="Ellipse 1(Javascript)">
@@ -207,10 +197,15 @@
               </li>
             </li>
 
-            <li class="skill-and-framework">
-              <a href="#">Libraries & Frameworks</a>
-              <i class='fa fa-chevron-right'></i>
-              <li>
+            <li class="skill-and-framework skill-and-framework-only">
+              <a href="#">Libraries & <br> Frameworks</a>
+              <button type="button" class="btn btn-lib-skill">
+                <i class='fa fa-chevron-right'></i>
+              </button>
+              <button type="button" class="btn btn-lib-chevron-left">
+                <i class='fa fa-chevron-left'></i>
+              </button>
+              <li class="item-lib-skills hide">
                 <ul class="language-list">
                   <li class="frame-9-10-11">
                       <img src="./images/icons8-react-40.png" alt="Ellipse 1(React)">
@@ -233,8 +228,13 @@
             </li>
             <li class="skill-and-framework">
               <a href="#">Professional Skills</a>
-              <i class='fa fa-chevron-right'></i>
-              <li>
+              <button type="button" class="btn btn-prof-skill">
+                <i class='fa fa-chevron-right'></i>
+              </button>
+              <button type="button" class="btn btn-prof-chevron-left">
+                <i class='fa fa-chevron-left'></i>
+              </button>
+              <li class="item-prof-skills hide">
                 <ul class="language-list l-list-pskills">
                   <li class="frame-9-10-11-pskills">
                       <a href="#">Pair-programming</a>
