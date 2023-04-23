@@ -1,35 +1,41 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Portfolio
 
-# Portfolio: Details Popup Window
-
-# Project Name
 
 ## Description the project
-This part of the Portfolio project implements local storage for the contact form input values.
-The local storage implementation is done on a branch, "Added_Local-Storage" and merged to the main repository, Portfolio-Amare. Basically, local storage by browsers stores (key, value) pairs persistently. The browser helps users leave inserting their input values each time the user browses a site. This project helps users have their form values prefilled, done by javascript "load" event.  
+
+Portfolio is a web application project that shows up about myself, my skills, and the main projects I developed. It is built using HTML5, CSS3, and JavaScript and allows users to contact me via the contact form.
 
 
 
 ## Built With
 
-- Javascript
-- Technologies used: VS code editor, git, github, github flow
+- HTML5, CSS3, JavaScript
+- Technologies used: VS code editor, git, GitHub, GitHub flow
 
 
+## Demo and website address
 
-## How can values be stored by browsers
 
-** You have to use localStorage js object to store data. localStorage object has setItem() and getItem() methods to set the key value pairs and retrieve the values of the data stored. Use 'change' or 'input' js event to store when inputs are inserted first. use 'load' js event to retrieve stored data and prefill the form. **
+[Deployment link](https://beautiful-banoffee-22988f.netlify.app/)
+
+
+## Getting started
+
+- Clone my repo to your local computer using the command `git clone https://github.com/amare1990/Portfolio-Amare.git`
+- Open the project using your favorite editor using `code .` command from the root directory of the repo.
+- Click the `Go Live ` to run the project.
+
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Amare Kassa**
 
 - GitHub: [@githubhandle](https://github.com/amare1990)
 - email Address: [@emailhandle](juandapps@hotmail.com)
+- LinkedIn: [@linkedInhandle](https://www.linkedin.com/in/amaremek/)
 
-👤 **Author2**
+👤 **Josep Zepeda**
 
 - GitHub: [@githubhandle](J2ZROMERO)
 - email Address: [@emailhandle](jose-zromero@hotmail.com)
@@ -38,7 +44,7 @@ The local storage implementation is done on a branch, "Added_Local-Storage" and 
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/amare1990/Portfolio-Amare/issues).
 
 ## Show your support
 
@@ -53,5 +59,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT/Portfolio-Amare/](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
