@@ -959,7 +959,8 @@ form {
   color: #344563;
 }
 
-.error-message {
+.error-message,
+.error-message-empty {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
   align-self: center;
