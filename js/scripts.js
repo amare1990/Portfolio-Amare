@@ -265,7 +265,7 @@ profChevronLeft.addEventListener('click', () => {
 // if screen size is greater than 768px
 function desktopVersion() {
   projects[0].title = 'Car Reservation System';
-  projects[1].title = 'JavaScript Capstone Project';
+  projects[1].title = 'Awesome Budget Management System';
   projects[2].title = "Space traveller's Hub";
   projects[3].title = 'LeaderBoard';
 
@@ -480,7 +480,7 @@ formKeyArrays.forEach((e) => {
   });
 });
 
-// To prefill the form when the page loads
+// To pre-fill the form when the page loads
 window.addEventListener('load', () => {
   const formObject = JSON.parse(localStorage.getItem('form key'));
   if (formObject) {
