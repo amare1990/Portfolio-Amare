@@ -368,7 +368,7 @@ function desktopVersion() {
     gridBody.append(actionGrid);
   }
 
-  const popupWindow = document.querySelector('.popup-card-wrapper');
+  // const popupWindow = document.querySelector('.popup-card-wrapper');
   function showPopupWindow() {
     const btn = document.querySelectorAll('.action-grid-btn');
     btn.forEach((e) => {
